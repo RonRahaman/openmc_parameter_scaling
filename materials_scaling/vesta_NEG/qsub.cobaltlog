@@ -1,0 +1,26 @@
+Jobid: 212111
+qsub --mode script -n 32 -O qsub -A mc_transport -n 32 -t 20 --mode script job.sh
+Thu Aug 14 22:06:19 2014 +0000 (UTC) submitted with cwd set to: /gpfs/vesta-home/rrahaman/openmc_batch_output/second_revision/materials_scaling/vesta_NEG
+Thu Aug 14 22:06:52 2014 +0000 (UTC) rrahaman/212111: Initiating boot at location VST-22040-33151-32.
+Thu Aug 14 22:07:14 2014 +0000 (UTC) 
+Thu Aug 14 22:07:14 2014 +0000 (UTC) Command: '/gpfs/vesta-home/rrahaman/openmc_batch_output/second_revision/materials_scaling/vesta_NEG/job.sh'
+Thu Aug 14 22:07:14 2014 +0000 (UTC) 
+Thu Aug 14 22:07:14 2014 +0000 (UTC) Environment:
+Thu Aug 14 22:07:14 2014 +0000 (UTC) SHELL=/bin/bash
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_NODEFILE=/tmp/tmptfgz5t
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_PARTNAME=VST-22040-33151-32
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_JOBID=212111
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_STARTTIME=1408053982
+Thu Aug 14 22:07:14 2014 +0000 (UTC) LOGNAME=rrahaman
+Thu Aug 14 22:07:14 2014 +0000 (UTC) USER=rrahaman
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_ENDTIME=1408055182
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_PARTSIZE=32
+Thu Aug 14 22:07:14 2014 +0000 (UTC) HOME=/home/rrahaman
+Thu Aug 14 22:07:14 2014 +0000 (UTC) COBALT_JOBSIZE=32
+Thu Aug 14 22:07:14 2014 +0000 (UTC) 
+Thu Aug 14 22:07:14 2014 +0000 (UTC) Info: stdin received from /dev/null
+Thu Aug 14 22:07:14 2014 +0000 (UTC) Info: stdout sent to /gpfs/vesta-home/rrahaman/openmc_batch_output/second_revision/materials_scaling/vesta_NEG/qsub.output
+Thu Aug 14 22:07:14 2014 +0000 (UTC) Info: stderr sent to /gpfs/vesta-home/rrahaman/openmc_batch_output/second_revision/materials_scaling/vesta_NEG/qsub.error
+Thu Aug 14 22:07:14 2014 +0000 (UTC) 
+Thu Aug 14 22:07:18 2014 +0000 (UTC) rrahaman/212111: Block VST-22040-33151-32 for location VST-22040-33151-32 successfully booted (Initiating). 
+Thu Aug 14 22:26:31 2014 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination

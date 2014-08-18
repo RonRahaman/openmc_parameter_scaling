@@ -1,0 +1,4 @@
+*.swp
+*gmon.out*
+statepoint*
+tallies.out

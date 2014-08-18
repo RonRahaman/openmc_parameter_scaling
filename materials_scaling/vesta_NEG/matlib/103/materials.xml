@@ -1,0 +1,187 @@
+<materials>
+
+  <default_xs>70c</default_xs>
+
+  
+  <material id="1">
+    <density units="g/cm3" value="10.062" />
+    <nuclide ao="4.9476e-6" name="U-234" />
+    <nuclide ao="4.8218e-4" name="U-235" />
+    <nuclide ao="9.0402e-5" name="U-236" />
+    <nuclide ao="2.1504e-2" name="U-238" />
+    <nuclide ao="4.5737e-2" name="O-16" />
+    <nuclide ao="1.0e-24" name="Th-227" />
+    <nuclide ao="1.0e-24" name="Th-228" />
+    <nuclide ao="1.0e-24" name="Th-229" />
+    <nuclide ao="1.0e-24" name="Th-230" />
+    <nuclide ao="1.0e-24" name="Th-232" />
+    <nuclide ao="1.0e-24" name="Th-233" />
+    <nuclide ao="1.0e-24" name="Th-234" />
+    <nuclide ao="1.0e-24" name="Pa-231" />
+    <nuclide ao="1.0e-24" name="Pa-232" />
+    <nuclide ao="1.0e-24" name="Pa-233" />
+    <nuclide ao="1.0e-24" name="U-232" />
+    <nuclide ao="1.0e-24" name="U-233" />
+    <nuclide ao="1.0e-24" name="U-237" />
+    <nuclide ao="1.0e-24" name="U-239" />
+    <nuclide ao="1.0e-24" name="U-240" />
+    <nuclide ao="1.0e-24" name="U-241" />
+    <nuclide ao="1.0e-24" name="Np-235" />
+    <nuclide ao="1.0e-24" name="Np-236" />
+    <nuclide ao="1.0e-24" name="Np-237" />
+    <nuclide ao="1.0e-24" name="Np-238" />
+    <nuclide ao="1.0e-24" name="Np-239" />
+    <nuclide ao="1.0e-24" name="Pu-236" />
+    <nuclide ao="1.0e-24" name="Pu-237" />
+    <nuclide ao="1.0e-24" name="Pu-238" />
+    <nuclide ao="1.0e-24" name="Pu-239" />
+    <nuclide ao="1.0e-24" name="Pu-240" />
+    <nuclide ao="1.0e-24" name="Pu-241" />
+    <nuclide ao="1.0e-24" name="Pu-242" />
+    <nuclide ao="1.0e-24" name="Pu-243" />
+    <nuclide ao="1.0e-24" name="Pu-244" />
+    <nuclide ao="1.0e-24" name="Pu-246" />
+    <nuclide ao="1.0e-24" name="Am-241" />
+    <nuclide ao="1.0e-24" name="Am-242" />
+    <nuclide ao="1.0e-24" name="Am-242m" />
+    <nuclide ao="1.0e-24" name="Am-243" />
+    <nuclide ao="1.0e-24" name="Am-244" />
+    <nuclide ao="1.0e-24" name="Am-244m" />
+    <nuclide ao="1.0e-24" name="Cm-241" />
+    <nuclide ao="1.0e-24" name="Cm-242" />
+    <nuclide ao="1.0e-24" name="Cm-243" />
+    <nuclide ao="1.0e-24" name="Cm-244" />
+    <nuclide ao="1.0e-24" name="Cm-245" />
+    <nuclide ao="1.0e-24" name="Cm-246" />
+    <nuclide ao="1.0e-24" name="Cm-247" />
+    <nuclide ao="1.0e-24" name="Cm-248" />
+    <nuclide ao="1.0e-24" name="Cm-249" />
+    <nuclide ao="1.0e-24" name="Cm-250" />
+    <nuclide ao="1.0e-24" name="Bk-249" />
+    <nuclide ao="1.0e-24" name="Bk-250" />
+    <nuclide ao="1.0e-24" name="Cf-249" />
+    <nuclide ao="1.0e-24" name="Cf-250" />
+    <nuclide ao="1.0e-24" name="Cf-251" />
+    <nuclide ao="1.0e-24" name="Cf-252" />
+    <nuclide ao="1.0e-24" name="Cf-254" />
+    <nuclide ao="1.0e-24" name="Es-254" />
+    <nuclide ao="1.0e-24" name="Es-255" />
+    <nuclide ao="1.0e-24" name="Fm-255" />
+    <nuclide ao="1.0e-24" name="S-32" />
+    <nuclide ao="1.0e-24" name="S-33" />
+    <nuclide ao="1.0e-24" name="S-34" />
+    </material>
+
+  
+  <material id="2">
+    <density units="g/cm3" value="5.77" />
+    <nuclide ao="0.5145" name="Zr-90" />
+    </material>
+
+  
+  <material id="3">
+    <density units="atom/b-cm" value="0.07416" />
+    <nuclide ao="2.0" name="H-1" />
+    <nuclide ao="1.0" name="O-16" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="4">
+    <density units="atom/b-cm" value="0.06614" />
+    <nuclide ao="2.0" name="H-1" />
+    <nuclide ao="1.0" name="O-16" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="5">
+    <density units="g/cm3" value="7.9" />
+    <nuclide name="Fe-54" wo="0.05437098" />
+    <nuclide name="Fe-56" wo="0.88500663" />
+    <nuclide name="Fe-57" wo="0.0208008" />
+    <nuclide name="Ni-58" wo="0.0067198" />
+    <nuclide name="Mn-55" wo="0.01" />
+    <nuclide name="Si-28" wo="0.00367464" />
+    </material>
+
+  
+  <material id="6">
+    <density units="g/cm3" value="4.32" />
+    <nuclide name="H-1" wo="0.0095661" />
+    <nuclide name="O-16" wo="0.0759107" />
+    <nuclide name="Fe-54" wo="0.035620772088" />
+    <nuclide name="Fe-56" wo="0.579805982228" />
+    <nuclide name="Ni-58" wo="0.055298376566" />
+    <nuclide name="Cr-52" wo="0.145407678031" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="7">
+    <density units="g/cm3" value="4.28" />
+    <nuclide name="H-1" wo="0.0086117" />
+    <nuclide name="O-16" wo="0.0683369" />
+    <nuclide name="Fe-54" wo="0.035953677186" />
+    <nuclide name="Fe-56" wo="0.585224740891" />
+    <nuclide name="Ni-58" wo="0.055815129186" />
+    <nuclide name="Cr-52" wo="0.146766614995" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="8">
+    <density units="g/cm3" value="7.184" />
+    <nuclide name="H-1" wo="0.0011505" />
+    <nuclide name="O-16" wo="0.0091296" />
+    <nuclide name="Fe-54" wo="0.03855611055" />
+    <nuclide name="Fe-56" wo="0.627585036425" />
+    <nuclide name="Ni-58" wo="0.059855207342" />
+    <nuclide name="Ni-60" wo="0.023850159704" />
+    <nuclide name="Cr-52" wo="0.157390026871" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="9">
+    <density units="g/cm3" value="2.53" />
+    <nuclide name="H-1" wo="0.0245014" />
+    <nuclide name="O-16" wo="0.1944274" />
+    <nuclide name="Fe-54" wo="0.030411411144" />
+    <nuclide name="Fe-56" wo="0.495012237964" />
+    <nuclide name="Ni-58" wo="0.047211231662" />
+    <nuclide name="Cr-52" wo="0.124142524198" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="10">
+    <density units="g/cm3" value="1.746" />
+    <nuclide name="H-1" wo="0.0358870" />
+    <nuclide name="O-16" wo="0.2847761" />
+    <nuclide name="Fe-56" wo="0.43037146399" />
+    <nuclide name="Ni-58" wo="0.04104621835" />
+    <nuclide name="Cr-52" wo="0.107931450781" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="11">
+    <density units="g/cm3" value="3.044" />
+    <nuclide name="H-1" wo="0.0162913" />
+    <nuclide name="O-16" wo="0.1292776" />
+    <nuclide name="Zr-90" wo="0.43313403903" />
+    <nuclide name="Zr-94" wo="0.15280552077" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+  
+  <material id="12">
+    <density units="g/cm3" value="1.762" />
+    <nuclide name="H-1" wo="0.0292856" />
+    <nuclide name="O-16" wo="0.2323919" />
+    <nuclide name="Zr-90" wo="0.3741373658" />
+    <sab name="lwtr" xs="10t" />
+  </material>
+
+</materials>
