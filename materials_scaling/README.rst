@@ -13,11 +13,10 @@ materials_lib_mitcrpg
   Also contained in the library is a script, count_nuclides.txt, that counts the
   number of nuclides in the model.  
 
-generate_materials.py
-  An old script for generating models with fewer nuclides based on the large hm
-  model.  May not be as accurate as materials_lib_mitcrpg.
+generate_settings.sh
+  A script for generating settings directories from a materials library (such
+  as materials_lib_mitcrpg).  See the script's comments for details.
 
-set_matlib.sh
-  An old script for setting up the settings directories for a single run of
-  OpenMC.  Need to fix this to use the materials in materials_lib_mitcrpg
-
+old_scripts
+  Contains old scripts for generating/running materials scaling.  See
+  old_scrips/README.rst for details.
