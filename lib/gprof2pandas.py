@@ -4,6 +4,7 @@ import pandas as pd
 
 PARENTS = 'parents'
 CHILDREN = 'children'
+FUNCTIONS = 'functions'
 INDEX = 'index'
 NAME = 'name'
 SELF = 'self'
@@ -228,16 +229,16 @@ class GprofPandasParser(Parser):
         cycle = self.translate(mo)
 
         # read cycle member lines
-        cycle.functions = []
+        cycle[FUNCTIONS] = []
         for line in lines[1:]:
             mo = self._cg_cycle_member_re.match(line)
             if not mo:
                 sys.stderr.write('warning: unrecognized call graph entry: %r\n' % line)
                 continue
             call = self.translate(mo)
-            cycle.functions.append(call)
+            cycle[FUNCTIONS].append(call)
         
-        self.cycles[cycle.cycle] = cycle
+        self.cycles[cycle[CYCLE]] = cycle
 
     def parse_cg_entry(self, lines):
         if lines[0].startswith("["):
