@@ -3,6 +3,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import re
 import os
 import sys
 sys.path.append('../lib/')
@@ -13,6 +14,7 @@ class ParsedBatch(object):
     def __init__(self, rootdir, cg_entries=None, output_pattern=None):
         self.rootdir = rootdir
         self.cg_entries = cg_entries
+        self.output_pattern = output_pattern
         self.dframe = pd.DataFrame()
 
         self.parse_all_profiles()
@@ -24,10 +26,29 @@ class ParsedBatch(object):
         sys.stdout.write(' ')
         for fname in os.listdir(self.rootdir):
             if fname.endswith('.profile'):
+                print fname
                 i += 1
-                # print fname
-                self.dframe = self.dframe.append(
-                        self.parse_profile(os.path.join(self.rootdir, fname)))
+
+                # Parse profile into pframe
+                pframe = self.parse_profile(os.path.join(self.rootdir, fname))
+
+                # If corresponding output exists, grep it
+                outfile = os.path.splitext(fname)[0]+'.output'
+                outpath = os.path.join(self.rootdir, outfile)
+                if os.path.isfile(outpath):
+                    grep_result = self.grep_output(outpath, self.output_pattern)
+                    # print grep_result
+
+                # Add grep results to pframe
+                for k in grep_result:
+                    pframe[k] = grep_result[k]
+
+                # print pframe
+
+                # Append pframe to self.dframe
+                self.dframe = self.dframe.append(pframe)
+
+                # Show progress
                 sys.stdout.write("\r%d profiles parsed..." % i)
                 sys.stdout.flush()
         sys.stdout.write('all done!\n')
@@ -44,10 +65,27 @@ class ParsedBatch(object):
         slist = []
         for entry in self.cg_entries:
             s = parser.get_entry(entry)
+            print s
+            sys.exit()
             slist.append(s.ix[['called', 'self']])
 
         # Return list of series as a dataframe
         return pd.DataFrame(slist)
+
+    def grep_output(self, input_path, re_pattern):
+        re_obj = re.compile(re_pattern)
+        result = {}
+        with open(input_path, 'r') as fp:
+            for line in fp:
+                match_obj = re_obj.search(line)
+                if match_obj:
+                    result.update(
+                            { k:v for (k,v) in
+                                match_obj.groupdict().iteritems() if v is not
+                                None} )
+        return result
+
+
 
 if __name__ == '__main__':
     import argparse
@@ -58,7 +96,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     B = ParsedBatch(args. dir, cg_entries=['.__cross_section_NMOD_calculate_nuclide_xs',
-        '.__cross_section_NMOD_calculate_xs'])
+        '.__cross_section_NMOD_calculate_xs'],
+        output_pattern = 
+        r'Calculation Rate \(inactive\)\s+=\s+(?P<rate_inactive>[0-9\.E\-\+]+)\s+neutrons/second|'+
+        r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')
     print B.dframe
     # print args
-
