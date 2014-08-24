@@ -18,16 +18,27 @@ class ParsedBatch(object):
         self.parse_all_profiles()
 
     def parse_all_profiles(self):
+        # For each profile in the root directory, parse the profile
         for fname in os.listdir(self.rootdir):
             if fname.endswith('.profile'):
                 print fname
-                with open(os.path.join(self.rootdir, fname), 'r') as fp:
-                    parser = gprof2pandas.GprofPandasParser(fp)
-                print parser.dframe
-        return
+                self.parse_profile(fname)
 
-    def parse_profile(self, basename):
-        return
+    def parse_profile(self, filename):
+
+        # Parse profile
+        with open(os.path.join(self.rootdir, filename), 'r') as fp:
+            parser = gprof2pandas.GprofPandasParser(fp)
+
+        # For each of the specified call-graph entries, get the entry and add
+        # it to the DataFrame
+        slist = []
+        # pframe = pd.DataFrame()
+        for entry in self.cg_entries:
+            s = parser.get_entry(entry)
+            slist.append(s.ix[['called', 'self']])
+        print pd.DataFrame(slist)
+        return pd.DataFrame(slist)
 
 if __name__ == '__main__':
     import argparse
@@ -37,6 +48,8 @@ if __name__ == '__main__':
             dest='dir')
     args = parser.parse_args()
 
-    ParsedBatch(args.dir)
+    B = ParsedBatch(args. dir, cg_entries=['.__cross_section_NMOD_calculate_nuclide_xs',
+        '.__cross_section_NMOD_calculate_xs'])
+    print B.dframe
     # print args
 
