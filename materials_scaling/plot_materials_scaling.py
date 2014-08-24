@@ -18,11 +18,13 @@ class ParsedBatch(object):
         self.parse_all_profiles()
 
     def parse_all_profiles(self):
-        # For each profile in the root directory, parse the profile
+        # For each profile in the root directory, parse the profile and append
+        # it to the dataframe
         for fname in os.listdir(self.rootdir):
             if fname.endswith('.profile'):
-                print fname
-                self.parse_profile(fname)
+                # print fname
+                self.dframe = self.dframe.append(self.parse_profile(fname))
+        return self.dframe
 
     def parse_profile(self, filename):
 
@@ -30,14 +32,14 @@ class ParsedBatch(object):
         with open(os.path.join(self.rootdir, filename), 'r') as fp:
             parser = gprof2pandas.GprofPandasParser(fp)
 
-        # For each of the specified call-graph entries, get the entry and add
-        # it to the DataFrame
+        # For each of the specified call-graph entries, get the entry as a pandas series        
+        # and append to a list of series
         slist = []
-        # pframe = pd.DataFrame()
         for entry in self.cg_entries:
             s = parser.get_entry(entry)
             slist.append(s.ix[['called', 'self']])
-        print pd.DataFrame(slist)
+
+        # Return list of series as a dataframe
         return pd.DataFrame(slist)
 
 if __name__ == '__main__':
