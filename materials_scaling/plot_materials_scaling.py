@@ -20,11 +20,17 @@ class ParsedBatch(object):
     def parse_all_profiles(self):
         # For each profile in the root directory, parse the profile and append
         # it to the dataframe
+        i = 0
+        sys.stdout.write(' ')
         for fname in os.listdir(self.rootdir):
             if fname.endswith('.profile'):
+                i += 1
                 # print fname
                 self.dframe = self.dframe.append(
                         self.parse_profile(os.path.join(self.rootdir, fname)))
+                sys.stdout.write("\r%d profiles parsed..." % i)
+                sys.stdout.flush()
+        sys.stdout.write('all done!\n')
         return self.dframe
 
     def parse_profile(self, profile_path):
