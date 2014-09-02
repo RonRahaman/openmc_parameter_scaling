@@ -9,6 +9,19 @@ import sys
 sys.path.append('../lib/')
 import gprof2pandas
 
+PRIMARY     = 'primary'
+PARENT      = 'parent'
+PARENTS     = 'parents'
+CHILD       = 'child'
+CHILDREN    = 'children'
+FUNCTIONS   = 'functions'
+INDEX       = 'index'
+NAME        = 'name'
+SELF        = 'self'
+CALLED      = 'called'
+CALLED_SELF = 'called_self'
+CYCLE       = 'cycle'
+
 class ParsedBatch(object):
 
     def __init__(self, rootdir, cg_entries=None, output_pattern=None):
@@ -26,7 +39,7 @@ class ParsedBatch(object):
         sys.stdout.write(' ')
         for fname in os.listdir(self.rootdir):
             if fname.endswith('.profile'):
-                print fname
+                # print fname
                 i += 1
 
                 # Parse profile into pframe
@@ -64,10 +77,13 @@ class ParsedBatch(object):
         # and append to a list of series
         slist = []
         for entry in self.cg_entries:
-            s = parser.get_entry(entry)
-            print s
-            sys.exit()
-            slist.append(s.ix[['called', 'self']])
+            s = parser.get_entry(
+                    primary=entry.get(PRIMARY), 
+                    parent=entry.get(PARENT), 
+                    child=entry.get(CHILD))
+            # print s
+            # sys.exit()
+            slist.append(s.ix[[CALLED, SELF]])
 
         # Return list of series as a dataframe
         return pd.DataFrame(slist)
@@ -95,8 +111,13 @@ if __name__ == '__main__':
             dest='dir')
     args = parser.parse_args()
 
-    B = ParsedBatch(args. dir, cg_entries=['.__cross_section_NMOD_calculate_nuclide_xs',
-        '.__cross_section_NMOD_calculate_xs'],
+    B = ParsedBatch(args. dir, 
+            cg_entries=[
+                {'primary': '.__cross_section_NMOD_calculate_nuclide_xs'}, 
+                {'primary': '.__cross_section_NMOD_calculate_xs'},
+                {'primary': '.__cross_section_NMOD_calculate_nuclide_xs',
+                    'child' : '.__search_NMOD_binary_search_real'}
+                ],
         output_pattern = 
         r'Calculation Rate \(inactive\)\s+=\s+(?P<rate_inactive>[0-9\.E\-\+]+)\s+neutrons/second|'+
         r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')

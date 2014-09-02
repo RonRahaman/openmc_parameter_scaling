@@ -2,15 +2,18 @@
 from gprof2dot import *
 import pandas as pd
 
-PARENTS = 'parents'
-CHILDREN = 'children'
-FUNCTIONS = 'functions'
-INDEX = 'index'
-NAME = 'name'
-SELF = 'self'
-CALLED = 'called'
+PRIMARY     = 'primary'
+PARENT      = 'parent'
+PARENTS     = 'parents'
+CHILD       = 'child'
+CHILDREN    = 'children'
+FUNCTIONS   = 'functions'
+INDEX       = 'index'
+NAME        = 'name'
+SELF        = 'self'
+CALLED      = 'called'
 CALLED_SELF = 'called_self'
-CYCLE = 'cycle'
+CYCLE       = 'cycle'
 
 class GprofPandasParser(Parser):
     """Parser for GNU gprof output, with limited compatability for Pandas DataFrames
