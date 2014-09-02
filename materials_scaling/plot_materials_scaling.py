@@ -111,15 +111,30 @@ if __name__ == '__main__':
             dest='dir')
     args = parser.parse_args()
 
+    # B = ParsedBatch(args. dir, 
+    #         cg_entries=[
+    #             {'primary': '.__cross_section_NMOD_calculate_nuclide_xs'}, 
+    #             {'primary': '.__cross_section_NMOD_calculate_xs'},
+    #             {'primary': '.__cross_section_NMOD_calculate_nuclide_xs',
+    #                 'child' : '.__search_NMOD_binary_search_real'}
+    #             ],
+    #     output_pattern = 
+    #     r'Calculation Rate \(inactive\)\s+=\s+(?P<rate_inactive>[0-9\.E\-\+]+)\s+neutrons/second|'+
+    #     r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')
+
     B = ParsedBatch(args. dir, 
             cg_entries=[
-                {'primary': '.__cross_section_NMOD_calculate_nuclide_xs'}, 
-                {'primary': '.__cross_section_NMOD_calculate_xs'},
-                {'primary': '.__cross_section_NMOD_calculate_nuclide_xs',
-                    'child' : '.__search_NMOD_binary_search_real'}
+                {'primary': 'cross_section_mp_calculate_xs_'}, 
+                {'primary': 'cross_section_mp_calculate_xs_',
+                    'child' : 'search_mp_binary_search_real_'}
                 ],
         output_pattern = 
-        r'Calculation Rate \(inactive\)\s+=\s+(?P<rate_inactive>[0-9\.E\-\+]+)\s+neutrons/second|'+
+        r'Number of nuclides:\s+(?P<nuclides>[0-9\.E\-\+]+)|'+
         r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')
-    print B.dframe
+    B.dframe.index.name= 'function'
+    B.dframe.reset_index(inplace=True)
+    B_means = B.dframe.groupby(['function', 'nuclides']).mean()
+    B_stds = B.dframe.groupby(['function', 'nuclides']).std()
+    print B_means
+    print B_stds
     # print args
