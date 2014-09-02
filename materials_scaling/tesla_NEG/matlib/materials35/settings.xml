@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<settings>
+
+  <eigenvalue>
+    <batches>1</batches>
+    <inactive>0</inactive>
+    <particles>100000</particles>
+  </eigenvalue>
+
+  <source>
+    <space>
+      <type>box</type>
+      <parameters>
+        -160 -160 -183
+         160  160  183
+      </parameters>
+    </space>
+  </source>
+
+  <entropy>
+    <lower_left>-182.07 -182.07 -183.00</lower_left>
+    <upper_right>182.07  182.07  183.00</upper_right>
+  </entropy>
+
+</settings>
