@@ -64,7 +64,10 @@ class ParsedBatch(object):
                 # Show progress
                 sys.stdout.write("\r%d profiles parsed..." % i)
                 sys.stdout.flush()
-        sys.stdout.write('all done!\n')
+        sys.stdout.write('done parsing!\n')
+
+        self.dframe.index.name= 'function'
+
         return self.dframe
 
     def parse_profile(self, profile_path):
@@ -88,6 +91,14 @@ class ParsedBatch(object):
         # Return list of series as a dataframe
         return pd.DataFrame(slist)
 
+    def clean_func_names(self, compiler):
+        if (compiler == 'intel'):
+            prefix = ''; sep = '_mp_'; suffix = '_'
+        else:
+            raise ValueError('unrecognized compiler for function names: %s' % (compiler))
+        self.dframe.rename(index = lambda x: x.split(sep)[-1].rstrip(suffix), inplace=True)
+
+
     def grep_output(self, input_path, re_pattern):
         re_obj = re.compile(re_pattern)
         result = {}
@@ -100,7 +111,6 @@ class ParsedBatch(object):
                                 match_obj.groupdict().iteritems() if v is not
                                 None} )
         return result
-
 
 
 if __name__ == '__main__':
@@ -131,10 +141,12 @@ if __name__ == '__main__':
         output_pattern = 
         r'Number of nuclides:\s+(?P<nuclides>[0-9\.E\-\+]+)|'+
         r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')
-    B.dframe.index.name= 'function'
+
+    B.clean_func_names('intel')
+
     B.dframe.reset_index(inplace=True)
+
     B_means = B.dframe.groupby(['function', 'nuclides']).mean()
     B_stds = B.dframe.groupby(['function', 'nuclides']).std()
-    print B_means
-    print B_stds
+
     # print args
