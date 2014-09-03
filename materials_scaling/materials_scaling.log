@@ -1,0 +1,65 @@
+# IPython log file
+
+get_ipython().magic(u'logstart materials_scaling.log over')
+get_ipython().magic(u'ls ')
+get_ipython().magic(u'cat materials_scaling.log')
+get_ipython().magic(u'run ./plot_materials_scaling.py -d tesla_NEG/')
+get_ipython().magic(u'ls ')
+fig, axes = plt.subplots(nrows=1, ncols=1)
+for f in B_means.index.get_level_values(0).unique():
+    print f
+    
+for f in B_means.index.get_level_values(0).unique():
+    print B_means.loc[f]
+    
+for f in B_means.index.get_level_values(0).unique():
+    print B_means.loc[f, 'nuclides']
+    
+for f in B_means.index.get_level_values(0).unique():
+    print B_means.loc[f]['nuclides']
+    
+for f in B_means.index.get_level_values(0).unique():
+    print B_means.loc[f]
+    
+for f in B_means.index.get_level_values(0).unique():
+    print B_means.loc[f]['called']
+    
+for f in B_means.index.get_level_values(0).unique():
+    print B_means.loc[f].index
+    
+for f in B_means.index.get_level_values(0).unique():
+    axes.plot( B_means.loc[f].index, B_means.loc[f].called, label = f)
+    
+plt.show()
+for f in B_means.index.get_level_values(0).unique():
+    axes.plot( B_means.loc[f].index, B_means.loc[f].self, label = f)
+    
+plt.show()
+for f in B_means.index.get_level_values(0).unique():
+    axes.plot( B_means.loc[f].index, B_means.loc[f].self, label = f)
+    
+plt.show()
+fig, axes = plt.subplots(nrows=1, ncols=1)
+for f in B_means.index.get_level_values(0).unique():
+    axes.plot( B_means.loc[f].index, B_means.loc[f].self, label = f)
+    
+plt.show()
+frame = B_means.loc['calculate_xs']
+frame
+frame.sort
+frame.sort()
+frame.sort('nuclides')
+frame
+frame.sort_index()
+frame.sort(('nuclides'))
+frame.sort(index)
+frame.sort_index()
+frame.sort_index(ascending=True)
+frame.reset_index()
+frame.reset_index(inplace=True)
+get_ipython().magic(u'ls ')
+frame
+frame.sort('nuclides')
+frame.nuclides()
+frame.nuclides
+exit()

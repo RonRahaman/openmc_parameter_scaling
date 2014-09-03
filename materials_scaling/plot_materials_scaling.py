@@ -27,7 +27,7 @@ if __name__ == '__main__':
     #     r'Calculation Rate \(inactive\)\s+=\s+(?P<rate_inactive>[0-9\.E\-\+]+)\s+neutrons/second|'+
     #     r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')
 
-    B = ParsedBatch(args. dir, 
+    B = ParsedBatch(args.dir, 
             cg_entries=[
                 {'primary': 'cross_section_mp_calculate_xs_'}, 
                 {'primary': 'cross_section_mp_calculate_xs_',
