@@ -80,11 +80,11 @@ class GprofPandasParser(Parser):
         if parent and child:
             raise ValueError('values for both parent and child should not be passed')
         elif parent:
-            parentframe = pd.DataFrame(self.dframe.ix[primary, PARENTS])
+            parentframe = pd.DataFrame(self.dframe.ix[primary, PARENTS]).convert_objects(convert_numeric=True)
             parentframe.set_index(NAME, inplace=True)
             return parentframe.ix[parent]
         elif child:
-            childframe = pd.DataFrame(self.dframe.ix[primary, CHILDREN])
+            childframe = pd.DataFrame(self.dframe.ix[primary, CHILDREN]).convert_objects(convert_numeric=True)
             childframe.set_index(NAME, inplace=True)
             return childframe.ix[child]
         else:
@@ -339,9 +339,4 @@ class GprofPandasParser(Parser):
         # Set dataframe
         self.dframe = pd.DataFrame(self.functions.values())
         self.dframe.set_index(NAME, inplace=True)
-
-        
-
-            
-
-        
+        self.dframe = self.dframe.convert_objects(convert_numeric=True)

@@ -142,11 +142,24 @@ if __name__ == '__main__':
         r'Number of nuclides:\s+(?P<nuclides>[0-9\.E\-\+]+)|'+
         r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second')
 
+    B
     B.clean_func_names('intel')
 
     B.dframe.reset_index(inplace=True)
 
-    B_means = B.dframe.groupby(['function', 'nuclides']).mean()
-    B_stds = B.dframe.groupby(['function', 'nuclides']).std()
+    B_means = B.dframe.convert_objects(convert_numeric=True).groupby(['function', 'nuclides']).mean()
+    B_stds = B.dframe.convert_objects(convert_numeric=True).groupby(['function', 'nuclides']).std()
 
-    # print args
+    # Plot call counts
+    fig, axes = plt.subplots(nrows=1, ncols=1)
+    for f in B_means.index.get_level_values(0).unique():
+        axes.plot( B_means.loc[f].index, B_means.loc[f].self, label = f)
+        
+    plt.show()
+
+    # fig, axes = plt.subplots(nrows=1, ncols=1)
+    
+    # for f in B_means.index.get_level_values(0).unique()
+
+
+
