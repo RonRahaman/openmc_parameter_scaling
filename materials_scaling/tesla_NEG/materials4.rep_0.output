@@ -1,3 +1,4 @@
+ WARNING: Could not compute uncertainties -- only one active batch simulated!
 
        .d88888b.                             888b     d888  .d8888b.
       d88P" "Y88b                            8888b   d8888 d88P  Y88b
@@ -15,7 +16,7 @@ __________________888______________________________________________________
       License:       http://mit-crpg.github.io/openmc/license.html
       Version:        0.5.3
       Git SHA1:       7e98d3bc10fee2f934bee3c1053cd0c9010b9994
-      Date/Time:      2014-09-02 14:13:14
+      Date/Time:      2014-09-04 10:20:05
 
  ===========================================================================
  ========================>     INITIALIZATION     <=========================
@@ -112,26 +113,25 @@ __________________888______________________________________________________
 
  =======================>     TIMING STATISTICS     <=======================
 
- Total time for initialization     =  7.1180E-01 seconds
-   Reading cross sections          =  2.0190E-01 seconds
+ Total time for initialization     =  1.3530E+00 seconds
+   Reading cross sections          =  6.5200E-01 seconds
    Unionizing energy grid          =  0.0000E+00 seconds
- Total time in simulation          =  2.1961E+01 seconds
-   Time in transport only          =  2.1918E+01 seconds
+ Total time in simulation          =  2.3477E+01 seconds
+   Time in transport only          =  2.3436E+01 seconds
    Time in inactive batches        =  0.0000E+00 seconds
-   Time in active batches          =  2.1961E+01 seconds
-   Time synchronizing fission bank =  6.9000E-03 seconds
-     Sampling source sites         =  5.6000E-03 seconds
-     SEND/RECV source sites        =  1.3000E-03 seconds
+   Time in active batches          =  2.3477E+01 seconds
+   Time synchronizing fission bank =  6.0000E-03 seconds
+     Sampling source sites         =  5.0000E-03 seconds
+     SEND/RECV source sites        =  1.0000E-03 seconds
    Time accumulating tallies       =  0.0000E+00 seconds
- Total time for finalization       =  1.0000E-04 seconds
- Total time elapsed                =  2.2673E+01 seconds
- Calculation Rate (active)         =  4553.57 neutrons/second
+ Total time for finalization       =  0.0000E+00 seconds
+ Total time elapsed                =  2.4830E+01 seconds
+ Calculation Rate (active)         =  4259.49 neutrons/second
 
  ============================>     RESULTS     <============================
 
- WARNING: Could not compute uncertainties -- only one active batch simulated!
  k-effective (Collision)     =  0.91958
  k-effective (Track-length)  =  0.91938
  k-effective (Absorption)    =  0.92250
  Leakage Fraction            =  0.00095
- 
+

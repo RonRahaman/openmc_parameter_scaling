@@ -2,179 +2,202 @@ Flat profile:
 
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
- time   seconds   seconds    calls   s/call   s/call  name    
- 49.88     69.69    69.69 344182532     0.00     0.00  search_mp_binary_search_real_
- 43.99    131.15    61.46 10868409     0.00     0.00  cross_section_mp_calculate_xs_
-  2.35    134.44     3.29 14263311     0.00     0.00  geometry_mp_distance_to_boundary_
-  0.47    135.10     0.66   100000     0.00     0.00  tracking_mp_transport_
-  0.44    135.71     0.61 11699094     0.00     0.00  interpolation_mp_interpolate_tab1_array_
-  0.32    136.16     0.45  1933049     0.00     0.00  physics_mp_elastic_scatter_
-  0.31    136.60     0.44 11172019     0.00     0.00  geometry_mp_cross_surface_
-  0.29    137.00     0.40  3200158     0.00     0.00  physics_mp_collision_
-  0.25    137.34     0.35  8061068     0.00     0.00  geometry_mp_find_cell_
-  0.24    137.67     0.33  1967583     0.00     0.00  physics_mp_sample_angle_
-  0.22    137.98     0.31                             log.L
-  0.19    138.25     0.27                             __intel_ssse3_rep_memcpy
-  0.11    138.40     0.15  3401618     0.00     0.00  geometry_mp_cross_lattice_
-  0.10    138.54     0.14 83214428     0.00     0.00  random_lcg_mp_prn_
-  0.10    138.68     0.14  1132670     0.00     0.00  physics_mp_sab_scatter_
-  0.09    138.80     0.12                             log
-  0.07    138.90     0.10 20663723     0.00     0.00  set_header_mp_set_size_int_
-  0.06    138.99     0.09   126011     0.00     0.00  physics_mp_create_fission_sites_
-  0.06    139.08     0.09                             __libm_sse2_sincos
-  0.06    139.16     0.08                             for_index
-  0.04    139.21     0.05 20663723     0.00     0.00  list_header_mp_list_size_int_
-  0.04    139.26     0.05     5500     0.00     0.00  ace_mp_read_energy_dist_
-  0.03    139.30     0.04      257     0.00     0.00  ace_mp_read_esz_
-  0.03    139.34     0.04                             _intel_fast_memcmp
-  0.02    139.37     0.03                             for_len_trim
-  0.02    139.40     0.03        1     0.03     0.03  source_mp_initialize_source_
-  0.02    139.43     0.03                             cos.N
-  0.01    139.45     0.02 11941981     0.00     0.00  fission_mp_nu_total_
-  0.01    139.47     0.02   100000     0.00     0.00  particle_header_mp_initialize_particle_
-  0.01    139.49     0.02      257     0.00     0.00  ace_mp_read_reactions_
-  0.01    139.51     0.02                             for_cpstr
-  0.01    139.53     0.02                             search._
-  0.01    139.54     0.01 11667870     0.00     0.00  particle_header_mp_deallocate_coord_
-  0.01    139.55     0.01   100000     0.00     0.00  source_mp_get_source_particle_
-  0.01    139.56     0.01    15375     0.00     0.00  xmlparse_mp_xml_find_attrib_
-  0.01    139.57     0.01        1     0.01   138.19  eigenvalue_mp_run_eigenvalue_
-  0.01    139.58     0.01        1     0.01     0.02  xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_
-  0.01    139.59     0.01                             __intel_memset
-  0.01    139.60     0.01                             __intel_ssse3_memcpy
-  0.01    139.61     0.01                             __libm_setusermatherrf
-  0.01    139.62     0.01                             _intel_fast_memcpy
-  0.01    139.63     0.01                             for__desc_ret_item
-  0.01    139.64     0.01                             for_adjustl
-  0.01    139.65     0.01                             for_alloc_allocatable
-  0.01    139.66     0.01                             for_read_dir_xmit
-  0.01    139.67     0.01                             list_header_mp_list_remove_char_
-  0.01    139.68     0.01                             random_lcg._
-  0.01    139.69     0.01                             ri_find_field
-  0.01    139.70     0.01                             ri_get_field
-  0.01    139.71     0.01                             tracking._
-  0.00    139.71     0.00   200001     0.00     0.00  random_lcg_mp_set_particle_seed_
-  0.00    139.71     0.00   100001     0.00     0.00  particle_header_mp_clear_particle_
-  0.00    139.71     0.00   100000     0.00     0.00  math_mp_watt_spectrum_
-  0.00    139.71     0.00    91477     0.00     0.00  fission_mp_nu_delayed_
-  0.00    139.71     0.00    18013     0.00     0.00  xmlparse_mp_xml_ok_
-  0.00    139.71     0.00     7123     0.00     0.00  dict_header_mp_dict_get_elem_ci_
-  0.00    139.71     0.00     6540     0.00     0.00  read_xml_primitives_mp_read_xml_word_
-  0.00    139.71     0.00     5707     0.00     0.00  ace_mp_length_energy_dist_
-  0.00    139.71     0.00     5707     0.00     0.00  endf_header_mp_tab1_clear_
-  0.00    139.71     0.00     5617     0.00     0.00  ace_header_mp_distenergy_clear_
-  0.00    139.71     0.00     4527     0.00     0.00  dict_header_mp_dict_add_key_ci_
-  0.00    139.71     0.00     4519     0.00     0.00  read_xml_primitives_mp_read_xml_double_
-  0.00    139.71     0.00     4252     0.00     0.00  read_xml_primitives_mp_read_xml_integer_
-  0.00    139.71     0.00     4234     0.00     0.00  string_mp_ends_with_
-  0.00    139.71     0.00     3407     0.00     0.00  dict_header_mp_dict_get_elem_ii_
-  0.00    139.71     0.00     2698     0.00     0.00  xmlparse_mp_xml_get_
-  0.00    139.71     0.00     2694     0.00     0.00  xmlparse_mp_xml_error_
-  0.00    139.71     0.00     2605     0.00     0.00  xmlparse_mp_xml_report_details_string__
-  0.00    139.71     0.00     2064     0.00     0.00  string_mp_starts_with_
-  0.00    139.71     0.00     1808     0.00     0.00  dict_header_mp_dict_get_key_ci_
-  0.00    139.71     0.00     1673     0.00     0.00  dict_header_mp_dict_has_key_ii_
-  0.00    139.71     0.00     1636     0.00     0.00  dict_header_mp_dict_get_key_ii_
-  0.00    139.71     0.00      909     0.00     0.00  list_header_mp_list_contains_char_
-  0.00    139.71     0.00      909     0.00     0.00  list_header_mp_list_index_char_
-  0.00    139.71     0.00      900     0.00     0.00  list_header_mp_list_append_char_
-  0.00    139.71     0.00      788     0.00     0.00  dict_header_mp_dict_has_key_ci_
-  0.00    139.71     0.00      515     0.00     0.00  set_header_mp_set_add_char_
-  0.00    139.71     0.00      394     0.00     0.00  set_header_mp_set_contains_char_
-  0.00    139.71     0.00      385     0.00     0.00  list_header_mp_list_append_real_
-  0.00    139.71     0.00      385     0.00     0.00  list_header_mp_list_get_item_char_
-  0.00    139.71     0.00      385     0.00     0.00  list_header_mp_list_get_item_real_
-  0.00    139.71     0.00      266     0.00     0.00  output_mp_write_message_
-  0.00    139.71     0.00      258     0.00     0.00  ace_mp_read_ace_table_
-  0.00    139.71     0.00      257     0.00     0.00  ace_header_mp_nuclide_clear_
-  0.00    139.71     0.00      257     0.00     0.00  ace_mp_read_nu_data_
-  0.00    139.71     0.00       98     0.00     0.00  dict_header_mp_dict_add_key_ii_
-  0.00    139.71     0.00       84     0.00     0.00  string_mp_lower_case_
-  0.00    139.71     0.00       68     0.00     0.00  math_mp_maxwell_spectrum_
-  0.00    139.71     0.00       63     0.00     0.00  ace_mp_get_energy_dist_
-  0.00    139.71     0.00       43     0.00     0.00  xmlparse_mp_xml_report_errors_extern__
-  0.00    139.71     0.00       36     0.00     0.00  read_xml_primitives_mp_read_from_buffer_integers_
-  0.00    139.71     0.00       36     0.00     0.00  read_xml_primitives_mp_read_xml_integer_array_
-  0.00    139.71     0.00       28     0.00     0.00  read_xml_primitives_mp_read_from_buffer_doubles_
-  0.00    139.71     0.00       28     0.00     0.00  read_xml_primitives_mp_read_xml_double_array_
-  0.00    139.71     0.00       25     0.00     0.00  string_mp_str_to_int_
-  0.00    139.71     0.00       16     0.00     0.00  output_interface_mp_write_integer_
-  0.00    139.71     0.00       13     0.00     0.00  list_header_mp_list_clear_char_
-  0.00    139.71     0.00       12     0.00     0.00  list_header_mp_list_clear_real_
-  0.00    139.71     0.00       12     0.00     0.00  list_header_mp_list_size_char_
-  0.00    139.71     0.00       12     0.00     0.00  xml_data_materials_t_mp_read_xml_type_density_xml_
-  0.00    139.71     0.00       12     0.00     0.00  xml_data_materials_t_mp_read_xml_type_material_xml_
-  0.00    139.71     0.00       11     0.00     0.00  timer_header_mp_timer_start_
-  0.00    139.71     0.00       11     0.00     0.00  timer_header_mp_timer_stop_
-  0.00    139.71     0.00        9     0.00     0.00  dict_header_mp_dict_clear_ii_
-  0.00    139.71     0.00        6     0.00     0.00  string_mp_int4_to_str_
-  0.00    139.71     0.00        5     0.00     0.00  list_header_mp_list_clear_int_
-  0.00    139.71     0.00        5     0.00     0.00  set_header_mp_set_clear_int_
-  0.00    139.71     0.00        5     0.00     0.00  string_mp_upper_case_
-  0.00    139.71     0.00        4     0.00     0.00  xml_data_geometry_t_mp_read_xml_type_lattice_xml_
-  0.00    139.71     0.00        4     0.00     0.00  xmlparse_mp_xml_close_
-  0.00    139.71     0.00        4     0.00     0.00  xmlparse_mp_xml_open_
-  0.00    139.71     0.00        4     0.00     0.00  xmlparse_mp_xml_options_
-  0.00    139.71     0.00        3     0.00     0.00  dict_header_mp_dict_clear_ci_
-  0.00    139.71     0.00        3     0.00     0.00  output_interface_mp_write_double_
-  0.00    139.71     0.00        3     0.00     0.00  output_interface_mp_write_double_1darray_
-  0.00    139.71     0.00        3     0.00     0.00  output_mp_header_
-  0.00    139.71     0.00        3     0.00     0.00  string_mp_real_to_str_
-  0.00    139.71     0.00        2     0.00     0.00  eigenvalue_mp_calculate_combined_keff_
-  0.00    139.71     0.00        2     0.00     0.00  error_mp_warning_
-  0.00    139.71     0.00        2     0.00     0.00  list_header_mp_list_contains_int_
-  0.00    139.71     0.00        2     0.00     0.00  list_header_mp_list_index_int_
-  0.00    139.71     0.00        2     0.00     0.00  output_interface_mp_file_close_
-  0.00    139.71     0.00        2     0.00     0.00  output_interface_mp_write_long_
-  0.00    139.71     0.00        2     0.00     0.00  output_interface_mp_write_string_
-  0.00    139.71     0.00        1     0.00   138.57  MAIN__
-  0.00    139.71     0.00        1     0.00     0.00  ace_mp_read_thermal_data_
-  0.00    139.71     0.00        1     0.00     0.33  ace_mp_read_xs_
-  0.00    139.71     0.00        1     0.00     0.00  cmfd_header_mp_deallocate_cmfd_
-  0.00    139.71     0.00        1     0.00     0.00  dict_header_mp_dict_keys_ii_
-  0.00    139.71     0.00        1     0.00     0.00  eigenvalue_mp_shannon_entropy_
-  0.00    139.71     0.00        1     0.00     0.00  finalize_mp_finalize_run_
-  0.00    139.71     0.00        1     0.00     0.00  fission_bank_lib_mp_allocate_banks_
-  0.00    139.71     0.00        1     0.00     0.00  fission_bank_lib_mp_free_banks_
-  0.00    139.71     0.00        1     0.00     0.00  geometry_mp_neighbor_lists_
-  0.00    139.71     0.00        1     0.00     0.00  global_mp_free_memory_
-  0.00    139.71     0.00        1     0.00     0.00  initialize_mp_adjust_indices_
-  0.00    139.71     0.00        1     0.00     0.38  initialize_mp_initialize_run_
-  0.00    139.71     0.00        1     0.00     0.00  initialize_mp_read_command_line_
-  0.00    139.71     0.00        1     0.00     0.00  input_xml_mp_read_geometry_xml_
-  0.00    139.71     0.00        1     0.00     0.02  input_xml_mp_read_input_xml_
-  0.00    139.71     0.00        1     0.00     0.00  input_xml_mp_read_materials_xml_
-  0.00    139.71     0.00        1     0.00     0.00  input_xml_mp_read_settings_xml_
-  0.00    139.71     0.00        1     0.00     0.00  input_xml_mp_read_tallies_xml_
-  0.00    139.71     0.00        1     0.00     0.00  list_header_mp_list_append_int_
-  0.00    139.71     0.00        1     0.00     0.00  mesh_mp_count_bank_sites_
-  0.00    139.71     0.00        1     0.00     0.00  output_interface_mp_file_create_
-  0.00    139.71     0.00        1     0.00     0.00  output_interface_mp_file_open_
-  0.00    139.71     0.00        1     0.00     0.00  output_interface_mp_write_source_bank_
-  0.00    139.71     0.00        1     0.00     0.00  output_interface_mp_write_tally_result_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_print_batch_keff_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_print_columns_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_print_results_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_print_runtime_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_time_stamp_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_title_
-  0.00    139.71     0.00        1     0.00     0.00  output_mp_write_tallies_
-  0.00    139.71     0.00        1     0.00     0.00  random_lcg_mp_initialize_prng_
-  0.00    139.71     0.00        1     0.00     0.00  random_lcg_mp_prn_skip_
-  0.00    139.71     0.00        1     0.00     0.00  set_header_mp_set_add_int_
-  0.00    139.71     0.00        1     0.00     0.00  set_header_mp_set_clear_char_
-  0.00    139.71     0.00        1     0.00     0.00  set_header_mp_set_contains_int_
-  0.00    139.71     0.00        1     0.00     0.00  state_point_mp_write_state_point_
-  0.00    139.71     0.00        1     0.00     0.00  tally_initialize_mp_configure_tallies_
-  0.00    139.71     0.00        1     0.00     0.00  tally_mp_setup_active_usertallies_
-  0.00    139.71     0.00        1     0.00     0.00  tally_mp_synchronize_tallies_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_geometry_t_mp_read_xml_file_geometry_t_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_materials_t_mp_read_xml_file_materials_t_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_settings_t_mp_read_xml_file_settings_t_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_settings_t_mp_read_xml_type_distribution_xml_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_settings_t_mp_read_xml_type_mesh_xml_array_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_settings_t_mp_read_xml_type_run_parameters_xml_
-  0.00    139.71     0.00        1     0.00     0.00  xml_data_settings_t_mp_read_xml_type_source_xml_
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 45.26     62.94    62.94 344182532     0.00     0.00  __search_MOD_binary_search_real
+ 42.43    121.94    59.00 327538976     0.00     0.00  __cross_section_MOD_calculate_nuclide_xs
+  3.40    126.68     4.74 38000283     0.00     0.00  __cross_section_MOD_calculate_urr_xs
+  3.19    131.12     4.44 10868409     0.00     0.01  __cross_section_MOD_calculate_xs
+  2.34    134.37     3.26 14263311     0.00     0.00  __geometry_MOD_distance_to_boundary
+  0.42    134.95     0.58 11699094     0.00     0.00  __interpolation_MOD_interpolate_tab1_array
+  0.33    135.41     0.46   100000     0.00     1.38  __tracking_MOD_transport
+  0.23    135.73     0.32  1967583     0.00     0.00  __physics_MOD_sample_angle
+  0.23    136.05     0.32 11163058     0.00     0.00  __geometry_MOD_find_cell
+  0.19    136.32     0.27  1132670     0.00     0.00  __physics_MOD_sab_scatter
+  0.17    136.55     0.23  4392435     0.00     0.00  __physics_MOD_rotate_angle
+  0.16    136.77     0.23 18799196     0.00     0.00  __geometry_MOD_sense
+  0.16    136.99     0.22 18533056     0.00     0.00  __geometry_MOD_simple_cell_contains
+  0.15    137.20     0.21  1933049     0.00     0.00  __physics_MOD_elastic_scatter
+  0.15    137.41     0.21                             __search_MOD_binary_search_int4
+  0.14    137.61     0.20     2061     0.10     0.10  __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml_array
+  0.14    137.81     0.20 83214428     0.00     0.00  __random_lcg_MOD_prn
+  0.11    137.96     0.15  3401618     0.00     0.00  __geometry_MOD_cross_lattice
+  0.09    138.08     0.13  7661535     0.00     0.00  __geometry_MOD_cross_surface
+  0.09    138.20     0.12  1895391     0.00     0.00  __physics_MOD_sample_target_velocity
+  0.06    138.29     0.09      258     0.35     1.82  __ace_MOD_read_ace_table
+  0.05    138.36     0.07 11941981     0.00     0.00  __fission_MOD_nu_total
+  0.05    138.43     0.07     5617     0.01     0.01  __ace_MOD_get_energy_dist
+  0.05    138.50     0.07   126011     0.00     0.00  __physics_MOD_sample_energy
+  0.04    138.56     0.06  3200158     0.00     0.00  __physics_MOD_sample_nuclide
+  0.04    138.62     0.06  1752898     0.00     0.00  __cross_section_MOD_calculate_sab_xs
+  0.04    138.67     0.05      257     0.19     0.19  __ace_MOD_read_esz
+  0.04    138.72     0.05      257     0.19     0.19  __ace_MOD_read_reactions
+  0.03    138.77     0.05        1    45.00    45.00  __random_lcg_MOD_initialize_prng
+  0.03    138.81     0.04 20663723     0.00     0.00  __list_header_MOD_list_size_int
+  0.03    138.85     0.04  3100253     0.00     0.00  __physics_MOD_scatter
+  0.02    138.88     0.03   355751     0.00     0.00  __physics_MOD_create_fission_sites
+  0.02    138.91     0.03                             __set_header_MOD_set_remove_char
+  0.01    138.93     0.02 20663723     0.00     0.00  __set_header_MOD_set_size_int
+  0.01    138.95     0.02  3200158     0.00     0.00  __physics_MOD_absorption
+  0.01    138.97     0.02   200001     0.00     0.00  __random_lcg_MOD_set_particle_seed
+  0.01    138.98     0.01 11667870     0.00     0.00  __particle_header_MOD_deallocate_coord
+  0.01    138.99     0.01  3200158     0.00     0.00  __physics_MOD_collision
+  0.01    139.00     0.01  3200158     0.00     0.00  __physics_MOD_sample_reaction
+  0.01    139.01     0.01   355751     0.00     0.00  __physics_MOD_sample_fission
+  0.01    139.02     0.01   100001     0.00     0.00  __particle_header_MOD_clear_particle
+  0.01    139.03     0.01   100000     0.00     0.00  __source_MOD_get_source_particle
+  0.01    139.04     0.01   100000     0.00     0.00  __source_MOD_sample_external_source
+  0.01    139.05     0.01    91477     0.00     0.00  __physics_MOD_sample_fission_energy
+  0.01    139.06     0.01      257     0.04     0.04  __ace_MOD_read_angular_dist
+  0.01    139.07     0.01                             __eigenvalue_MOD_run_eigenvalue
+  0.00    139.07     0.01                             __cross_section_MOD_find_energy_index
+  0.00    139.07     0.00   100000     0.00     0.00  __math_MOD_watt_spectrum
+  0.00    139.07     0.00   100000     0.00     0.00  __particle_header_MOD_initialize_particle
+  0.00    139.07     0.00    91477     0.00     0.00  __fission_MOD_nu_delayed
+  0.00    139.07     0.00    91477     0.00     0.00  __mesh_MOD_get_mesh_indices
+  0.00    139.07     0.00    34534     0.00     0.00  __physics_MOD_inelastic_scatter
+  0.00    139.07     0.00    18013     0.00     0.00  __xmlparse_MOD_xml_ok
+  0.00    139.07     0.00    15375     0.00     0.00  __xmlparse_MOD_xml_find_attrib
+  0.00    139.07     0.00     9839     0.00     0.00  __ace_header_MOD_distangle_clear
+  0.00    139.07     0.00     9839     0.00     0.00  __ace_header_MOD_reaction_clear
+  0.00    139.07     0.00     7123     0.00     0.00  __dict_header_MOD_dict_get_elem_ci
+  0.00    139.07     0.00     6540     0.00     0.00  __read_xml_primitives_MOD_read_xml_word
+  0.00    139.07     0.00     5707     0.00     0.00  __ace_MOD_length_energy_dist
+  0.00    139.07     0.00     5707     0.00     0.00  __endf_header_MOD_tab1_clear
+  0.00    139.07     0.00     5617     0.00     0.00  __ace_header_MOD_distenergy_clear
+  0.00    139.07     0.00     4527     0.00     0.00  __dict_header_MOD_dict_add_key_ci
+  0.00    139.07     0.00     4519     0.00     0.00  __read_xml_primitives_MOD_read_xml_double
+  0.00    139.07     0.00     4252     0.00     0.00  __read_xml_primitives_MOD_read_xml_integer
+  0.00    139.07     0.00     4234     0.00     0.00  __string_MOD_ends_with
+  0.00    139.07     0.00     3407     0.00     0.00  __dict_header_MOD_dict_get_elem_ii
+  0.00    139.07     0.00     2698     0.00     0.00  __xmlparse_MOD_xml_compress_
+  0.00    139.07     0.00     2698     0.00     0.00  __xmlparse_MOD_xml_get
+  0.00    139.07     0.00     2698     0.00     0.00  __xmlparse_MOD_xml_replace_entities_
+  0.00    139.07     0.00     2694     0.00     0.00  __xmlparse_MOD_xml_error
+  0.00    139.07     0.00     2064     0.00     0.00  __string_MOD_starts_with
+  0.00    139.07     0.00     2061     0.00     0.00  __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml
+  0.00    139.07     0.00     1808     0.00     0.00  __dict_header_MOD_dict_get_key_ci
+  0.00    139.07     0.00     1673     0.00     0.00  __dict_header_MOD_dict_has_key_ii
+  0.00    139.07     0.00     1636     0.00     0.00  __dict_header_MOD_dict_get_key_ii
+  0.00    139.07     0.00      909     0.00     0.00  __list_header_MOD_list_contains_char
+  0.00    139.07     0.00      909     0.00     0.00  __list_header_MOD_list_index_char
+  0.00    139.07     0.00      900     0.00     0.00  __list_header_MOD_list_append_char
+  0.00    139.07     0.00      788     0.00     0.00  __dict_header_MOD_dict_has_key_ci
+  0.00    139.07     0.00      515     0.00     0.00  __set_header_MOD_set_add_char
+  0.00    139.07     0.00      394     0.00     0.00  __set_header_MOD_set_contains_char
+  0.00    139.07     0.00      385     0.00     0.00  __list_header_MOD_list_append_real
+  0.00    139.07     0.00      385     0.00     0.00  __list_header_MOD_list_get_item_char
+  0.00    139.07     0.00      385     0.00     0.00  __list_header_MOD_list_get_item_real
+  0.00    139.07     0.00      385     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_nuclide_xml
+  0.00    139.07     0.00      385     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_nuclide_xml_array
+  0.00    139.07     0.00      266     0.00     0.00  __output_MOD_write_message
+  0.00    139.07     0.00      257     0.00     0.27  __ace_MOD_read_energy_dist
+  0.00    139.07     0.00      257     0.00     0.01  __ace_MOD_read_nu_data
+  0.00    139.07     0.00      257     0.00     0.00  __ace_MOD_read_unr_res
+  0.00    139.07     0.00      257     0.00     0.00  __ace_header_MOD_nuclide_clear
+  0.00    139.07     0.00       98     0.00     0.00  __dict_header_MOD_dict_add_key_ii
+  0.00    139.07     0.00       84     0.00     0.00  __string_MOD_lower_case
+  0.00    139.07     0.00       68     0.00     0.00  __math_MOD_maxwell_spectrum
+  0.00    139.07     0.00       43     0.00     0.00  __xmlparse_MOD_xml_report_errors_extern_
+  0.00    139.07     0.00       36     0.00     0.00  __read_xml_primitives_MOD_read_from_buffer_integers
+  0.00    139.07     0.00       36     0.00     0.00  __read_xml_primitives_MOD_read_xml_integer_array
+  0.00    139.07     0.00       28     0.00     0.00  __read_xml_primitives_MOD_read_from_buffer_doubles
+  0.00    139.07     0.00       28     0.00     0.00  __read_xml_primitives_MOD_read_xml_double_array
+  0.00    139.07     0.00       28     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_type_cell_xml
+  0.00    139.07     0.00       28     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_type_cell_xml_array
+  0.00    139.07     0.00       25     0.00     0.00  __string_MOD_str_to_int
+  0.00    139.07     0.00       17     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_type_surface_xml
+  0.00    139.07     0.00       17     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_type_surface_xml_array
+  0.00    139.07     0.00       16     0.00     0.00  __output_interface_MOD_write_integer
+  0.00    139.07     0.00       13     0.00     0.00  __list_header_MOD_list_clear_char
+  0.00    139.07     0.00       12     0.00     0.00  __list_header_MOD_list_clear_real
+  0.00    139.07     0.00       12     0.00     0.00  __list_header_MOD_list_size_char
+  0.00    139.07     0.00       12     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_density_xml
+  0.00    139.07     0.00       12     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_material_xml
+  0.00    139.07     0.00       12     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_material_xml_array
+  0.00    139.07     0.00       11     0.00     0.00  __timer_header_MOD_timer_start
+  0.00    139.07     0.00       11     0.00     0.00  __timer_header_MOD_timer_stop
+  0.00    139.07     0.00        9     0.00     0.00  __dict_header_MOD_dict_clear_ii
+  0.00    139.07     0.00        9     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_sab_xml
+  0.00    139.07     0.00        9     0.00     0.00  __xml_data_materials_t_MOD_read_xml_type_sab_xml_array
+  0.00    139.07     0.00        6     0.00     0.00  __string_MOD_int4_to_str
+  0.00    139.07     0.00        5     0.00     0.00  __list_header_MOD_list_clear_int
+  0.00    139.07     0.00        5     0.00     0.00  __output_MOD_header
+  0.00    139.07     0.00        5     0.00     0.00  __set_header_MOD_set_clear_int
+  0.00    139.07     0.00        5     0.00     0.00  __string_MOD_upper_case
+  0.00    139.07     0.00        4     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_type_lattice_xml
+  0.00    139.07     0.00        4     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_type_lattice_xml_array
+  0.00    139.07     0.00        4     0.00     0.00  __xmlparse_MOD_xml_close
+  0.00    139.07     0.00        4     0.00     0.00  __xmlparse_MOD_xml_open
+  0.00    139.07     0.00        4     0.00     0.00  __xmlparse_MOD_xml_options
+  0.00    139.07     0.00        3     0.00     0.00  __dict_header_MOD_dict_clear_ci
+  0.00    139.07     0.00        3     0.00     0.00  __output_interface_MOD_write_double
+  0.00    139.07     0.00        3     0.00     0.00  __output_interface_MOD_write_double_1darray
+  0.00    139.07     0.00        3     0.00     0.00  __string_MOD_real_to_str
+  0.00    139.07     0.00        2     0.00     0.00  __eigenvalue_MOD_calculate_combined_keff
+  0.00    139.07     0.00        2     0.00     0.00  __error_MOD_warning
+  0.00    139.07     0.00        2     0.00     0.00  __list_header_MOD_list_contains_int
+  0.00    139.07     0.00        2     0.00     0.00  __list_header_MOD_list_index_int
+  0.00    139.07     0.00        2     0.00     0.00  __output_MOD_time_stamp
+  0.00    139.07     0.00        2     0.00     0.00  __output_interface_MOD_file_close
+  0.00    139.07     0.00        2     0.00     0.00  __output_interface_MOD_write_long
+  0.00    139.07     0.00        2     0.00     0.00  __output_interface_MOD_write_string
+  0.00    139.07     0.00        1     0.00     0.00  __ace_MOD_read_thermal_data
+  0.00    139.07     0.00        1     0.00   469.33  __ace_MOD_read_xs
+  0.00    139.07     0.00        1     0.00     0.00  __cmfd_header_MOD_deallocate_cmfd
+  0.00    139.07     0.00        1     0.00     0.00  __dict_header_MOD_dict_keys_ii
+  0.00    139.07     0.00        1     0.00     0.00  __eigenvalue_MOD_calculate_average_keff
+  0.00    139.07     0.00        1     0.00     0.00  __eigenvalue_MOD_finalize_batch
+  0.00    139.07     0.00        1     0.00     0.00  __eigenvalue_MOD_initialize_batch
+  0.00    139.07     0.00        1     0.00     0.00  __eigenvalue_MOD_shannon_entropy
+  0.00    139.07     0.00        1     0.00     0.21  __eigenvalue_MOD_synchronize_bank
+  0.00    139.07     0.00        1     0.00     0.00  __fission_bank_lib_MOD_allocate_banks
+  0.00    139.07     0.00        1     0.00     0.00  __geometry_MOD_neighbor_lists
+  0.00    139.07     0.00        1     0.00     0.00  __global_MOD_free_memory
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_adjust_indices
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_calculate_work
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_display_grid_sizes
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_normalize_ao
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_prepare_universes
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_read_command_line
+  0.00    139.07     0.00        1     0.00     0.00  __initialize_MOD_resize_egrid
+  0.00    139.07     0.00        1     0.00   200.00  __input_xml_MOD_read_cross_sections_xml
+  0.00    139.07     0.00        1     0.00     0.00  __input_xml_MOD_read_geometry_xml
+  0.00    139.07     0.00        1     0.00   200.00  __input_xml_MOD_read_input_xml
+  0.00    139.07     0.00        1     0.00     0.00  __input_xml_MOD_read_materials_xml
+  0.00    139.07     0.00        1     0.00     0.00  __input_xml_MOD_read_settings_xml
+  0.00    139.07     0.00        1     0.00     0.00  __input_xml_MOD_read_tallies_xml
+  0.00    139.07     0.00        1     0.00     0.00  __list_header_MOD_list_append_int
+  0.00    139.07     0.00        1     0.00     0.00  __mesh_MOD_count_bank_sites
+  0.00    139.07     0.00        1     0.00     0.00  __output_MOD_print_batch_keff
+  0.00    139.07     0.00        1     0.00     0.00  __output_MOD_print_columns
+  0.00    139.07     0.00        1     0.00     0.00  __output_MOD_print_results
+  0.00    139.07     0.00        1     0.00     0.00  __output_MOD_print_runtime
+  0.00    139.07     0.00        1     0.00     0.00  __output_MOD_title
+  0.00    139.07     0.00        1     0.00     0.00  __output_MOD_write_tallies
+  0.00    139.07     0.00        1     0.00     0.00  __output_interface_MOD_file_create
+  0.00    139.07     0.00        1     0.00     0.00  __output_interface_MOD_file_open
+  0.00    139.07     0.00        1     0.00     0.00  __output_interface_MOD_write_source_bank
+  0.00    139.07     0.00        1     0.00     0.00  __output_interface_MOD_write_tally_result
+  0.00    139.07     0.00        1     0.00     0.00  __random_lcg_MOD_prn_skip
+  0.00    139.07     0.00        1     0.00     0.00  __set_header_MOD_set_add_int
+  0.00    139.07     0.00        1     0.00     0.00  __set_header_MOD_set_clear_char
+  0.00    139.07     0.00        1     0.00     0.00  __set_header_MOD_set_contains_int
+  0.00    139.07     0.00        1     0.00    22.11  __source_MOD_initialize_source
+  0.00    139.07     0.00        1     0.00     0.00  __state_point_MOD_write_state_point
+  0.00    139.07     0.00        1     0.00     0.00  __tally_MOD_setup_active_usertallies
+  0.00    139.07     0.00        1     0.00     0.00  __tally_MOD_synchronize_tallies
+  0.00    139.07     0.00        1     0.00     0.00  __tally_initialize_MOD_configure_tallies
+  0.00    139.07     0.00        1     0.00     0.00  __tally_initialize_MOD_setup_tally_arrays
+  0.00    139.07     0.00        1     0.00     0.00  __tally_initialize_MOD_setup_tally_maps
+  0.00    139.07     0.00        1     0.00   200.00  __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_geometry_t_MOD_read_xml_file_geometry_t
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_materials_t_MOD_read_xml_file_materials_t
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_settings_t_MOD_read_xml_file_settings_t
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_settings_t_MOD_read_xml_type_distribution_xml
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_settings_t_MOD_read_xml_type_mesh_xml
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_settings_t_MOD_read_xml_type_mesh_xml_array
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml
+  0.00    139.07     0.00        1     0.00     0.00  __xml_data_settings_t_MOD_read_xml_type_source_xml
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -206,966 +229,1115 @@ name       the name of the function.  This is the minor sort
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) for 0.01% of 139.71 seconds
+granularity: each sample hit covers 2 byte(s) for 0.01% of 139.07 seconds
 
 index % time    self  children    called     name
-                0.00  138.57       1/1           main [2]
-[1]     99.2    0.00  138.57       1         MAIN__ [1]
-                0.01  138.18       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-                0.00    0.38       1/1           initialize_mp_initialize_run_ [16]
-                0.00    0.00       1/1           finalize_mp_finalize_run_ [147]
+                                                 <spontaneous>
+[1]     99.3    0.01  138.08                 __eigenvalue_MOD_run_eigenvalue [1]
+                0.46  137.59  100000/100000      __tracking_MOD_transport [2]
+                0.01    0.02  100000/100000      __source_MOD_get_source_particle [45]
+                0.00    0.00       1/1           __eigenvalue_MOD_synchronize_bank [59]
+                0.00    0.00       1/100001      __particle_header_MOD_clear_particle [51]
+                0.00    0.00       1/1           __eigenvalue_MOD_finalize_batch [61]
+                0.00    0.00       3/11          __timer_header_MOD_timer_start [126]
+                0.00    0.00       3/11          __timer_header_MOD_timer_stop [127]
+                0.00    0.00       2/5           __output_MOD_header [133]
+                0.00    0.00       1/1           __eigenvalue_MOD_initialize_batch [157]
+                0.00    0.00       1/1           __eigenvalue_MOD_calculate_average_keff [156]
+                0.00    0.00       1/1           __eigenvalue_MOD_shannon_entropy [158]
+                0.00    0.00       1/1           __output_MOD_print_columns [176]
+-----------------------------------------------
+                0.46  137.59  100000/100000      __eigenvalue_MOD_run_eigenvalue [1]
+[2]     99.3    0.46  137.59  100000         __tracking_MOD_transport [2]
+                4.44  126.65 10868409/10868409     __cross_section_MOD_calculate_xs [3]
+                3.26    0.00 14263311/14263311     __geometry_MOD_distance_to_boundary [7]
+                0.01    2.10 3200158/3200158     __physics_MOD_collision [9]
+                0.13    0.53 7661535/7661535     __geometry_MOD_cross_surface [16]
+                0.15    0.23 3401618/3401618     __geometry_MOD_cross_lattice [21]
+                0.02    0.04 20663627/20663723     __set_header_MOD_set_size_int [39]
+                0.03    0.00 14263311/83214428     __random_lcg_MOD_prn [31]
+                0.00    0.00  100000/11163058     __geometry_MOD_find_cell [13]
+-----------------------------------------------
+                4.44  126.65 10868409/10868409     __tracking_MOD_transport [2]
+[3]     94.3    4.44  126.65 10868409         __cross_section_MOD_calculate_xs [3]
+               59.00   67.65 327538976/327538976     __cross_section_MOD_calculate_nuclide_xs [4]
+-----------------------------------------------
+               59.00   67.65 327538976/327538976     __cross_section_MOD_calculate_xs [3]
+[4]     91.1   59.00   67.65 327538976         __cross_section_MOD_calculate_nuclide_xs [4]
+               59.90    0.00 327538976/344182532     __search_MOD_binary_search_real [5]
+                4.74    2.64 38000283/38000283     __cross_section_MOD_calculate_urr_xs [6]
+                0.06    0.32 1752898/1752898     __cross_section_MOD_calculate_sab_xs [22]
+-----------------------------------------------
+                0.02    0.00  101904/344182532     __physics_MOD_sample_energy [34]
+                0.21    0.00 1132670/344182532     __physics_MOD_sab_scatter [17]
+                0.32    0.00 1752898/344182532     __cross_section_MOD_calculate_sab_xs [22]
+                0.36    0.00 1957061/344182532     __physics_MOD_sample_angle [15]
+                2.14    0.00 11699023/344182532     __interpolation_MOD_interpolate_tab1_array [8]
+               59.90    0.00 327538976/344182532     __cross_section_MOD_calculate_nuclide_xs [4]
+[5]     45.3   62.94    0.00 344182532         __search_MOD_binary_search_real [5]
+-----------------------------------------------
+                4.74    2.64 38000283/38000283     __cross_section_MOD_calculate_nuclide_xs [4]
+[6]      5.3    4.74    2.64 38000283         __cross_section_MOD_calculate_urr_xs [6]
+                0.53    1.95 10677876/11699094     __interpolation_MOD_interpolate_tab1_array [8]
+                0.09    0.00 38000283/83214428     __random_lcg_MOD_prn [31]
+                0.06    0.00 10981380/11941981     __fission_MOD_nu_total [35]
+-----------------------------------------------
+                3.26    0.00 14263311/14263311     __tracking_MOD_transport [2]
+[7]      2.3    3.26    0.00 14263311         __geometry_MOD_distance_to_boundary [7]
+-----------------------------------------------
+                0.00    0.00      68/11699094     __physics_MOD_sample_energy [34]
+                0.01    0.03  185563/11699094     __physics_MOD_sample_fission_energy [33]
+                0.04    0.15  835587/11699094     __ace_MOD_read_ace_table [18]
+                0.53    1.95 10677876/11699094     __cross_section_MOD_calculate_urr_xs [6]
+[8]      2.0    0.58    2.14 11699094         __interpolation_MOD_interpolate_tab1_array [8]
+                2.14    0.00 11699023/344182532     __search_MOD_binary_search_real [5]
+-----------------------------------------------
+                0.01    2.10 3200158/3200158     __tracking_MOD_transport [2]
+[9]      1.5    0.01    2.10 3200158         __physics_MOD_collision [9]
+                0.01    2.09 3200158/3200158     __physics_MOD_sample_reaction [10]
+-----------------------------------------------
+                0.01    2.09 3200158/3200158     __physics_MOD_collision [9]
+[10]     1.5    0.01    2.09 3200158         __physics_MOD_sample_reaction [10]
+                0.04    1.79 3100253/3100253     __physics_MOD_scatter [11]
+                0.03    0.12  355751/355751      __physics_MOD_create_fission_sites [32]
+                0.06    0.01 3200158/3200158     __physics_MOD_sample_nuclide [38]
+                0.02    0.01 3200158/3200158     __physics_MOD_absorption [47]
+                0.01    0.00  355751/355751      __physics_MOD_sample_fission [53]
+-----------------------------------------------
+                0.04    1.79 3100253/3100253     __physics_MOD_sample_reaction [10]
+[11]     1.3    0.04    1.79 3100253         __physics_MOD_scatter [11]
+                0.21    0.99 1933049/1933049     __physics_MOD_elastic_scatter [12]
+                0.27    0.28 1132670/1132670     __physics_MOD_sab_scatter [17]
+                0.00    0.04   34534/34534       __physics_MOD_inelastic_scatter [44]
+                0.01    0.00 3100253/83214428     __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.21    0.99 1933049/1933049     __physics_MOD_scatter [11]
+[12]     0.9    0.21    0.99 1933049         __physics_MOD_elastic_scatter [12]
+                0.31    0.36 1933049/1967583     __physics_MOD_sample_angle [15]
+                0.12    0.09 1895391/1895391     __physics_MOD_sample_target_velocity [26]
+                0.10    0.00 1933049/4392435     __physics_MOD_rotate_angle [23]
+-----------------------------------------------
+                              408494             __geometry_MOD_find_cell [13]
+                0.00    0.00  100000/11163058     __tracking_MOD_transport [2]
+                0.10    0.14 3401618/11163058     __geometry_MOD_cross_lattice [21]
+                0.22    0.31 7661440/11163058     __geometry_MOD_cross_surface [16]
+[13]     0.6    0.32    0.45 11163058+408494  __geometry_MOD_find_cell [13]
+                0.22    0.23 18533056/18533056     __geometry_MOD_simple_cell_contains [20]
+                0.01    0.00 11571552/11667870     __particle_header_MOD_deallocate_coord [54]
+                              408494             __geometry_MOD_find_cell [13]
 -----------------------------------------------
                                                  <spontaneous>
-[2]     99.2    0.00  138.57                 main [2]
-                0.00  138.57       1/1           MAIN__ [1]
+[14]     0.5    0.00    0.74                 __initialize_MOD_initialize_run [14]
+                0.00    0.47       1/1           __ace_MOD_read_xs [19]
+                0.00    0.20       1/1           __input_xml_MOD_read_input_xml [29]
+                0.05    0.00       1/1           __random_lcg_MOD_initialize_prng [42]
+                0.00    0.02       1/1           __source_MOD_initialize_source [48]
+                0.00    0.00       3/11          __timer_header_MOD_timer_start [126]
+                0.00    0.00       2/11          __timer_header_MOD_timer_stop [127]
+                0.00    0.00       1/1           __initialize_MOD_read_command_line [167]
+                0.00    0.00       1/1           __initialize_MOD_adjust_indices [162]
+                0.00    0.00       1/1           __initialize_MOD_prepare_universes [166]
+                0.00    0.00       1/1           __geometry_MOD_neighbor_lists [160]
+                0.00    0.00       1/1           __initialize_MOD_normalize_ao [165]
+                0.00    0.00       1/1           __initialize_MOD_resize_egrid [168]
+                0.00    0.00       1/1           __initialize_MOD_display_grid_sizes [164]
+                0.00    0.00       1/1           __initialize_MOD_calculate_work [163]
+                0.00    0.00       1/1           __tally_initialize_MOD_setup_tally_maps [193]
+                0.00    0.00       1/1           __tally_initialize_MOD_configure_tallies [191]
+                0.00    0.00       1/1           __output_MOD_title [179]
+                0.00    0.00       1/5           __output_MOD_header [133]
+                0.00    0.00       1/1           __fission_bank_lib_MOD_allocate_banks [159]
 -----------------------------------------------
-                0.01  138.18       1/1           MAIN__ [1]
-[3]     98.9    0.01  138.18       1         eigenvalue_mp_run_eigenvalue_ [3]
-                0.66  137.49  100000/100000      tracking_mp_transport_ [4]
-                0.01    0.02  100000/100000      source_mp_get_source_particle_ [35]
-                0.00    0.00   91477/83214428     random_lcg_mp_prn_ [24]
-                0.00    0.00       1/1           tally_mp_synchronize_tallies_ [81]
-                0.00    0.00       1/100001      particle_header_mp_clear_particle_ [69]
-                0.00    0.00       7/11          timer_header_mp_timer_start_ [121]
-                0.00    0.00       7/11          timer_header_mp_timer_stop_ [122]
-                0.00    0.00       2/2           eigenvalue_mp_calculate_combined_keff_ [136]
-                0.00    0.00       2/3           output_mp_header_ [134]
-                0.00    0.00       1/1           output_mp_print_columns_ [162]
-                0.00    0.00       1/6           string_mp_int4_to_str_ [124]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
-                0.00    0.00       1/1           random_lcg_mp_prn_skip_ [169]
-                0.00    0.00       1/200001      random_lcg_mp_set_particle_seed_ [82]
-                0.00    0.00       1/1           eigenvalue_mp_shannon_entropy_ [146]
-                0.00    0.00       1/1           output_mp_print_batch_keff_ [161]
-                0.00    0.00       1/1           set_header_mp_set_contains_int_ [172]
-                0.00    0.00       1/1           state_point_mp_write_state_point_ [173]
-                0.00    0.00       1/1           tally_mp_setup_active_usertallies_ [175]
+                0.01    0.01   34534/1967583     __physics_MOD_inelastic_scatter [44]
+                0.31    0.36 1933049/1967583     __physics_MOD_elastic_scatter [12]
+[15]     0.5    0.32    0.37 1967583         __physics_MOD_sample_angle [15]
+                0.36    0.00 1957061/344182532     __search_MOD_binary_search_real [5]
+                0.01    0.00 3924644/83214428     __random_lcg_MOD_prn [31]
 -----------------------------------------------
-                0.66  137.49  100000/100000      eigenvalue_mp_run_eigenvalue_ [3]
-[4]     98.9    0.66  137.49  100000         tracking_mp_transport_ [4]
-               61.46   69.47 10868409/10868409     cross_section_mp_calculate_xs_ [5]
-                3.29    0.00 14263311/14263311     geometry_mp_distance_to_boundary_ [7]
-                0.40    1.75 3200158/3200158     physics_mp_collision_ [10]
-                0.54    0.01 7661535/11163153     geometry_mp_cross_surface_ <cycle 2> [14]
-                0.15    0.24 3401618/3401618     geometry_mp_cross_lattice_ [15]
-                0.10    0.05 20663627/20663723     set_header_mp_set_size_int_ [23]
-                0.02    0.00 14263311/83214428     random_lcg_mp_prn_ [24]
-                0.01    0.00  100000/11163153     geometry_mp_find_cell_ <cycle 2> [18]
+                0.13    0.53 7661535/7661535     __tracking_MOD_transport [2]
+[16]     0.5    0.13    0.53 7661535         __geometry_MOD_cross_surface [16]
+                0.22    0.31 7661440/11163058     __geometry_MOD_find_cell [13]
+                0.00    0.00      95/20663723     __set_header_MOD_set_size_int [39]
 -----------------------------------------------
-               61.46   69.47 10868409/10868409     tracking_mp_transport_ [4]
-[5]     93.7   61.46   69.47 10868409         cross_section_mp_calculate_xs_ [5]
-               66.68    0.00 329291874/344182532     search_mp_binary_search_real_ [6]
-                0.02    2.72 10981380/11941981     fission_mp_nu_total_ [9]
-                0.06    0.00 38000283/83214428     random_lcg_mp_prn_ [24]
+                0.27    0.28 1132670/1132670     __physics_MOD_scatter [11]
+[17]     0.4    0.27    0.28 1132670         __physics_MOD_sab_scatter [17]
+                0.21    0.00 1132670/344182532     __search_MOD_binary_search_real [5]
+                0.06    0.00 1132670/4392435     __physics_MOD_rotate_angle [23]
+                0.01    0.00 3398010/83214428     __random_lcg_MOD_prn [31]
 -----------------------------------------------
-                0.02    0.00  101904/344182532     physics_mp_create_fission_sites_ [26]
-                0.23    0.00 1132670/344182532     physics_mp_sab_scatter_ [17]
-                0.40    0.00 1957061/344182532     physics_mp_sample_angle_ [13]
-                2.37    0.00 11699023/344182532     interpolation_mp_interpolate_tab1_array_ [8]
-               66.68    0.00 329291874/344182532     cross_section_mp_calculate_xs_ [5]
-[6]     49.9   69.69    0.00 344182532         search_mp_binary_search_real_ [6]
+                0.09    0.38     258/258         __ace_MOD_read_xs [19]
+[18]     0.3    0.09    0.38     258         __ace_MOD_read_ace_table [18]
+                0.04    0.15  835587/11699094     __interpolation_MOD_interpolate_tab1_array [8]
+                0.00    0.07     257/257         __ace_MOD_read_energy_dist [37]
+                0.05    0.00     257/257         __ace_MOD_read_esz [40]
+                0.05    0.00     257/257         __ace_MOD_read_reactions [41]
+                0.01    0.00     257/257         __ace_MOD_read_angular_dist [55]
+                0.01    0.00  869124/11941981     __fission_MOD_nu_total [35]
+                0.00    0.00     257/257         __ace_MOD_read_nu_data [57]
+                0.00    0.00     258/266         __output_MOD_write_message [104]
+                0.00    0.00     257/257         __ace_MOD_read_unr_res [105]
+                0.00    0.00       1/1           __ace_MOD_read_thermal_data [153]
+                0.00    0.00       1/2           __error_MOD_warning [146]
 -----------------------------------------------
-                3.29    0.00 14263311/14263311     tracking_mp_transport_ [4]
-[7]      2.4    3.29    0.00 14263311         geometry_mp_distance_to_boundary_ [7]
+                0.00    0.47       1/1           __initialize_MOD_initialize_run [14]
+[19]     0.3    0.00    0.47       1         __ace_MOD_read_xs [19]
+                0.09    0.38     258/258         __ace_MOD_read_ace_table [18]
+                0.00    0.00     516/1808        __dict_header_MOD_dict_get_key_ci [90]
+                0.00    0.00     515/515         __set_header_MOD_set_add_char [97]
+                0.00    0.00     394/394         __set_header_MOD_set_contains_char [98]
+                0.00    0.00       1/1           __set_header_MOD_set_clear_char [187]
 -----------------------------------------------
-                0.00    0.00      68/11699094     physics_mp_create_fission_sites_ [26]
-                0.00    0.00    2609/11699094     physics_mp_collision_ [10]
-                0.00    0.02   91477/11699094     fission_mp_nu_delayed_ [38]
-                0.61    2.35 11604940/11699094     fission_mp_nu_total_ [9]
-[8]      2.1    0.61    2.37 11699094         interpolation_mp_interpolate_tab1_array_ [8]
-                2.37    0.00 11699023/344182532     search_mp_binary_search_real_ [6]
+                0.22    0.23 18533056/18533056     __geometry_MOD_find_cell [13]
+[20]     0.3    0.22    0.23 18533056         __geometry_MOD_simple_cell_contains [20]
+                0.23    0.00 18799196/18799196     __geometry_MOD_sense [24]
 -----------------------------------------------
-                0.00    0.02   91477/11941981     physics_mp_collision_ [10]
-                0.00    0.22  869124/11941981     ace_mp_read_ace_table_ [19]
-                0.02    2.72 10981380/11941981     cross_section_mp_calculate_xs_ [5]
-[9]      2.1    0.02    2.95 11941981         fission_mp_nu_total_ [9]
-                0.61    2.35 11604940/11699094     interpolation_mp_interpolate_tab1_array_ [8]
+                0.15    0.23 3401618/3401618     __tracking_MOD_transport [2]
+[21]     0.3    0.15    0.23 3401618         __geometry_MOD_cross_lattice [21]
+                0.10    0.14 3401618/11163058     __geometry_MOD_find_cell [13]
 -----------------------------------------------
-                0.40    1.75 3200158/3200158     tracking_mp_transport_ [4]
-[10]     1.5    0.40    1.75 3200158         physics_mp_collision_ [10]
-                0.45    0.74 1933049/1933049     physics_mp_elastic_scatter_ [11]
-                0.14    0.24 1132670/1132670     physics_mp_sab_scatter_ [17]
-                0.09    0.02  126011/126011      physics_mp_create_fission_sites_ [26]
-                0.00    0.02   91477/91477       fission_mp_nu_delayed_ [38]
-                0.00    0.02   91477/11941981     fission_mp_nu_total_ [9]
-                0.02    0.00 10168154/83214428     random_lcg_mp_prn_ [24]
-                0.01    0.01   34534/1967583     physics_mp_sample_angle_ [13]
-                0.00    0.00    2609/11699094     interpolation_mp_interpolate_tab1_array_ [8]
+                0.06    0.32 1752898/1752898     __cross_section_MOD_calculate_nuclide_xs [4]
+[22]     0.3    0.06    0.32 1752898         __cross_section_MOD_calculate_sab_xs [22]
+                0.32    0.00 1752898/344182532     __search_MOD_binary_search_real [5]
 -----------------------------------------------
-                0.45    0.74 1933049/1933049     physics_mp_collision_ [10]
-[11]     0.9    0.45    0.74 1933049         physics_mp_elastic_scatter_ [11]
-                0.32    0.40 1933049/1967583     physics_mp_sample_angle_ [13]
-                0.02    0.00 11111974/83214428     random_lcg_mp_prn_ [24]
+                0.00    0.00   34534/4392435     __physics_MOD_inelastic_scatter [44]
+                0.06    0.00 1132670/4392435     __physics_MOD_sab_scatter [17]
+                0.07    0.00 1292182/4392435     __physics_MOD_sample_target_velocity [26]
+                0.10    0.00 1933049/4392435     __physics_MOD_elastic_scatter [12]
+[23]     0.2    0.23    0.01 4392435         __physics_MOD_rotate_angle [23]
+                0.01    0.00 4392435/83214428     __random_lcg_MOD_prn [31]
 -----------------------------------------------
-[12]     0.6    0.79    0.01 11163153+8069934 <cycle 2 as a whole> [12]
-                0.44    0.00 11172019             geometry_mp_cross_surface_ <cycle 2> [14]
-                0.35    0.01 8061068             geometry_mp_find_cell_ <cycle 2> [18]
------------------------------------------------
-                0.01    0.01   34534/1967583     physics_mp_collision_ [10]
-                0.32    0.40 1933049/1967583     physics_mp_elastic_scatter_ [11]
-[13]     0.5    0.33    0.40 1967583         physics_mp_sample_angle_ [13]
-                0.40    0.00 1957061/344182532     search_mp_binary_search_real_ [6]
-                0.01    0.00 3924644/83214428     random_lcg_mp_prn_ [24]
------------------------------------------------
-                              108866             geometry_mp_find_cell_ <cycle 2> [18]
-                0.24    0.00 3401618/11163153     geometry_mp_cross_lattice_ [15]
-                0.54    0.01 7661535/11163153     tracking_mp_transport_ [4]
-[14]     0.3    0.44    0.00 11172019         geometry_mp_cross_surface_ <cycle 2> [14]
-                0.00    0.00 3510484/11667870     particle_header_mp_deallocate_coord_ [45]
-                0.00    0.00      95/20663723     set_header_mp_set_size_int_ [23]
-                             7961068             geometry_mp_find_cell_ <cycle 2> [18]
------------------------------------------------
-                0.15    0.24 3401618/3401618     tracking_mp_transport_ [4]
-[15]     0.3    0.15    0.24 3401618         geometry_mp_cross_lattice_ [15]
-                0.24    0.00 3401618/11163153     geometry_mp_cross_surface_ <cycle 2> [14]
------------------------------------------------
-                0.00    0.38       1/1           MAIN__ [1]
-[16]     0.3    0.00    0.38       1         initialize_mp_initialize_run_ [16]
-                0.00    0.33       1/1           ace_mp_read_xs_ [20]
-                0.03    0.00       1/1           source_mp_initialize_source_ [34]
-                0.00    0.02       1/1           input_xml_mp_read_input_xml_ [41]
-                0.00    0.00     762/1808        dict_header_mp_dict_get_key_ci_ [95]
-                0.00    0.00      37/1636        dict_header_mp_dict_get_key_ii_ [97]
-                0.00    0.00       3/11          timer_header_mp_timer_start_ [121]
-                0.00    0.00       2/11          timer_header_mp_timer_stop_ [122]
-                0.00    0.00       2/3           string_mp_real_to_str_ [135]
-                0.00    0.00       2/6           string_mp_int4_to_str_ [124]
-                0.00    0.00       1/1           initialize_mp_read_command_line_ [153]
-                0.00    0.00       1/1           random_lcg_mp_initialize_prng_ [168]
-                0.00    0.00       1/1           dict_header_mp_dict_keys_ii_ [145]
-                0.00    0.00       1/9           dict_header_mp_dict_clear_ii_ [123]
-                0.00    0.00       1/1           geometry_mp_neighbor_lists_ [150]
-                0.00    0.00       1/1           initialize_mp_adjust_indices_ [152]
-                0.00    0.00       1/1           tally_initialize_mp_configure_tallies_ [174]
-                0.00    0.00       1/1           fission_bank_lib_mp_allocate_banks_ [148]
-                0.00    0.00       1/1           output_mp_title_ [166]
-                0.00    0.00       1/3           output_mp_header_ [134]
------------------------------------------------
-                0.14    0.24 1132670/1132670     physics_mp_collision_ [10]
-[17]     0.3    0.14    0.24 1132670         physics_mp_sab_scatter_ [17]
-                0.23    0.00 1132670/344182532     search_mp_binary_search_real_ [6]
-                0.01    0.00 4530680/83214428     random_lcg_mp_prn_ [24]
------------------------------------------------
-                             7961068             geometry_mp_cross_surface_ <cycle 2> [14]
-                0.01    0.00  100000/11163153     tracking_mp_transport_ [4]
-[18]     0.3    0.35    0.01 8061068         geometry_mp_find_cell_ <cycle 2> [18]
-                0.01    0.00 8061068/11667870     particle_header_mp_deallocate_coord_ [45]
-                              108866             geometry_mp_cross_surface_ <cycle 2> [14]
------------------------------------------------
-                0.00    0.33     258/258         ace_mp_read_xs_ [20]
-[19]     0.2    0.00    0.33     258         ace_mp_read_ace_table_ [19]
-                0.00    0.22  869124/11941981     fission_mp_nu_total_ [9]
-                0.05    0.00    5473/5473        ace_mp_read_energy_dist_ <cycle 1> [31]
-                0.04    0.00     257/257         ace_mp_read_esz_ [32]
-                0.02    0.00     257/257         ace_mp_read_reactions_ [40]
-                0.00    0.00     258/266         output_mp_write_message_ [107]
-                0.00    0.00     257/257         ace_mp_read_nu_data_ [109]
-                0.00    0.00       1/1           ace_mp_read_thermal_data_ [143]
-                0.00    0.00       1/2           error_mp_warning_ [137]
------------------------------------------------
-                0.00    0.33       1/1           initialize_mp_initialize_run_ [16]
-[20]     0.2    0.00    0.33       1         ace_mp_read_xs_ [20]
-                0.00    0.33     258/258         ace_mp_read_ace_table_ [19]
-                0.00    0.00     516/1808        dict_header_mp_dict_get_key_ci_ [95]
-                0.00    0.00     515/515         set_header_mp_set_add_char_ [102]
-                0.00    0.00     394/394         set_header_mp_set_contains_char_ [103]
-                0.00    0.00       1/1           set_header_mp_set_clear_char_ [171]
+                0.23    0.00 18799196/18799196     __geometry_MOD_simple_cell_contains [20]
+[24]     0.2    0.23    0.00 18799196         __geometry_MOD_sense [24]
 -----------------------------------------------
                                                  <spontaneous>
-[21]     0.2    0.31    0.00                 log.L [21]
+[25]     0.2    0.21    0.00                 __search_MOD_binary_search_int4 [25]
+-----------------------------------------------
+                0.12    0.09 1895391/1895391     __physics_MOD_elastic_scatter [12]
+[26]     0.2    0.12    0.09 1895391         __physics_MOD_sample_target_velocity [26]
+                0.07    0.00 1292182/4392435     __physics_MOD_rotate_angle [23]
+                0.02    0.00 7886743/83214428     __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.20    0.00    2061/2061        __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+[27]     0.1    0.20    0.00    2061         __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml_array [27]
+                0.00    0.00    2061/2061        __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml [89]
+-----------------------------------------------
+                0.00    0.20       1/1           __input_xml_MOD_read_input_xml [29]
+[28]     0.1    0.00    0.20       1         __input_xml_MOD_read_cross_sections_xml [28]
+                0.00    0.20       1/1           __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00    4233/4234        __string_MOD_ends_with [82]
+                0.00    0.00    4011/4527        __dict_header_MOD_dict_add_key_ci [79]
+                0.00    0.00    2061/2064        __string_MOD_starts_with [88]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+-----------------------------------------------
+                0.00    0.20       1/1           __initialize_MOD_initialize_run [14]
+[29]     0.1    0.00    0.20       1         __input_xml_MOD_read_input_xml [29]
+                0.00    0.20       1/1           __input_xml_MOD_read_cross_sections_xml [28]
+                0.00    0.00       1/1           __input_xml_MOD_read_settings_xml [171]
+                0.00    0.00       1/1           __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00       1/1           __input_xml_MOD_read_geometry_xml [169]
+                0.00    0.00       1/1           __input_xml_MOD_read_tallies_xml [172]
+-----------------------------------------------
+                0.00    0.20       1/1           __input_xml_MOD_read_cross_sections_xml [28]
+[30]     0.1    0.00    0.20       1         __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.20    0.00    2061/2061        __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml_array [27]
+                0.00    0.00    2071/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00    2070/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00    2069/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00       2/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00       2/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_open [139]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_options [140]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_close [138]
+-----------------------------------------------
+                0.00    0.00     204/83214428     __math_MOD_maxwell_spectrum [60]
+                0.00    0.00    2158/83214428     __physics_MOD_sample_fission [53]
+                0.00    0.00   91477/83214428     __eigenvalue_MOD_synchronize_bank [59]
+                0.00    0.00   92188/83214428     __physics_MOD_sample_fission_energy [33]
+                0.00    0.00  223701/83214428     __physics_MOD_sample_energy [34]
+                0.00    0.00  400000/83214428     __math_MOD_watt_spectrum [58]
+                0.00    0.00  500000/83214428     __source_MOD_sample_external_source [50]
+                0.00    0.00  538705/83214428     __physics_MOD_create_fission_sites [32]
+                0.01    0.00 3100253/83214428     __physics_MOD_scatter [11]
+                0.01    0.00 3200158/83214428     __physics_MOD_absorption [47]
+                0.01    0.00 3200158/83214428     __physics_MOD_sample_nuclide [38]
+                0.01    0.00 3398010/83214428     __physics_MOD_sab_scatter [17]
+                0.01    0.00 3924644/83214428     __physics_MOD_sample_angle [15]
+                0.01    0.00 4392435/83214428     __physics_MOD_rotate_angle [23]
+                0.02    0.00 7886743/83214428     __physics_MOD_sample_target_velocity [26]
+                0.03    0.00 14263311/83214428     __tracking_MOD_transport [2]
+                0.09    0.00 38000283/83214428     __cross_section_MOD_calculate_urr_xs [6]
+[31]     0.1    0.20    0.00 83214428         __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.03    0.12  355751/355751      __physics_MOD_sample_reaction [10]
+[32]     0.1    0.03    0.12  355751         __physics_MOD_create_fission_sites [32]
+                0.01    0.11   91477/91477       __physics_MOD_sample_fission_energy [33]
+                0.00    0.00  538705/83214428     __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.01    0.11   91477/91477       __physics_MOD_create_fission_sites [32]
+[33]     0.1    0.01    0.11   91477         __physics_MOD_sample_fission_energy [33]
+                0.05    0.01   91477/126011      __physics_MOD_sample_energy [34]
+                0.01    0.03  185563/11699094     __interpolation_MOD_interpolate_tab1_array [8]
+                0.00    0.00   91477/11941981     __fission_MOD_nu_total [35]
+                0.00    0.00   92188/83214428     __random_lcg_MOD_prn [31]
+                0.00    0.00   91477/91477       __fission_MOD_nu_delayed [68]
+-----------------------------------------------
+                0.02    0.01   34534/126011      __physics_MOD_inelastic_scatter [44]
+                0.05    0.01   91477/126011      __physics_MOD_sample_fission_energy [33]
+[34]     0.1    0.07    0.02  126011         __physics_MOD_sample_energy [34]
+                0.02    0.00  101904/344182532     __search_MOD_binary_search_real [5]
+                0.00    0.00  223701/83214428     __random_lcg_MOD_prn [31]
+                0.00    0.00      68/11699094     __interpolation_MOD_interpolate_tab1_array [8]
+                0.00    0.00      68/68          __math_MOD_maxwell_spectrum [60]
+-----------------------------------------------
+                0.00    0.00   91477/11941981     __physics_MOD_sample_fission_energy [33]
+                0.01    0.00  869124/11941981     __ace_MOD_read_ace_table [18]
+                0.06    0.00 10981380/11941981     __cross_section_MOD_calculate_urr_xs [6]
+[35]     0.1    0.07    0.00 11941981         __fission_MOD_nu_total [35]
+-----------------------------------------------
+                                  90             __ace_MOD_get_energy_dist [36]
+                0.00    0.00     144/5617        __ace_MOD_read_nu_data [57]
+                0.07    0.00    5473/5617        __ace_MOD_read_energy_dist [37]
+[36]     0.1    0.07    0.00    5617+90      __ace_MOD_get_energy_dist [36]
+                0.00    0.00    5707/5707        __ace_MOD_length_energy_dist [76]
+                                  90             __ace_MOD_get_energy_dist [36]
+-----------------------------------------------
+                0.00    0.07     257/257         __ace_MOD_read_ace_table [18]
+[37]     0.0    0.00    0.07     257         __ace_MOD_read_energy_dist [37]
+                0.07    0.00    5473/5617        __ace_MOD_get_energy_dist [36]
+-----------------------------------------------
+                0.06    0.01 3200158/3200158     __physics_MOD_sample_reaction [10]
+[38]     0.0    0.06    0.01 3200158         __physics_MOD_sample_nuclide [38]
+                0.01    0.00 3200158/83214428     __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.00    0.00       1/20663723     __tally_MOD_synchronize_tallies [62]
+                0.00    0.00      95/20663723     __geometry_MOD_cross_surface [16]
+                0.02    0.04 20663627/20663723     __tracking_MOD_transport [2]
+[39]     0.0    0.02    0.04 20663723         __set_header_MOD_set_size_int [39]
+                0.04    0.00 20663723/20663723     __list_header_MOD_list_size_int [43]
+-----------------------------------------------
+                0.05    0.00     257/257         __ace_MOD_read_ace_table [18]
+[40]     0.0    0.05    0.00     257         __ace_MOD_read_esz [40]
+-----------------------------------------------
+                0.05    0.00     257/257         __ace_MOD_read_ace_table [18]
+[41]     0.0    0.05    0.00     257         __ace_MOD_read_reactions [41]
+-----------------------------------------------
+                0.05    0.00       1/1           __initialize_MOD_initialize_run [14]
+[42]     0.0    0.05    0.00       1         __random_lcg_MOD_initialize_prng [42]
+-----------------------------------------------
+                0.04    0.00 20663723/20663723     __set_header_MOD_set_size_int [39]
+[43]     0.0    0.04    0.00 20663723         __list_header_MOD_list_size_int [43]
+-----------------------------------------------
+                0.00    0.04   34534/34534       __physics_MOD_scatter [11]
+[44]     0.0    0.00    0.04   34534         __physics_MOD_inelastic_scatter [44]
+                0.02    0.01   34534/126011      __physics_MOD_sample_energy [34]
+                0.01    0.01   34534/1967583     __physics_MOD_sample_angle [15]
+                0.00    0.00   34534/4392435     __physics_MOD_rotate_angle [23]
+-----------------------------------------------
+                0.01    0.02  100000/100000      __eigenvalue_MOD_run_eigenvalue [1]
+[45]     0.0    0.01    0.02  100000         __source_MOD_get_source_particle [45]
+                0.00    0.01  100000/100000      __particle_header_MOD_initialize_particle [52]
+                0.01    0.00  100000/200001      __random_lcg_MOD_set_particle_seed [49]
 -----------------------------------------------
                                                  <spontaneous>
-[22]     0.2    0.27    0.00                 __intel_ssse3_rep_memcpy [22]
+[46]     0.0    0.03    0.00                 __set_header_MOD_set_remove_char [46]
 -----------------------------------------------
-                0.00    0.00       1/20663723     tally_mp_synchronize_tallies_ [81]
-                0.00    0.00      95/20663723     geometry_mp_cross_surface_ <cycle 2> [14]
-                0.10    0.05 20663627/20663723     tracking_mp_transport_ [4]
-[23]     0.1    0.10    0.05 20663723         set_header_mp_set_size_int_ [23]
-                0.05    0.00 20663723/20663723     list_header_mp_list_size_int_ [30]
+                0.02    0.01 3200158/3200158     __physics_MOD_sample_reaction [10]
+[47]     0.0    0.02    0.01 3200158         __physics_MOD_absorption [47]
+                0.01    0.00 3200158/83214428     __random_lcg_MOD_prn [31]
 -----------------------------------------------
-                0.00    0.00     204/83214428     math_mp_maxwell_spectrum_ [80]
-                0.00    0.00   91477/83214428     eigenvalue_mp_run_eigenvalue_ [3]
-                0.00    0.00  223701/83214428     physics_mp_create_fission_sites_ [26]
-                0.00    0.00  400000/83214428     math_mp_watt_spectrum_ [63]
-                0.00    0.00  500000/83214428     source_mp_initialize_source_ [34]
-                0.01    0.00 3924644/83214428     physics_mp_sample_angle_ [13]
-                0.01    0.00 4530680/83214428     physics_mp_sab_scatter_ [17]
-                0.02    0.00 10168154/83214428     physics_mp_collision_ [10]
-                0.02    0.00 11111974/83214428     physics_mp_elastic_scatter_ [11]
-                0.02    0.00 14263311/83214428     tracking_mp_transport_ [4]
-                0.06    0.00 38000283/83214428     cross_section_mp_calculate_xs_ [5]
-[24]     0.1    0.14    0.00 83214428         random_lcg_mp_prn_ [24]
+                0.00    0.02       1/1           __initialize_MOD_initialize_run [14]
+[48]     0.0    0.00    0.02       1         __source_MOD_initialize_source [48]
+                0.01    0.00  100000/100000      __source_MOD_sample_external_source [50]
+                0.01    0.00  100000/200001      __random_lcg_MOD_set_particle_seed [49]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
 -----------------------------------------------
-                                                 <spontaneous>
-[25]     0.1    0.12    0.00                 log [25]
+                0.00    0.00       1/200001      __eigenvalue_MOD_synchronize_bank [59]
+                0.01    0.00  100000/200001      __source_MOD_get_source_particle [45]
+                0.01    0.00  100000/200001      __source_MOD_initialize_source [48]
+[49]     0.0    0.02    0.00  200001         __random_lcg_MOD_set_particle_seed [49]
 -----------------------------------------------
-                0.09    0.02  126011/126011      physics_mp_collision_ [10]
-[26]     0.1    0.09    0.02  126011         physics_mp_create_fission_sites_ [26]
-                0.02    0.00  101904/344182532     search_mp_binary_search_real_ [6]
-                0.00    0.00  223701/83214428     random_lcg_mp_prn_ [24]
-                0.00    0.00      68/11699094     interpolation_mp_interpolate_tab1_array_ [8]
-                0.00    0.00      68/68          math_mp_maxwell_spectrum_ [80]
+                0.01    0.00  100000/100000      __source_MOD_initialize_source [48]
+[50]     0.0    0.01    0.00  100000         __source_MOD_sample_external_source [50]
+                0.00    0.00  500000/83214428     __random_lcg_MOD_prn [31]
+                0.00    0.00  100000/100000      __math_MOD_watt_spectrum [58]
 -----------------------------------------------
-                                                 <spontaneous>
-[27]     0.1    0.09    0.00                 __libm_sse2_sincos [27]
+                0.00    0.00       1/100001      __eigenvalue_MOD_run_eigenvalue [1]
+                0.01    0.00  100000/100001      __particle_header_MOD_initialize_particle [52]
+[51]     0.0    0.01    0.00  100001         __particle_header_MOD_clear_particle [51]
+                0.00    0.00   96318/11667870     __particle_header_MOD_deallocate_coord [54]
 -----------------------------------------------
-                                                 <spontaneous>
-[28]     0.1    0.08    0.00                 for_index [28]
+                0.00    0.01  100000/100000      __source_MOD_get_source_particle [45]
+[52]     0.0    0.00    0.01  100000         __particle_header_MOD_initialize_particle [52]
+                0.01    0.00  100000/100001      __particle_header_MOD_clear_particle [51]
 -----------------------------------------------
-[29]     0.0    0.05    0.00    5473+90      <cycle 1 as a whole> [29]
-                0.05    0.00    5500             ace_mp_read_energy_dist_ <cycle 1> [31]
-                0.00    0.00      63             ace_mp_get_energy_dist_ <cycle 1> [112]
+                0.01    0.00  355751/355751      __physics_MOD_sample_reaction [10]
+[53]     0.0    0.01    0.00  355751         __physics_MOD_sample_fission [53]
+                0.00    0.00    2158/83214428     __random_lcg_MOD_prn [31]
 -----------------------------------------------
-                0.05    0.00 20663723/20663723     set_header_mp_set_size_int_ [23]
-[30]     0.0    0.05    0.00 20663723         list_header_mp_list_size_int_ [30]
+                0.00    0.00   96318/11667870     __particle_header_MOD_clear_particle [51]
+                0.01    0.00 11571552/11667870     __geometry_MOD_find_cell [13]
+[54]     0.0    0.01    0.00 11667870         __particle_header_MOD_deallocate_coord [54]
 -----------------------------------------------
-                                  27             ace_mp_get_energy_dist_ <cycle 1> [112]
-                0.05    0.00    5473/5473        ace_mp_read_ace_table_ [19]
-[31]     0.0    0.05    0.00    5500         ace_mp_read_energy_dist_ <cycle 1> [31]
-                0.00    0.00    5500/5707        ace_mp_length_energy_dist_ [85]
-                                  63             ace_mp_get_energy_dist_ <cycle 1> [112]
------------------------------------------------
-                0.04    0.00     257/257         ace_mp_read_ace_table_ [19]
-[32]     0.0    0.04    0.00     257         ace_mp_read_esz_ [32]
+                0.01    0.00     257/257         __ace_MOD_read_ace_table [18]
+[55]     0.0    0.01    0.00     257         __ace_MOD_read_angular_dist [55]
 -----------------------------------------------
                                                  <spontaneous>
-[33]     0.0    0.04    0.00                 _intel_fast_memcmp [33]
------------------------------------------------
-                0.03    0.00       1/1           initialize_mp_initialize_run_ [16]
-[34]     0.0    0.03    0.00       1         source_mp_initialize_source_ [34]
-                0.00    0.00  500000/83214428     random_lcg_mp_prn_ [24]
-                0.00    0.00  100000/100000      math_mp_watt_spectrum_ [63]
-                0.00    0.00  100000/200001      random_lcg_mp_set_particle_seed_ [82]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
------------------------------------------------
-                0.01    0.02  100000/100000      eigenvalue_mp_run_eigenvalue_ [3]
-[35]     0.0    0.01    0.02  100000         source_mp_get_source_particle_ [35]
-                0.02    0.00  100000/100000      particle_header_mp_initialize_particle_ [39]
-                0.00    0.00  100000/200001      random_lcg_mp_set_particle_seed_ [82]
------------------------------------------------
-                                                 <spontaneous>
-[36]     0.0    0.03    0.00                 for_len_trim [36]
------------------------------------------------
-                                                 <spontaneous>
-[37]     0.0    0.03    0.00                 cos.N [37]
------------------------------------------------
-                0.00    0.02   91477/91477       physics_mp_collision_ [10]
-[38]     0.0    0.00    0.02   91477         fission_mp_nu_delayed_ [38]
-                0.00    0.02   91477/11699094     interpolation_mp_interpolate_tab1_array_ [8]
------------------------------------------------
-                0.02    0.00  100000/100000      source_mp_get_source_particle_ [35]
-[39]     0.0    0.02    0.00  100000         particle_header_mp_initialize_particle_ [39]
-                0.00    0.00  100000/100001      particle_header_mp_clear_particle_ [69]
------------------------------------------------
-                0.02    0.00     257/257         ace_mp_read_ace_table_ [19]
-[40]     0.0    0.02    0.00     257         ace_mp_read_reactions_ [40]
------------------------------------------------
-                0.00    0.02       1/1           initialize_mp_initialize_run_ [16]
-[41]     0.0    0.00    0.02       1         input_xml_mp_read_input_xml_ [41]
-                0.01    0.01       1/1           xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-                0.00    0.00       1/1           input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00       1/1           input_xml_mp_read_geometry_xml_ [67]
-                0.00    0.00       1/1           input_xml_mp_read_settings_xml_ [74]
-                0.00    0.00    4233/4234        string_mp_ends_with_ [89]
-                0.00    0.00    4011/4527        dict_header_mp_dict_add_key_ci_ [88]
-                0.00    0.00    2061/2064        string_mp_starts_with_ [94]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
-                0.00    0.00       1/1           input_xml_mp_read_tallies_xml_ [154]
------------------------------------------------
-                                                 <spontaneous>
-[42]     0.0    0.02    0.00                 for_cpstr [42]
------------------------------------------------
-                                                 <spontaneous>
-[43]     0.0    0.02    0.00                 search._ [43]
------------------------------------------------
-                0.01    0.01       1/1           input_xml_mp_read_input_xml_ [41]
-[44]     0.0    0.01    0.01       1         xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-                0.00    0.00    6074/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00    4169/4252        read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00    4122/4519        read_xml_primitives_mp_read_xml_double_ [61]
-                0.00    0.00   16430/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00    2071/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00    2070/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       1/4           xmlparse_mp_xml_open_ [129]
-                0.00    0.00       1/4           xmlparse_mp_xml_options_ [130]
-                0.00    0.00       1/4           xmlparse_mp_xml_close_ [128]
------------------------------------------------
-                              101753             particle_header_mp_deallocate_coord_ [45]
-                0.00    0.00   96318/11667870     particle_header_mp_clear_particle_ [69]
-                0.00    0.00 3510484/11667870     geometry_mp_cross_surface_ <cycle 2> [14]
-                0.01    0.00 8061068/11667870     geometry_mp_find_cell_ <cycle 2> [18]
-[45]     0.0    0.01    0.00 11667870+101753  particle_header_mp_deallocate_coord_ [45]
-                              101753             particle_header_mp_deallocate_coord_ [45]
------------------------------------------------
-                0.00    0.00      28/15375       read_xml_primitives_mp_read_xml_double_array_ [71]
-                0.00    0.00      36/15375       read_xml_primitives_mp_read_xml_integer_array_ [70]
-                0.00    0.00    4252/15375       read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00    4519/15375       read_xml_primitives_mp_read_xml_double_ [61]
-                0.00    0.00    6540/15375       read_xml_primitives_mp_read_xml_word_ [60]
-[46]     0.0    0.01    0.00   15375         xmlparse_mp_xml_find_attrib_ [46]
------------------------------------------------
-                                                 <spontaneous>
-[47]     0.0    0.01    0.00                 for__desc_ret_item [47]
------------------------------------------------
-                                                 <spontaneous>
-[48]     0.0    0.01    0.00                 for_adjustl [48]
------------------------------------------------
-                                                 <spontaneous>
-[49]     0.0    0.01    0.00                 for_alloc_allocatable [49]
------------------------------------------------
-                                                 <spontaneous>
-[50]     0.0    0.01    0.00                 for_read_dir_xmit [50]
------------------------------------------------
-                                                 <spontaneous>
-[51]     0.0    0.01    0.00                 list_header_mp_list_remove_char_ [51]
------------------------------------------------
-                                                 <spontaneous>
-[52]     0.0    0.01    0.00                 random_lcg._ [52]
------------------------------------------------
-                                                 <spontaneous>
-[53]     0.0    0.01    0.00                 ri_find_field [53]
------------------------------------------------
-                                                 <spontaneous>
-[54]     0.0    0.01    0.00                 ri_get_field [54]
------------------------------------------------
-                                                 <spontaneous>
-[55]     0.0    0.01    0.00                 tracking._ [55]
------------------------------------------------
-                                                 <spontaneous>
-[56]     0.0    0.01    0.00                 __intel_memset [56]
------------------------------------------------
-                                                 <spontaneous>
-[57]     0.0    0.01    0.00                 __intel_ssse3_memcpy [57]
------------------------------------------------
-                                                 <spontaneous>
-[58]     0.0    0.01    0.00                 __libm_setusermatherrf [58]
------------------------------------------------
-                                                 <spontaneous>
-[59]     0.0    0.01    0.00                 _intel_fast_memcpy [59]
------------------------------------------------
-                0.00    0.00       1/6540        xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00       1/6540        xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       1/6540        xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00       4/6540        xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00      12/6540        xml_data_materials_t_mp_read_xml_type_density_xml_ [72]
-                0.00    0.00      44/6540        xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00     403/6540        xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00    6074/6540        xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-[60]     0.0    0.00    0.00    6540         read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00    6540/15375       xmlparse_mp_xml_find_attrib_ [46]
------------------------------------------------
-                0.00    0.00      12/4519        xml_data_materials_t_mp_read_xml_type_density_xml_ [72]
-                0.00    0.00     385/4519        xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00    4122/4519        xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-[61]     0.0    0.00    0.00    4519         read_xml_primitives_mp_read_xml_double_ [61]
-                0.00    0.00    4519/15375       xmlparse_mp_xml_find_attrib_ [46]
------------------------------------------------
-                0.00    0.00       2/4252        xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00       4/4252        xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00      12/4252        xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00      65/4252        xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00    4169/4252        xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-[62]     0.0    0.00    0.00    4252         read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00    4252/15375       xmlparse_mp_xml_find_attrib_ [46]
------------------------------------------------
-                0.00    0.00  100000/100000      source_mp_initialize_source_ [34]
-[63]     0.0    0.00    0.00  100000         math_mp_watt_spectrum_ [63]
-                0.00    0.00  400000/83214428     random_lcg_mp_prn_ [24]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_input_xml_ [41]
-[64]     0.0    0.00    0.00       1         input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00       1/1           xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00     788/788         dict_header_mp_dict_has_key_ci_ [101]
-                0.00    0.00     530/1808        dict_header_mp_dict_get_key_ci_ [95]
-                0.00    0.00     516/4527        dict_header_mp_dict_add_key_ci_ [88]
-                0.00    0.00     385/900         list_header_mp_list_append_char_ [100]
-                0.00    0.00     385/385         list_header_mp_list_append_real_ [104]
-                0.00    0.00     385/385         list_header_mp_list_get_item_char_ [105]
-                0.00    0.00     385/385         list_header_mp_list_get_item_real_ [106]
-                0.00    0.00      12/1673        dict_header_mp_dict_has_key_ii_ [96]
-                0.00    0.00      12/84          string_mp_lower_case_ [111]
-                0.00    0.00      12/12          list_header_mp_list_size_char_ [120]
-                0.00    0.00      12/13          list_header_mp_list_clear_char_ [118]
-                0.00    0.00      12/12          list_header_mp_list_clear_real_ [119]
-                0.00    0.00      12/98          dict_header_mp_dict_add_key_ii_ [110]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_materials_xml_ [64]
-[65]     0.0    0.00    0.00       1         xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00      12/12          xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00       1/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00      40/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00      39/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00      38/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00       1/4           xmlparse_mp_xml_open_ [129]
-                0.00    0.00       1/4           xmlparse_mp_xml_options_ [130]
-                0.00    0.00       1/43          xmlparse_mp_xml_report_errors_extern__ [113]
-                0.00    0.00       1/4           xmlparse_mp_xml_close_ [128]
------------------------------------------------
-                0.00    0.00      12/12          xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-[66]     0.0    0.00    0.00      12         xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00     403/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00     385/4519        read_xml_primitives_mp_read_xml_double_ [61]
-                0.00    0.00      12/12          xml_data_materials_t_mp_read_xml_type_density_xml_ [72]
-                0.00    0.00      12/4252        read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00    1206/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00     418/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00     418/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00      15/43          xmlparse_mp_xml_report_errors_extern__ [113]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_input_xml_ [41]
-[67]     0.0    0.00    0.00       1         input_xml_mp_read_geometry_xml_ [67]
-                0.00    0.00       1/1           xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00      86/98          dict_header_mp_dict_add_key_ii_ [110]
-                0.00    0.00      77/1673        dict_header_mp_dict_has_key_ii_ [96]
-                0.00    0.00      66/84          string_mp_lower_case_ [111]
-                0.00    0.00      24/25          string_mp_str_to_int_ [116]
-                0.00    0.00      19/1636        dict_header_mp_dict_get_key_ii_ [97]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_geometry_xml_ [67]
-[68]     0.0    0.00    0.00       1         xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00      65/4252        read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00      44/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00      28/36          read_xml_primitives_mp_read_xml_integer_array_ [70]
-                0.00    0.00       4/4           xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00      17/28          read_xml_primitives_mp_read_xml_double_array_ [71]
-                0.00    0.00     253/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00     101/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00     100/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       1/4           xmlparse_mp_xml_open_ [129]
-                0.00    0.00       1/4           xmlparse_mp_xml_options_ [130]
-                0.00    0.00       1/4           xmlparse_mp_xml_close_ [128]
------------------------------------------------
-                0.00    0.00       1/100001      eigenvalue_mp_run_eigenvalue_ [3]
-                0.00    0.00  100000/100001      particle_header_mp_initialize_particle_ [39]
-[69]     0.0    0.00    0.00  100001         particle_header_mp_clear_particle_ [69]
-                0.00    0.00   96318/11667870     particle_header_mp_deallocate_coord_ [45]
------------------------------------------------
-                0.00    0.00       8/36          xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00      28/36          xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-[70]     0.0    0.00    0.00      36         read_xml_primitives_mp_read_xml_integer_array_ [70]
-                0.00    0.00      36/15375       xmlparse_mp_xml_find_attrib_ [46]
-                0.00    0.00      36/36          read_xml_primitives_mp_read_from_buffer_integers_ [114]
------------------------------------------------
-                0.00    0.00       1/28          xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       2/28          xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       8/28          xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00      17/28          xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-[71]     0.0    0.00    0.00      28         read_xml_primitives_mp_read_xml_double_array_ [71]
-                0.00    0.00      28/15375       xmlparse_mp_xml_find_attrib_ [46]
-                0.00    0.00      28/28          read_xml_primitives_mp_read_from_buffer_doubles_ [115]
------------------------------------------------
-                0.00    0.00      12/12          xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-[72]     0.0    0.00    0.00      12         xml_data_materials_t_mp_read_xml_type_density_xml_ [72]
-                0.00    0.00      12/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00      12/4519        read_xml_primitives_mp_read_xml_double_ [61]
-                0.00    0.00      24/18013       xmlparse_mp_xml_ok_ [83]
------------------------------------------------
-                0.00    0.00       4/4           xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-[73]     0.0    0.00    0.00       4         xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00       8/28          read_xml_primitives_mp_read_xml_double_array_ [71]
-                0.00    0.00       8/36          read_xml_primitives_mp_read_xml_integer_array_ [70]
-                0.00    0.00       4/4252        read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00       4/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00      44/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00      44/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00      44/18013       xmlparse_mp_xml_ok_ [83]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_input_xml_ [41]
-[74]     0.0    0.00    0.00       1         input_xml_mp_read_settings_xml_ [74]
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-                0.00    0.00       6/84          string_mp_lower_case_ [111]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
-                0.00    0.00       1/25          string_mp_str_to_int_ [116]
-                0.00    0.00       1/1           set_header_mp_set_add_int_ [170]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_settings_xml_ [74]
-[75]     0.0    0.00    0.00       1         xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-                0.00    0.00      20/43          xmlparse_mp_xml_report_errors_extern__ [113]
-                0.00    0.00       5/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00       4/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       3/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00       1/4           xmlparse_mp_xml_open_ [129]
-                0.00    0.00       1/4           xmlparse_mp_xml_options_ [130]
-                0.00    0.00       1/4           xmlparse_mp_xml_close_ [128]
------------------------------------------------
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[76]     0.0    0.00    0.00       1         xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00       2/4252        read_xml_primitives_mp_read_xml_integer_ [62]
-                0.00    0.00       1/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00       7/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00       7/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       6/18013       xmlparse_mp_xml_ok_ [83]
------------------------------------------------
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-[77]     0.0    0.00    0.00       1         xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       1/6540        read_xml_primitives_mp_read_xml_word_ [60]
-                0.00    0.00       1/28          read_xml_primitives_mp_read_xml_double_array_ [71]
-                0.00    0.00       5/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00       5/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       4/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00       2/43          xmlparse_mp_xml_report_errors_extern__ [113]
------------------------------------------------
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[78]     0.0    0.00    0.00       1         xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       2/28          read_xml_primitives_mp_read_xml_double_array_ [71]
-                0.00    0.00       5/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       5/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00       4/18013       xmlparse_mp_xml_ok_ [83]
-                0.00    0.00       1/43          xmlparse_mp_xml_report_errors_extern__ [113]
------------------------------------------------
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[79]     0.0    0.00    0.00       1         xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-                0.00    0.00       1/1           xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       4/43          xmlparse_mp_xml_report_errors_extern__ [113]
-                0.00    0.00       2/2698        xmlparse_mp_xml_get_ [91]
-                0.00    0.00       2/2694        xmlparse_mp_xml_error_ [92]
-                0.00    0.00       1/18013       xmlparse_mp_xml_ok_ [83]
------------------------------------------------
-                0.00    0.00      68/68          physics_mp_create_fission_sites_ [26]
-[80]     0.0    0.00    0.00      68         math_mp_maxwell_spectrum_ [80]
-                0.00    0.00     204/83214428     random_lcg_mp_prn_ [24]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[81]     0.0    0.00    0.00       1         tally_mp_synchronize_tallies_ [81]
-                0.00    0.00       1/20663723     set_header_mp_set_size_int_ [23]
------------------------------------------------
-                0.00    0.00       1/200001      eigenvalue_mp_run_eigenvalue_ [3]
-                0.00    0.00  100000/200001      source_mp_get_source_particle_ [35]
-                0.00    0.00  100000/200001      source_mp_initialize_source_ [34]
-[82]     0.0    0.00    0.00  200001         random_lcg_mp_set_particle_seed_ [82]
------------------------------------------------
-                0.00    0.00       1/18013       xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-                0.00    0.00       3/18013       xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-                0.00    0.00       4/18013       xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       4/18013       xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       6/18013       xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00      24/18013       xml_data_materials_t_mp_read_xml_type_density_xml_ [72]
-                0.00    0.00      38/18013       xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00      44/18013       xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00     253/18013       xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00    1206/18013       xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00   16430/18013       xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-[83]     0.0    0.00    0.00   18013         xmlparse_mp_xml_ok_ [83]
------------------------------------------------
-                0.00    0.00     788/7123        dict_header_mp_dict_has_key_ci_ [101]
-                0.00    0.00    1808/7123        dict_header_mp_dict_get_key_ci_ [95]
-                0.00    0.00    4527/7123        dict_header_mp_dict_add_key_ci_ [88]
-[84]     0.0    0.00    0.00    7123         dict_header_mp_dict_get_elem_ci_ [84]
------------------------------------------------
-                0.00    0.00      63/5707        ace_mp_get_energy_dist_ <cycle 1> [112]
-                0.00    0.00     144/5707        ace_mp_read_nu_data_ [109]
-                0.00    0.00    5500/5707        ace_mp_read_energy_dist_ <cycle 1> [31]
-[85]     0.0    0.00    0.00    5707         ace_mp_length_energy_dist_ [85]
------------------------------------------------
-                0.00    0.00    5707/5707        ace_header_mp_distenergy_clear_ [87]
-[86]     0.0    0.00    0.00    5707         endf_header_mp_tab1_clear_ [86]
------------------------------------------------
-                                  90             ace_header_mp_distenergy_clear_ [87]
-                0.00    0.00    5617/5617        ace_header_mp_nuclide_clear_ [108]
-[87]     0.0    0.00    0.00    5617+90      ace_header_mp_distenergy_clear_ [87]
-                0.00    0.00    5707/5707        endf_header_mp_tab1_clear_ [86]
-                                  90             ace_header_mp_distenergy_clear_ [87]
------------------------------------------------
-                0.00    0.00     516/4527        input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00    4011/4527        input_xml_mp_read_input_xml_ [41]
-[88]     0.0    0.00    0.00    4527         dict_header_mp_dict_add_key_ci_ [88]
-                0.00    0.00    4527/7123        dict_header_mp_dict_get_elem_ci_ [84]
------------------------------------------------
-                0.00    0.00       1/4234        initialize_mp_read_command_line_ [153]
-                0.00    0.00    4233/4234        input_xml_mp_read_input_xml_ [41]
-[89]     0.0    0.00    0.00    4234         string_mp_ends_with_ [89]
------------------------------------------------
-                0.00    0.00      98/3407        dict_header_mp_dict_add_key_ii_ [110]
-                0.00    0.00    1636/3407        dict_header_mp_dict_get_key_ii_ [97]
-                0.00    0.00    1673/3407        dict_header_mp_dict_has_key_ii_ [96]
-[90]     0.0    0.00    0.00    3407         dict_header_mp_dict_get_elem_ii_ [90]
------------------------------------------------
-                0.00    0.00       2/2698        xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-                0.00    0.00       5/2698        xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-                0.00    0.00       5/2698        xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       5/2698        xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       7/2698        xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00      40/2698        xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00      44/2698        xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00     101/2698        xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00     418/2698        xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00    2071/2698        xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-[91]     0.0    0.00    0.00    2698         xmlparse_mp_xml_get_ [91]
-                0.00    0.00    2605/2605        xmlparse_mp_xml_report_details_string__ [93]
------------------------------------------------
-                0.00    0.00       2/2694        xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-                0.00    0.00       4/2694        xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-                0.00    0.00       5/2694        xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       5/2694        xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       7/2694        xml_data_settings_t_mp_read_xml_type_run_parameters_xml_ [76]
-                0.00    0.00      39/2694        xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00      44/2694        xml_data_geometry_t_mp_read_xml_type_lattice_xml_ [73]
-                0.00    0.00     100/2694        xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00     418/2694        xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00    2070/2694        xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-[92]     0.0    0.00    0.00    2694         xmlparse_mp_xml_error_ [92]
------------------------------------------------
-                0.00    0.00    2605/2605        xmlparse_mp_xml_get_ [91]
-[93]     0.0    0.00    0.00    2605         xmlparse_mp_xml_report_details_string__ [93]
------------------------------------------------
-                0.00    0.00       3/2064        initialize_mp_read_command_line_ [153]
-                0.00    0.00    2061/2064        input_xml_mp_read_input_xml_ [41]
-[94]     0.0    0.00    0.00    2064         string_mp_starts_with_ [94]
------------------------------------------------
-                0.00    0.00     516/1808        ace_mp_read_xs_ [20]
-                0.00    0.00     530/1808        input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00     762/1808        initialize_mp_initialize_run_ [16]
-[95]     0.0    0.00    0.00    1808         dict_header_mp_dict_get_key_ci_ [95]
-                0.00    0.00    1808/7123        dict_header_mp_dict_get_elem_ci_ [84]
------------------------------------------------
-                0.00    0.00      12/1673        input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00      77/1673        input_xml_mp_read_geometry_xml_ [67]
-                0.00    0.00    1584/1673        initialize_mp_adjust_indices_ [152]
-[96]     0.0    0.00    0.00    1673         dict_header_mp_dict_has_key_ii_ [96]
-                0.00    0.00    1673/3407        dict_header_mp_dict_get_elem_ii_ [90]
------------------------------------------------
-                0.00    0.00      19/1636        input_xml_mp_read_geometry_xml_ [67]
-                0.00    0.00      37/1636        initialize_mp_initialize_run_ [16]
-                0.00    0.00    1580/1636        initialize_mp_adjust_indices_ [152]
-[97]     0.0    0.00    0.00    1636         dict_header_mp_dict_get_key_ii_ [97]
-                0.00    0.00    1636/3407        dict_header_mp_dict_get_elem_ii_ [90]
------------------------------------------------
-                0.00    0.00     394/909         set_header_mp_set_contains_char_ [103]
-                0.00    0.00     515/909         set_header_mp_set_add_char_ [102]
-[98]     0.0    0.00    0.00     909         list_header_mp_list_contains_char_ [98]
-                0.00    0.00     909/909         list_header_mp_list_index_char_ [99]
------------------------------------------------
-                0.00    0.00     909/909         list_header_mp_list_contains_char_ [98]
-[99]     0.0    0.00    0.00     909         list_header_mp_list_index_char_ [99]
------------------------------------------------
-                0.00    0.00     385/900         input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00     515/900         set_header_mp_set_add_char_ [102]
-[100]    0.0    0.00    0.00     900         list_header_mp_list_append_char_ [100]
------------------------------------------------
-                0.00    0.00     788/788         input_xml_mp_read_materials_xml_ [64]
-[101]    0.0    0.00    0.00     788         dict_header_mp_dict_has_key_ci_ [101]
-                0.00    0.00     788/7123        dict_header_mp_dict_get_elem_ci_ [84]
------------------------------------------------
-                0.00    0.00     515/515         ace_mp_read_xs_ [20]
-[102]    0.0    0.00    0.00     515         set_header_mp_set_add_char_ [102]
-                0.00    0.00     515/909         list_header_mp_list_contains_char_ [98]
-                0.00    0.00     515/900         list_header_mp_list_append_char_ [100]
------------------------------------------------
-                0.00    0.00     394/394         ace_mp_read_xs_ [20]
-[103]    0.0    0.00    0.00     394         set_header_mp_set_contains_char_ [103]
-                0.00    0.00     394/909         list_header_mp_list_contains_char_ [98]
------------------------------------------------
-                0.00    0.00     385/385         input_xml_mp_read_materials_xml_ [64]
-[104]    0.0    0.00    0.00     385         list_header_mp_list_append_real_ [104]
------------------------------------------------
-                0.00    0.00     385/385         input_xml_mp_read_materials_xml_ [64]
-[105]    0.0    0.00    0.00     385         list_header_mp_list_get_item_char_ [105]
------------------------------------------------
-                0.00    0.00     385/385         input_xml_mp_read_materials_xml_ [64]
-[106]    0.0    0.00    0.00     385         list_header_mp_list_get_item_real_ [106]
------------------------------------------------
-                0.00    0.00       1/266         eigenvalue_mp_run_eigenvalue_ [3]
-                0.00    0.00       1/266         geometry_mp_neighbor_lists_ [150]
-                0.00    0.00       1/266         input_xml_mp_read_input_xml_ [41]
-                0.00    0.00       1/266         input_xml_mp_read_settings_xml_ [74]
-                0.00    0.00       1/266         input_xml_mp_read_geometry_xml_ [67]
-                0.00    0.00       1/266         input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00       1/266         source_mp_initialize_source_ [34]
-                0.00    0.00       1/266         state_point_mp_write_state_point_ [173]
-                0.00    0.00     258/266         ace_mp_read_ace_table_ [19]
-[107]    0.0    0.00    0.00     266         output_mp_write_message_ [107]
------------------------------------------------
-                0.00    0.00     257/257         global_mp_free_memory_ [151]
-[108]    0.0    0.00    0.00     257         ace_header_mp_nuclide_clear_ [108]
-                0.00    0.00    5617/5617        ace_header_mp_distenergy_clear_ [87]
------------------------------------------------
-                                 144             ace_mp_read_nu_data_ [109]
-                0.00    0.00     257/257         ace_mp_read_ace_table_ [19]
-[109]    0.0    0.00    0.00     257+144     ace_mp_read_nu_data_ [109]
-                0.00    0.00     144/5707        ace_mp_length_energy_dist_ [85]
-                                 144             ace_mp_read_nu_data_ [109]
------------------------------------------------
-                0.00    0.00      12/98          input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00      86/98          input_xml_mp_read_geometry_xml_ [67]
-[110]    0.0    0.00    0.00      98         dict_header_mp_dict_add_key_ii_ [110]
-                0.00    0.00      98/3407        dict_header_mp_dict_get_elem_ii_ [90]
------------------------------------------------
-                0.00    0.00       6/84          input_xml_mp_read_settings_xml_ [74]
-                0.00    0.00      12/84          input_xml_mp_read_materials_xml_ [64]
-                0.00    0.00      66/84          input_xml_mp_read_geometry_xml_ [67]
-[111]    0.0    0.00    0.00      84         string_mp_lower_case_ [111]
------------------------------------------------
-                                  63             ace_mp_read_energy_dist_ <cycle 1> [31]
-[112]    0.0    0.00    0.00      63         ace_mp_get_energy_dist_ <cycle 1> [112]
-                0.00    0.00      63/5707        ace_mp_length_energy_dist_ [85]
-                                  27             ace_mp_read_energy_dist_ <cycle 1> [31]
------------------------------------------------
-                0.00    0.00       1/43          xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00       1/43          xml_data_settings_t_mp_read_xml_type_mesh_xml_array_ [78]
-                0.00    0.00       2/43          xml_data_settings_t_mp_read_xml_type_distribution_xml_ [77]
-                0.00    0.00       4/43          xml_data_settings_t_mp_read_xml_type_source_xml_ [79]
-                0.00    0.00      15/43          xml_data_materials_t_mp_read_xml_type_material_xml_ [66]
-                0.00    0.00      20/43          xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[113]    0.0    0.00    0.00      43         xmlparse_mp_xml_report_errors_extern__ [113]
------------------------------------------------
-                0.00    0.00      36/36          read_xml_primitives_mp_read_xml_integer_array_ [70]
-[114]    0.0    0.00    0.00      36         read_xml_primitives_mp_read_from_buffer_integers_ [114]
------------------------------------------------
-                0.00    0.00      28/28          read_xml_primitives_mp_read_xml_double_array_ [71]
-[115]    0.0    0.00    0.00      28         read_xml_primitives_mp_read_from_buffer_doubles_ [115]
------------------------------------------------
-                0.00    0.00       1/25          input_xml_mp_read_settings_xml_ [74]
-                0.00    0.00      24/25          input_xml_mp_read_geometry_xml_ [67]
-[116]    0.0    0.00    0.00      25         string_mp_str_to_int_ [116]
------------------------------------------------
-                0.00    0.00      16/16          state_point_mp_write_state_point_ [173]
-[117]    0.0    0.00    0.00      16         output_interface_mp_write_integer_ [117]
------------------------------------------------
-                0.00    0.00       1/13          set_header_mp_set_clear_char_ [171]
-                0.00    0.00      12/13          input_xml_mp_read_materials_xml_ [64]
-[118]    0.0    0.00    0.00      13         list_header_mp_list_clear_char_ [118]
------------------------------------------------
-                0.00    0.00      12/12          input_xml_mp_read_materials_xml_ [64]
-[119]    0.0    0.00    0.00      12         list_header_mp_list_clear_real_ [119]
------------------------------------------------
-                0.00    0.00      12/12          input_xml_mp_read_materials_xml_ [64]
-[120]    0.0    0.00    0.00      12         list_header_mp_list_size_char_ [120]
------------------------------------------------
-                0.00    0.00       1/11          finalize_mp_finalize_run_ [147]
-                0.00    0.00       3/11          initialize_mp_initialize_run_ [16]
-                0.00    0.00       7/11          eigenvalue_mp_run_eigenvalue_ [3]
-[121]    0.0    0.00    0.00      11         timer_header_mp_timer_start_ [121]
------------------------------------------------
-                0.00    0.00       2/11          finalize_mp_finalize_run_ [147]
-                0.00    0.00       2/11          initialize_mp_initialize_run_ [16]
-                0.00    0.00       7/11          eigenvalue_mp_run_eigenvalue_ [3]
-[122]    0.0    0.00    0.00      11         timer_header_mp_timer_stop_ [122]
------------------------------------------------
-                0.00    0.00       1/9           initialize_mp_initialize_run_ [16]
-                0.00    0.00       8/9           global_mp_free_memory_ [151]
-[123]    0.0    0.00    0.00       9         dict_header_mp_dict_clear_ii_ [123]
------------------------------------------------
-                0.00    0.00       1/6           eigenvalue_mp_run_eigenvalue_ [3]
-                0.00    0.00       1/6           state_point_mp_write_state_point_ [173]
-                0.00    0.00       2/6           initialize_mp_initialize_run_ [16]
-                0.00    0.00       2/6           output_mp_print_batch_keff_ [161]
-[124]    0.0    0.00    0.00       6         string_mp_int4_to_str_ [124]
------------------------------------------------
-                0.00    0.00       5/5           set_header_mp_set_clear_int_ [126]
-[125]    0.0    0.00    0.00       5         list_header_mp_list_clear_int_ [125]
------------------------------------------------
-                0.00    0.00       5/5           global_mp_free_memory_ [151]
-[126]    0.0    0.00    0.00       5         set_header_mp_set_clear_int_ [126]
-                0.00    0.00       5/5           list_header_mp_list_clear_int_ [125]
------------------------------------------------
-                0.00    0.00       1/5           output_mp_print_runtime_ [164]
-                0.00    0.00       1/5           output_mp_print_results_ [163]
-                0.00    0.00       3/5           output_mp_header_ [134]
-[127]    0.0    0.00    0.00       5         string_mp_upper_case_ [127]
------------------------------------------------
-                0.00    0.00       1/4           xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-                0.00    0.00       1/4           xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00       1/4           xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00       1/4           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[128]    0.0    0.00    0.00       4         xmlparse_mp_xml_close_ [128]
------------------------------------------------
-                0.00    0.00       1/4           xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-                0.00    0.00       1/4           xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00       1/4           xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00       1/4           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[129]    0.0    0.00    0.00       4         xmlparse_mp_xml_open_ [129]
------------------------------------------------
-                0.00    0.00       1/4           xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_ [44]
-                0.00    0.00       1/4           xml_data_geometry_t_mp_read_xml_file_geometry_t_ [68]
-                0.00    0.00       1/4           xml_data_materials_t_mp_read_xml_file_materials_t_ [65]
-                0.00    0.00       1/4           xml_data_settings_t_mp_read_xml_file_settings_t_ [75]
-[130]    0.0    0.00    0.00       4         xmlparse_mp_xml_options_ [130]
------------------------------------------------
-                0.00    0.00       3/3           global_mp_free_memory_ [151]
-[131]    0.0    0.00    0.00       3         dict_header_mp_dict_clear_ci_ [131]
------------------------------------------------
-                0.00    0.00       3/3           state_point_mp_write_state_point_ [173]
-[132]    0.0    0.00    0.00       3         output_interface_mp_write_double_ [132]
------------------------------------------------
-                0.00    0.00       3/3           state_point_mp_write_state_point_ [173]
-[133]    0.0    0.00    0.00       3         output_interface_mp_write_double_1darray_ [133]
------------------------------------------------
-                0.00    0.00       1/3           initialize_mp_initialize_run_ [16]
-                0.00    0.00       2/3           eigenvalue_mp_run_eigenvalue_ [3]
-[134]    0.0    0.00    0.00       3         output_mp_header_ [134]
-                0.00    0.00       3/5           string_mp_upper_case_ [127]
------------------------------------------------
-                0.00    0.00       1/3           output_mp_print_runtime_ [164]
-                0.00    0.00       2/3           initialize_mp_initialize_run_ [16]
-[135]    0.0    0.00    0.00       3         string_mp_real_to_str_ [135]
------------------------------------------------
-                0.00    0.00       2/2           eigenvalue_mp_run_eigenvalue_ [3]
-[136]    0.0    0.00    0.00       2         eigenvalue_mp_calculate_combined_keff_ [136]
------------------------------------------------
-                0.00    0.00       1/2           ace_mp_read_ace_table_ [19]
-                0.00    0.00       1/2           output_mp_print_results_ [163]
-[137]    0.0    0.00    0.00       2         error_mp_warning_ [137]
------------------------------------------------
-                0.00    0.00       1/2           set_header_mp_set_add_int_ [170]
-                0.00    0.00       1/2           set_header_mp_set_contains_int_ [172]
-[138]    0.0    0.00    0.00       2         list_header_mp_list_contains_int_ [138]
-                0.00    0.00       2/2           list_header_mp_list_index_int_ [139]
------------------------------------------------
-                0.00    0.00       2/2           list_header_mp_list_contains_int_ [138]
-[139]    0.0    0.00    0.00       2         list_header_mp_list_index_int_ [139]
------------------------------------------------
-                0.00    0.00       2/2           state_point_mp_write_state_point_ [173]
-[140]    0.0    0.00    0.00       2         output_interface_mp_file_close_ [140]
------------------------------------------------
-                0.00    0.00       2/2           state_point_mp_write_state_point_ [173]
-[141]    0.0    0.00    0.00       2         output_interface_mp_write_long_ [141]
------------------------------------------------
-                0.00    0.00       2/2           state_point_mp_write_state_point_ [173]
-[142]    0.0    0.00    0.00       2         output_interface_mp_write_string_ [142]
------------------------------------------------
-                0.00    0.00       1/1           ace_mp_read_ace_table_ [19]
-[143]    0.0    0.00    0.00       1         ace_mp_read_thermal_data_ [143]
------------------------------------------------
-                0.00    0.00       1/1           global_mp_free_memory_ [151]
-[144]    0.0    0.00    0.00       1         cmfd_header_mp_deallocate_cmfd_ [144]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[145]    0.0    0.00    0.00       1         dict_header_mp_dict_keys_ii_ [145]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[146]    0.0    0.00    0.00       1         eigenvalue_mp_shannon_entropy_ [146]
-                0.00    0.00       1/1           mesh_mp_count_bank_sites_ [156]
------------------------------------------------
-                0.00    0.00       1/1           MAIN__ [1]
-[147]    0.0    0.00    0.00       1         finalize_mp_finalize_run_ [147]
-                0.00    0.00       2/11          timer_header_mp_timer_stop_ [122]
-                0.00    0.00       1/11          timer_header_mp_timer_start_ [121]
-                0.00    0.00       1/1           output_mp_write_tallies_ [167]
-                0.00    0.00       1/1           output_mp_print_results_ [163]
-                0.00    0.00       1/1           output_mp_print_runtime_ [164]
-                0.00    0.00       1/1           global_mp_free_memory_ [151]
-                0.00    0.00       1/1           fission_bank_lib_mp_free_banks_ [149]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[148]    0.0    0.00    0.00       1         fission_bank_lib_mp_allocate_banks_ [148]
------------------------------------------------
-                0.00    0.00       1/1           finalize_mp_finalize_run_ [147]
-[149]    0.0    0.00    0.00       1         fission_bank_lib_mp_free_banks_ [149]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[150]    0.0    0.00    0.00       1         geometry_mp_neighbor_lists_ [150]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
------------------------------------------------
-                0.00    0.00       1/1           finalize_mp_finalize_run_ [147]
-[151]    0.0    0.00    0.00       1         global_mp_free_memory_ [151]
-                0.00    0.00     257/257         ace_header_mp_nuclide_clear_ [108]
-                0.00    0.00       8/9           dict_header_mp_dict_clear_ii_ [123]
-                0.00    0.00       5/5           set_header_mp_set_clear_int_ [126]
-                0.00    0.00       3/3           dict_header_mp_dict_clear_ci_ [131]
-                0.00    0.00       1/1           cmfd_header_mp_deallocate_cmfd_ [144]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[152]    0.0    0.00    0.00       1         initialize_mp_adjust_indices_ [152]
-                0.00    0.00    1584/1673        dict_header_mp_dict_has_key_ii_ [96]
-                0.00    0.00    1580/1636        dict_header_mp_dict_get_key_ii_ [97]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[153]    0.0    0.00    0.00       1         initialize_mp_read_command_line_ [153]
-                0.00    0.00       3/2064        string_mp_starts_with_ [94]
-                0.00    0.00       1/4234        string_mp_ends_with_ [89]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_input_xml_ [41]
-[154]    0.0    0.00    0.00       1         input_xml_mp_read_tallies_xml_ [154]
------------------------------------------------
-                0.00    0.00       1/1           set_header_mp_set_add_int_ [170]
-[155]    0.0    0.00    0.00       1         list_header_mp_list_append_int_ [155]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_shannon_entropy_ [146]
-[156]    0.0    0.00    0.00       1         mesh_mp_count_bank_sites_ [156]
------------------------------------------------
-                0.00    0.00       1/1           state_point_mp_write_state_point_ [173]
-[157]    0.0    0.00    0.00       1         output_interface_mp_file_create_ [157]
------------------------------------------------
-                0.00    0.00       1/1           state_point_mp_write_state_point_ [173]
-[158]    0.0    0.00    0.00       1         output_interface_mp_file_open_ [158]
------------------------------------------------
-                0.00    0.00       1/1           state_point_mp_write_state_point_ [173]
-[159]    0.0    0.00    0.00       1         output_interface_mp_write_source_bank_ [159]
------------------------------------------------
-                0.00    0.00       1/1           state_point_mp_write_state_point_ [173]
-[160]    0.0    0.00    0.00       1         output_interface_mp_write_tally_result_ [160]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[161]    0.0    0.00    0.00       1         output_mp_print_batch_keff_ [161]
-                0.00    0.00       2/6           string_mp_int4_to_str_ [124]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[162]    0.0    0.00    0.00       1         output_mp_print_columns_ [162]
------------------------------------------------
-                0.00    0.00       1/1           finalize_mp_finalize_run_ [147]
-[163]    0.0    0.00    0.00       1         output_mp_print_results_ [163]
-                0.00    0.00       1/5           string_mp_upper_case_ [127]
-                0.00    0.00       1/2           error_mp_warning_ [137]
------------------------------------------------
-                0.00    0.00       1/1           finalize_mp_finalize_run_ [147]
-[164]    0.0    0.00    0.00       1         output_mp_print_runtime_ [164]
-                0.00    0.00       1/5           string_mp_upper_case_ [127]
-                0.00    0.00       1/3           string_mp_real_to_str_ [135]
------------------------------------------------
-                0.00    0.00       1/1           state_point_mp_write_state_point_ [173]
-[165]    0.0    0.00    0.00       1         output_mp_time_stamp_ [165]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[166]    0.0    0.00    0.00       1         output_mp_title_ [166]
------------------------------------------------
-                0.00    0.00       1/1           finalize_mp_finalize_run_ [147]
-[167]    0.0    0.00    0.00       1         output_mp_write_tallies_ [167]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[168]    0.0    0.00    0.00       1         random_lcg_mp_initialize_prng_ [168]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[169]    0.0    0.00    0.00       1         random_lcg_mp_prn_skip_ [169]
------------------------------------------------
-                0.00    0.00       1/1           input_xml_mp_read_settings_xml_ [74]
-[170]    0.0    0.00    0.00       1         set_header_mp_set_add_int_ [170]
-                0.00    0.00       1/2           list_header_mp_list_contains_int_ [138]
-                0.00    0.00       1/1           list_header_mp_list_append_int_ [155]
------------------------------------------------
-                0.00    0.00       1/1           ace_mp_read_xs_ [20]
-[171]    0.0    0.00    0.00       1         set_header_mp_set_clear_char_ [171]
-                0.00    0.00       1/13          list_header_mp_list_clear_char_ [118]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[172]    0.0    0.00    0.00       1         set_header_mp_set_contains_int_ [172]
-                0.00    0.00       1/2           list_header_mp_list_contains_int_ [138]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[173]    0.0    0.00    0.00       1         state_point_mp_write_state_point_ [173]
-                0.00    0.00      16/16          output_interface_mp_write_integer_ [117]
-                0.00    0.00       3/3           output_interface_mp_write_double_1darray_ [133]
-                0.00    0.00       3/3           output_interface_mp_write_double_ [132]
-                0.00    0.00       2/2           output_interface_mp_write_string_ [142]
-                0.00    0.00       2/2           output_interface_mp_write_long_ [141]
-                0.00    0.00       2/2           output_interface_mp_file_close_ [140]
-                0.00    0.00       1/6           string_mp_int4_to_str_ [124]
-                0.00    0.00       1/266         output_mp_write_message_ [107]
-                0.00    0.00       1/1           output_interface_mp_file_create_ [157]
-                0.00    0.00       1/1           output_mp_time_stamp_ [165]
-                0.00    0.00       1/1           output_interface_mp_write_tally_result_ [160]
-                0.00    0.00       1/1           output_interface_mp_file_open_ [158]
-                0.00    0.00       1/1           output_interface_mp_write_source_bank_ [159]
------------------------------------------------
-                0.00    0.00       1/1           initialize_mp_initialize_run_ [16]
-[174]    0.0    0.00    0.00       1         tally_initialize_mp_configure_tallies_ [174]
------------------------------------------------
-                0.00    0.00       1/1           eigenvalue_mp_run_eigenvalue_ [3]
-[175]    0.0    0.00    0.00       1         tally_mp_setup_active_usertallies_ [175]
+[56]     0.0    0.01    0.00                 __cross_section_MOD_find_energy_index [56]
+-----------------------------------------------
+                0.00    0.00     257/257         __ace_MOD_read_ace_table [18]
+[57]     0.0    0.00    0.00     257         __ace_MOD_read_nu_data [57]
+                0.00    0.00     144/5617        __ace_MOD_get_energy_dist [36]
+-----------------------------------------------
+                0.00    0.00  100000/100000      __source_MOD_sample_external_source [50]
+[58]     0.0    0.00    0.00  100000         __math_MOD_watt_spectrum [58]
+                0.00    0.00  400000/83214428     __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_run_eigenvalue [1]
+[59]     0.0    0.00    0.00       1         __eigenvalue_MOD_synchronize_bank [59]
+                0.00    0.00   91477/83214428     __random_lcg_MOD_prn [31]
+                0.00    0.00       1/200001      __random_lcg_MOD_set_particle_seed [49]
+                0.00    0.00       2/11          __timer_header_MOD_timer_start [126]
+                0.00    0.00       2/11          __timer_header_MOD_timer_stop [127]
+                0.00    0.00       1/1           __random_lcg_MOD_prn_skip [185]
+-----------------------------------------------
+                0.00    0.00      68/68          __physics_MOD_sample_energy [34]
+[60]     0.0    0.00    0.00      68         __math_MOD_maxwell_spectrum [60]
+                0.00    0.00     204/83214428     __random_lcg_MOD_prn [31]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_run_eigenvalue [1]
+[61]     0.0    0.00    0.00       1         __eigenvalue_MOD_finalize_batch [61]
+                0.00    0.00       1/1           __tally_MOD_synchronize_tallies [62]
+                0.00    0.00       2/2           __eigenvalue_MOD_calculate_combined_keff [145]
+                0.00    0.00       1/11          __timer_header_MOD_timer_start [126]
+                0.00    0.00       1/11          __timer_header_MOD_timer_stop [127]
+                0.00    0.00       1/1           __set_header_MOD_set_contains_int [188]
+                0.00    0.00       1/1           __state_point_MOD_write_state_point [189]
+                0.00    0.00       1/1           __output_MOD_print_batch_keff [175]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_finalize_batch [61]
+[62]     0.0    0.00    0.00       1         __tally_MOD_synchronize_tallies [62]
+                0.00    0.00       1/20663723     __set_header_MOD_set_size_int [39]
+-----------------------------------------------
+                0.00    0.00   91477/91477       __physics_MOD_sample_fission_energy [33]
+[68]     0.0    0.00    0.00   91477         __fission_MOD_nu_delayed [68]
+-----------------------------------------------
+                0.00    0.00   91477/91477       __mesh_MOD_count_bank_sites [174]
+[69]     0.0    0.00    0.00   91477         __mesh_MOD_get_mesh_indices [69]
+-----------------------------------------------
+                0.00    0.00       1/18013       __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+                0.00    0.00       3/18013       __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+                0.00    0.00       4/18013       __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+                0.00    0.00       4/18013       __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       6/18013       __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+                0.00    0.00      18/18013       __xml_data_materials_t_MOD_read_xml_type_sab_xml [129]
+                0.00    0.00      24/18013       __xml_data_materials_t_MOD_read_xml_type_density_xml [123]
+                0.00    0.00      38/18013       __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00      44/18013       __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00      54/18013       __xml_data_geometry_t_MOD_read_xml_type_surface_xml [117]
+                0.00    0.00      99/18013       __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00     100/18013       __xml_data_geometry_t_MOD_read_xml_type_cell_xml [114]
+                0.00    0.00     418/18013       __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+                0.00    0.00     770/18013       __xml_data_materials_t_MOD_read_xml_type_nuclide_xml [102]
+                0.00    0.00    2069/18013       __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00   14361/18013       __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml [89]
+[70]     0.0    0.00    0.00   18013         __xmlparse_MOD_xml_ok [70]
+-----------------------------------------------
+                0.00    0.00      28/15375       __read_xml_primitives_MOD_read_xml_double_array [113]
+                0.00    0.00      36/15375       __read_xml_primitives_MOD_read_xml_integer_array [111]
+                0.00    0.00    4252/15375       __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00    4519/15375       __read_xml_primitives_MOD_read_xml_double [80]
+                0.00    0.00    6540/15375       __read_xml_primitives_MOD_read_xml_word [75]
+[71]     0.0    0.00    0.00   15375         __xmlparse_MOD_xml_find_attrib [71]
+-----------------------------------------------
+                0.00    0.00    9839/9839        __ace_header_MOD_reaction_clear [73]
+[72]     0.0    0.00    0.00    9839         __ace_header_MOD_distangle_clear [72]
+-----------------------------------------------
+                0.00    0.00    9839/9839        __ace_header_MOD_nuclide_clear [106]
+[73]     0.0    0.00    0.00    9839         __ace_header_MOD_reaction_clear [73]
+                0.00    0.00    9839/9839        __ace_header_MOD_distangle_clear [72]
+                0.00    0.00    5473/5617        __ace_header_MOD_distenergy_clear [78]
+-----------------------------------------------
+                0.00    0.00     788/7123        __dict_header_MOD_dict_has_key_ci [96]
+                0.00    0.00    1808/7123        __dict_header_MOD_dict_get_key_ci [90]
+                0.00    0.00    4527/7123        __dict_header_MOD_dict_add_key_ci [79]
+[74]     0.0    0.00    0.00    7123         __dict_header_MOD_dict_get_elem_ci [74]
+-----------------------------------------------
+                0.00    0.00       1/6540        __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00       1/6540        __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       1/6540        __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+                0.00    0.00       2/6540        __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00       4/6540        __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00      12/6540        __xml_data_materials_t_MOD_read_xml_type_density_xml [123]
+                0.00    0.00      18/6540        __xml_data_materials_t_MOD_read_xml_type_sab_xml [129]
+                0.00    0.00      20/6540        __xml_data_geometry_t_MOD_read_xml_type_surface_xml [117]
+                0.00    0.00      24/6540        __xml_data_geometry_t_MOD_read_xml_type_cell_xml [114]
+                0.00    0.00     385/6540        __xml_data_materials_t_MOD_read_xml_type_nuclide_xml [102]
+                0.00    0.00    6072/6540        __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml [89]
+[75]     0.0    0.00    0.00    6540         __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00    6540/15375       __xmlparse_MOD_xml_find_attrib [71]
+-----------------------------------------------
+                0.00    0.00    5707/5707        __ace_MOD_get_energy_dist [36]
+[76]     0.0    0.00    0.00    5707         __ace_MOD_length_energy_dist [76]
+-----------------------------------------------
+                0.00    0.00    5707/5707        __ace_header_MOD_distenergy_clear [78]
+[77]     0.0    0.00    0.00    5707         __endf_header_MOD_tab1_clear [77]
+-----------------------------------------------
+                                  90             __ace_header_MOD_distenergy_clear [78]
+                0.00    0.00     144/5617        __ace_header_MOD_nuclide_clear [106]
+                0.00    0.00    5473/5617        __ace_header_MOD_reaction_clear [73]
+[78]     0.0    0.00    0.00    5617+90      __ace_header_MOD_distenergy_clear [78]
+                0.00    0.00    5707/5707        __endf_header_MOD_tab1_clear [77]
+                                  90             __ace_header_MOD_distenergy_clear [78]
+-----------------------------------------------
+                0.00    0.00     516/4527        __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00    4011/4527        __input_xml_MOD_read_cross_sections_xml [28]
+[79]     0.0    0.00    0.00    4527         __dict_header_MOD_dict_add_key_ci [79]
+                0.00    0.00    4527/7123        __dict_header_MOD_dict_get_elem_ci [74]
+-----------------------------------------------
+                0.00    0.00      12/4519        __xml_data_materials_t_MOD_read_xml_type_density_xml [123]
+                0.00    0.00     385/4519        __xml_data_materials_t_MOD_read_xml_type_nuclide_xml [102]
+                0.00    0.00    4122/4519        __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml [89]
+[80]     0.0    0.00    0.00    4519         __read_xml_primitives_MOD_read_xml_double [80]
+                0.00    0.00    4519/15375       __xmlparse_MOD_xml_find_attrib [71]
+-----------------------------------------------
+                0.00    0.00       2/4252        __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00       2/4252        __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+                0.00    0.00       4/4252        __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00      12/4252        __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+                0.00    0.00      17/4252        __xml_data_geometry_t_MOD_read_xml_type_surface_xml [117]
+                0.00    0.00      48/4252        __xml_data_geometry_t_MOD_read_xml_type_cell_xml [114]
+                0.00    0.00    4167/4252        __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml [89]
+[81]     0.0    0.00    0.00    4252         __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00    4252/15375       __xmlparse_MOD_xml_find_attrib [71]
+-----------------------------------------------
+                0.00    0.00       1/4234        __initialize_MOD_read_command_line [167]
+                0.00    0.00    4233/4234        __input_xml_MOD_read_cross_sections_xml [28]
+[82]     0.0    0.00    0.00    4234         __string_MOD_ends_with [82]
+-----------------------------------------------
+                0.00    0.00      98/3407        __dict_header_MOD_dict_add_key_ii [107]
+                0.00    0.00    1636/3407        __dict_header_MOD_dict_get_key_ii [92]
+                0.00    0.00    1673/3407        __dict_header_MOD_dict_has_key_ii [91]
+[83]     0.0    0.00    0.00    3407         __dict_header_MOD_dict_get_elem_ii [83]
+-----------------------------------------------
+                0.00    0.00    2698/2698        __xmlparse_MOD_xml_get [85]
+[84]     0.0    0.00    0.00    2698         __xmlparse_MOD_xml_compress_ [84]
+-----------------------------------------------
+                0.00    0.00       2/2698        __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+                0.00    0.00       5/2698        __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+                0.00    0.00       5/2698        __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       5/2698        __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+                0.00    0.00       7/2698        __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+                0.00    0.00      40/2698        __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00      44/2698        __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00     101/2698        __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00     418/2698        __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+                0.00    0.00    2071/2698        __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+[85]     0.0    0.00    0.00    2698         __xmlparse_MOD_xml_get [85]
+                0.00    0.00    2698/2698        __xmlparse_MOD_xml_replace_entities_ [86]
+                0.00    0.00    2698/2698        __xmlparse_MOD_xml_compress_ [84]
+-----------------------------------------------
+                0.00    0.00    2698/2698        __xmlparse_MOD_xml_get [85]
+[86]     0.0    0.00    0.00    2698         __xmlparse_MOD_xml_replace_entities_ [86]
+-----------------------------------------------
+                0.00    0.00       2/2694        __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+                0.00    0.00       4/2694        __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+                0.00    0.00       5/2694        __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+                0.00    0.00       5/2694        __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       7/2694        __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+                0.00    0.00      39/2694        __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00      44/2694        __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00     100/2694        __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00     418/2694        __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+                0.00    0.00    2070/2694        __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+[87]     0.0    0.00    0.00    2694         __xmlparse_MOD_xml_error [87]
+-----------------------------------------------
+                0.00    0.00       3/2064        __initialize_MOD_read_command_line [167]
+                0.00    0.00    2061/2064        __input_xml_MOD_read_cross_sections_xml [28]
+[88]     0.0    0.00    0.00    2064         __string_MOD_starts_with [88]
+-----------------------------------------------
+                0.00    0.00    2061/2061        __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml_array [27]
+[89]     0.0    0.00    0.00    2061         __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml [89]
+                0.00    0.00   14361/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00    6072/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00    4167/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00    4122/4519        __read_xml_primitives_MOD_read_xml_double [80]
+-----------------------------------------------
+                0.00    0.00     516/1808        __ace_MOD_read_xs [19]
+                0.00    0.00     530/1808        __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00     762/1808        __initialize_MOD_normalize_ao [165]
+[90]     0.0    0.00    0.00    1808         __dict_header_MOD_dict_get_key_ci [90]
+                0.00    0.00    1808/7123        __dict_header_MOD_dict_get_elem_ci [74]
+-----------------------------------------------
+                0.00    0.00      12/1673        __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00      77/1673        __input_xml_MOD_read_geometry_xml [169]
+                0.00    0.00    1584/1673        __initialize_MOD_adjust_indices [162]
+[91]     0.0    0.00    0.00    1673         __dict_header_MOD_dict_has_key_ii [91]
+                0.00    0.00    1673/3407        __dict_header_MOD_dict_get_elem_ii [83]
+-----------------------------------------------
+                0.00    0.00      19/1636        __input_xml_MOD_read_geometry_xml [169]
+                0.00    0.00      37/1636        __initialize_MOD_prepare_universes [166]
+                0.00    0.00    1580/1636        __initialize_MOD_adjust_indices [162]
+[92]     0.0    0.00    0.00    1636         __dict_header_MOD_dict_get_key_ii [92]
+                0.00    0.00    1636/3407        __dict_header_MOD_dict_get_elem_ii [83]
+-----------------------------------------------
+                0.00    0.00     394/909         __set_header_MOD_set_contains_char [98]
+                0.00    0.00     515/909         __set_header_MOD_set_add_char [97]
+[93]     0.0    0.00    0.00     909         __list_header_MOD_list_contains_char [93]
+                0.00    0.00     909/909         __list_header_MOD_list_index_char [94]
+-----------------------------------------------
+                0.00    0.00     909/909         __list_header_MOD_list_contains_char [93]
+[94]     0.0    0.00    0.00     909         __list_header_MOD_list_index_char [94]
+-----------------------------------------------
+                0.00    0.00     385/900         __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00     515/900         __set_header_MOD_set_add_char [97]
+[95]     0.0    0.00    0.00     900         __list_header_MOD_list_append_char [95]
+-----------------------------------------------
+                0.00    0.00     788/788         __input_xml_MOD_read_materials_xml [170]
+[96]     0.0    0.00    0.00     788         __dict_header_MOD_dict_has_key_ci [96]
+                0.00    0.00     788/7123        __dict_header_MOD_dict_get_elem_ci [74]
+-----------------------------------------------
+                0.00    0.00     515/515         __ace_MOD_read_xs [19]
+[97]     0.0    0.00    0.00     515         __set_header_MOD_set_add_char [97]
+                0.00    0.00     515/909         __list_header_MOD_list_contains_char [93]
+                0.00    0.00     515/900         __list_header_MOD_list_append_char [95]
+-----------------------------------------------
+                0.00    0.00     394/394         __ace_MOD_read_xs [19]
+[98]     0.0    0.00    0.00     394         __set_header_MOD_set_contains_char [98]
+                0.00    0.00     394/909         __list_header_MOD_list_contains_char [93]
+-----------------------------------------------
+                0.00    0.00     385/385         __input_xml_MOD_read_materials_xml [170]
+[99]     0.0    0.00    0.00     385         __list_header_MOD_list_append_real [99]
+-----------------------------------------------
+                0.00    0.00     385/385         __input_xml_MOD_read_materials_xml [170]
+[100]    0.0    0.00    0.00     385         __list_header_MOD_list_get_item_char [100]
+-----------------------------------------------
+                0.00    0.00     385/385         __input_xml_MOD_read_materials_xml [170]
+[101]    0.0    0.00    0.00     385         __list_header_MOD_list_get_item_real [101]
+-----------------------------------------------
+                0.00    0.00     385/385         __xml_data_materials_t_MOD_read_xml_type_nuclide_xml_array [103]
+[102]    0.0    0.00    0.00     385         __xml_data_materials_t_MOD_read_xml_type_nuclide_xml [102]
+                0.00    0.00     770/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00     385/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00     385/4519        __read_xml_primitives_MOD_read_xml_double [80]
+-----------------------------------------------
+                0.00    0.00     385/385         __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+[103]    0.0    0.00    0.00     385         __xml_data_materials_t_MOD_read_xml_type_nuclide_xml_array [103]
+                0.00    0.00     385/385         __xml_data_materials_t_MOD_read_xml_type_nuclide_xml [102]
+-----------------------------------------------
+                0.00    0.00       1/266         __eigenvalue_MOD_initialize_batch [157]
+                0.00    0.00       1/266         __geometry_MOD_neighbor_lists [160]
+                0.00    0.00       1/266         __input_xml_MOD_read_cross_sections_xml [28]
+                0.00    0.00       1/266         __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00       1/266         __input_xml_MOD_read_geometry_xml [169]
+                0.00    0.00       1/266         __input_xml_MOD_read_settings_xml [171]
+                0.00    0.00       1/266         __source_MOD_initialize_source [48]
+                0.00    0.00       1/266         __state_point_MOD_write_state_point [189]
+                0.00    0.00     258/266         __ace_MOD_read_ace_table [18]
+[104]    0.0    0.00    0.00     266         __output_MOD_write_message [104]
+-----------------------------------------------
+                0.00    0.00     257/257         __ace_MOD_read_ace_table [18]
+[105]    0.0    0.00    0.00     257         __ace_MOD_read_unr_res [105]
+-----------------------------------------------
+                0.00    0.00     257/257         __global_MOD_free_memory [161]
+[106]    0.0    0.00    0.00     257         __ace_header_MOD_nuclide_clear [106]
+                0.00    0.00    9839/9839        __ace_header_MOD_reaction_clear [73]
+                0.00    0.00     144/5617        __ace_header_MOD_distenergy_clear [78]
+-----------------------------------------------
+                0.00    0.00      12/98          __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00      86/98          __input_xml_MOD_read_geometry_xml [169]
+[107]    0.0    0.00    0.00      98         __dict_header_MOD_dict_add_key_ii [107]
+                0.00    0.00      98/3407        __dict_header_MOD_dict_get_elem_ii [83]
+-----------------------------------------------
+                0.00    0.00       6/84          __input_xml_MOD_read_settings_xml [171]
+                0.00    0.00      12/84          __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00      66/84          __input_xml_MOD_read_geometry_xml [169]
+[108]    0.0    0.00    0.00      84         __string_MOD_lower_case [108]
+-----------------------------------------------
+                0.00    0.00       1/43          __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00       1/43          __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+                0.00    0.00       2/43          __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       4/43          __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+                0.00    0.00      15/43          __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+                0.00    0.00      20/43          __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[109]    0.0    0.00    0.00      43         __xmlparse_MOD_xml_report_errors_extern_ [109]
+-----------------------------------------------
+                0.00    0.00      36/36          __read_xml_primitives_MOD_read_xml_integer_array [111]
+[110]    0.0    0.00    0.00      36         __read_xml_primitives_MOD_read_from_buffer_integers [110]
+-----------------------------------------------
+                0.00    0.00       8/36          __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00      28/36          __xml_data_geometry_t_MOD_read_xml_type_cell_xml [114]
+[111]    0.0    0.00    0.00      36         __read_xml_primitives_MOD_read_xml_integer_array [111]
+                0.00    0.00      36/15375       __xmlparse_MOD_xml_find_attrib [71]
+                0.00    0.00      36/36          __read_xml_primitives_MOD_read_from_buffer_integers [110]
+-----------------------------------------------
+                0.00    0.00      28/28          __read_xml_primitives_MOD_read_xml_double_array [113]
+[112]    0.0    0.00    0.00      28         __read_xml_primitives_MOD_read_from_buffer_doubles [112]
+-----------------------------------------------
+                0.00    0.00       1/28          __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       2/28          __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+                0.00    0.00       8/28          __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00      17/28          __xml_data_geometry_t_MOD_read_xml_type_surface_xml [117]
+[113]    0.0    0.00    0.00      28         __read_xml_primitives_MOD_read_xml_double_array [113]
+                0.00    0.00      28/15375       __xmlparse_MOD_xml_find_attrib [71]
+                0.00    0.00      28/28          __read_xml_primitives_MOD_read_from_buffer_doubles [112]
+-----------------------------------------------
+                0.00    0.00      28/28          __xml_data_geometry_t_MOD_read_xml_type_cell_xml_array [115]
+[114]    0.0    0.00    0.00      28         __xml_data_geometry_t_MOD_read_xml_type_cell_xml [114]
+                0.00    0.00     100/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      48/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00      28/36          __read_xml_primitives_MOD_read_xml_integer_array [111]
+                0.00    0.00      24/6540        __read_xml_primitives_MOD_read_xml_word [75]
+-----------------------------------------------
+                0.00    0.00      28/28          __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+[115]    0.0    0.00    0.00      28         __xml_data_geometry_t_MOD_read_xml_type_cell_xml_array [115]
+                0.00    0.00      28/28          __xml_data_geometry_t_MOD_read_xml_type_cell_xml [114]
+-----------------------------------------------
+                0.00    0.00       1/25          __input_xml_MOD_read_settings_xml [171]
+                0.00    0.00      24/25          __input_xml_MOD_read_geometry_xml [169]
+[116]    0.0    0.00    0.00      25         __string_MOD_str_to_int [116]
+-----------------------------------------------
+                0.00    0.00      17/17          __xml_data_geometry_t_MOD_read_xml_type_surface_xml_array [118]
+[117]    0.0    0.00    0.00      17         __xml_data_geometry_t_MOD_read_xml_type_surface_xml [117]
+                0.00    0.00      54/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      20/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00      17/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00      17/28          __read_xml_primitives_MOD_read_xml_double_array [113]
+-----------------------------------------------
+                0.00    0.00      17/17          __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+[118]    0.0    0.00    0.00      17         __xml_data_geometry_t_MOD_read_xml_type_surface_xml_array [118]
+                0.00    0.00      17/17          __xml_data_geometry_t_MOD_read_xml_type_surface_xml [117]
+-----------------------------------------------
+                0.00    0.00      16/16          __state_point_MOD_write_state_point [189]
+[119]    0.0    0.00    0.00      16         __output_interface_MOD_write_integer [119]
+-----------------------------------------------
+                0.00    0.00       1/13          __set_header_MOD_set_clear_char [187]
+                0.00    0.00      12/13          __input_xml_MOD_read_materials_xml [170]
+[120]    0.0    0.00    0.00      13         __list_header_MOD_list_clear_char [120]
+-----------------------------------------------
+                0.00    0.00      12/12          __input_xml_MOD_read_materials_xml [170]
+[121]    0.0    0.00    0.00      12         __list_header_MOD_list_clear_real [121]
+-----------------------------------------------
+                0.00    0.00      12/12          __input_xml_MOD_read_materials_xml [170]
+[122]    0.0    0.00    0.00      12         __list_header_MOD_list_size_char [122]
+-----------------------------------------------
+                0.00    0.00      12/12          __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+[123]    0.0    0.00    0.00      12         __xml_data_materials_t_MOD_read_xml_type_density_xml [123]
+                0.00    0.00      24/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      12/4519        __read_xml_primitives_MOD_read_xml_double [80]
+                0.00    0.00      12/6540        __read_xml_primitives_MOD_read_xml_word [75]
+-----------------------------------------------
+                0.00    0.00      12/12          __xml_data_materials_t_MOD_read_xml_type_material_xml_array [125]
+[124]    0.0    0.00    0.00      12         __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+                0.00    0.00     418/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00     418/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00     418/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00     385/385         __xml_data_materials_t_MOD_read_xml_type_nuclide_xml_array [103]
+                0.00    0.00      15/43          __xmlparse_MOD_xml_report_errors_extern_ [109]
+                0.00    0.00      12/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00      12/12          __xml_data_materials_t_MOD_read_xml_type_density_xml [123]
+                0.00    0.00       9/9           __xml_data_materials_t_MOD_read_xml_type_sab_xml_array [130]
+-----------------------------------------------
+                0.00    0.00      12/12          __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+[125]    0.0    0.00    0.00      12         __xml_data_materials_t_MOD_read_xml_type_material_xml_array [125]
+                0.00    0.00      12/12          __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+-----------------------------------------------
+                0.00    0.00       1/11          __eigenvalue_MOD_finalize_batch [61]
+                0.00    0.00       1/11          __eigenvalue_MOD_initialize_batch [157]
+                0.00    0.00       1/11          __finalize_MOD_finalize_run [281]
+                0.00    0.00       2/11          __eigenvalue_MOD_synchronize_bank [59]
+                0.00    0.00       3/11          __eigenvalue_MOD_run_eigenvalue [1]
+                0.00    0.00       3/11          __initialize_MOD_initialize_run [14]
+[126]    0.0    0.00    0.00      11         __timer_header_MOD_timer_start [126]
+-----------------------------------------------
+                0.00    0.00       1/11          __eigenvalue_MOD_finalize_batch [61]
+                0.00    0.00       1/11          __eigenvalue_MOD_initialize_batch [157]
+                0.00    0.00       2/11          __eigenvalue_MOD_synchronize_bank [59]
+                0.00    0.00       2/11          __finalize_MOD_finalize_run [281]
+                0.00    0.00       2/11          __initialize_MOD_initialize_run [14]
+                0.00    0.00       3/11          __eigenvalue_MOD_run_eigenvalue [1]
+[127]    0.0    0.00    0.00      11         __timer_header_MOD_timer_stop [127]
+-----------------------------------------------
+                0.00    0.00       1/9           __initialize_MOD_prepare_universes [166]
+                0.00    0.00       8/9           __global_MOD_free_memory [161]
+[128]    0.0    0.00    0.00       9         __dict_header_MOD_dict_clear_ii [128]
+-----------------------------------------------
+                0.00    0.00       9/9           __xml_data_materials_t_MOD_read_xml_type_sab_xml_array [130]
+[129]    0.0    0.00    0.00       9         __xml_data_materials_t_MOD_read_xml_type_sab_xml [129]
+                0.00    0.00      18/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      18/6540        __read_xml_primitives_MOD_read_xml_word [75]
+-----------------------------------------------
+                0.00    0.00       9/9           __xml_data_materials_t_MOD_read_xml_type_material_xml [124]
+[130]    0.0    0.00    0.00       9         __xml_data_materials_t_MOD_read_xml_type_sab_xml_array [130]
+                0.00    0.00       9/9           __xml_data_materials_t_MOD_read_xml_type_sab_xml [129]
+-----------------------------------------------
+                0.00    0.00       1/6           __eigenvalue_MOD_initialize_batch [157]
+                0.00    0.00       1/6           __state_point_MOD_write_state_point [189]
+                0.00    0.00       2/6           __initialize_MOD_display_grid_sizes [164]
+                0.00    0.00       2/6           __output_MOD_print_batch_keff [175]
+[131]    0.0    0.00    0.00       6         __string_MOD_int4_to_str [131]
+-----------------------------------------------
+                0.00    0.00       5/5           __set_header_MOD_set_clear_int [134]
+[132]    0.0    0.00    0.00       5         __list_header_MOD_list_clear_int [132]
+-----------------------------------------------
+                0.00    0.00       1/5           __initialize_MOD_initialize_run [14]
+                0.00    0.00       1/5           __output_MOD_print_runtime [178]
+                0.00    0.00       1/5           __output_MOD_print_results [177]
+                0.00    0.00       2/5           __eigenvalue_MOD_run_eigenvalue [1]
+[133]    0.0    0.00    0.00       5         __output_MOD_header [133]
+                0.00    0.00       5/5           __string_MOD_upper_case [135]
+-----------------------------------------------
+                0.00    0.00       5/5           __global_MOD_free_memory [161]
+[134]    0.0    0.00    0.00       5         __set_header_MOD_set_clear_int [134]
+                0.00    0.00       5/5           __list_header_MOD_list_clear_int [132]
+-----------------------------------------------
+                0.00    0.00       5/5           __output_MOD_header [133]
+[135]    0.0    0.00    0.00       5         __string_MOD_upper_case [135]
+-----------------------------------------------
+                0.00    0.00       4/4           __xml_data_geometry_t_MOD_read_xml_type_lattice_xml_array [137]
+[136]    0.0    0.00    0.00       4         __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+                0.00    0.00      44/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      44/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00      44/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00       8/28          __read_xml_primitives_MOD_read_xml_double_array [113]
+                0.00    0.00       8/36          __read_xml_primitives_MOD_read_xml_integer_array [111]
+                0.00    0.00       4/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00       4/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+-----------------------------------------------
+                0.00    0.00       4/4           __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+[137]    0.0    0.00    0.00       4         __xml_data_geometry_t_MOD_read_xml_type_lattice_xml_array [137]
+                0.00    0.00       4/4           __xml_data_geometry_t_MOD_read_xml_type_lattice_xml [136]
+-----------------------------------------------
+                0.00    0.00       1/4           __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00       1/4           __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00       1/4           __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00       1/4           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[138]    0.0    0.00    0.00       4         __xmlparse_MOD_xml_close [138]
+-----------------------------------------------
+                0.00    0.00       1/4           __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00       1/4           __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00       1/4           __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00       1/4           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[139]    0.0    0.00    0.00       4         __xmlparse_MOD_xml_open [139]
+-----------------------------------------------
+                0.00    0.00       1/4           __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t [30]
+                0.00    0.00       1/4           __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00       1/4           __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00       1/4           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[140]    0.0    0.00    0.00       4         __xmlparse_MOD_xml_options [140]
+-----------------------------------------------
+                0.00    0.00       3/3           __global_MOD_free_memory [161]
+[141]    0.0    0.00    0.00       3         __dict_header_MOD_dict_clear_ci [141]
+-----------------------------------------------
+                0.00    0.00       3/3           __state_point_MOD_write_state_point [189]
+[142]    0.0    0.00    0.00       3         __output_interface_MOD_write_double [142]
+-----------------------------------------------
+                0.00    0.00       3/3           __state_point_MOD_write_state_point [189]
+[143]    0.0    0.00    0.00       3         __output_interface_MOD_write_double_1darray [143]
+-----------------------------------------------
+                0.00    0.00       1/3           __initialize_MOD_display_grid_sizes [164]
+                0.00    0.00       1/3           __initialize_MOD_resize_egrid [168]
+                0.00    0.00       1/3           __output_MOD_print_runtime [178]
+[144]    0.0    0.00    0.00       3         __string_MOD_real_to_str [144]
+-----------------------------------------------
+                0.00    0.00       2/2           __eigenvalue_MOD_finalize_batch [61]
+[145]    0.0    0.00    0.00       2         __eigenvalue_MOD_calculate_combined_keff [145]
+-----------------------------------------------
+                0.00    0.00       1/2           __ace_MOD_read_ace_table [18]
+                0.00    0.00       1/2           __output_MOD_print_results [177]
+[146]    0.0    0.00    0.00       2         __error_MOD_warning [146]
+-----------------------------------------------
+                0.00    0.00       1/2           __set_header_MOD_set_contains_int [188]
+                0.00    0.00       1/2           __set_header_MOD_set_add_int [186]
+[147]    0.0    0.00    0.00       2         __list_header_MOD_list_contains_int [147]
+                0.00    0.00       2/2           __list_header_MOD_list_index_int [148]
+-----------------------------------------------
+                0.00    0.00       2/2           __list_header_MOD_list_contains_int [147]
+[148]    0.0    0.00    0.00       2         __list_header_MOD_list_index_int [148]
+-----------------------------------------------
+                0.00    0.00       1/2           __output_MOD_title [179]
+                0.00    0.00       1/2           __state_point_MOD_write_state_point [189]
+[149]    0.0    0.00    0.00       2         __output_MOD_time_stamp [149]
+-----------------------------------------------
+                0.00    0.00       2/2           __state_point_MOD_write_state_point [189]
+[150]    0.0    0.00    0.00       2         __output_interface_MOD_file_close [150]
+-----------------------------------------------
+                0.00    0.00       2/2           __state_point_MOD_write_state_point [189]
+[151]    0.0    0.00    0.00       2         __output_interface_MOD_write_long [151]
+-----------------------------------------------
+                0.00    0.00       2/2           __state_point_MOD_write_state_point [189]
+[152]    0.0    0.00    0.00       2         __output_interface_MOD_write_string [152]
+-----------------------------------------------
+                0.00    0.00       1/1           __ace_MOD_read_ace_table [18]
+[153]    0.0    0.00    0.00       1         __ace_MOD_read_thermal_data [153]
+-----------------------------------------------
+                0.00    0.00       1/1           __global_MOD_free_memory [161]
+[154]    0.0    0.00    0.00       1         __cmfd_header_MOD_deallocate_cmfd [154]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_prepare_universes [166]
+[155]    0.0    0.00    0.00       1         __dict_header_MOD_dict_keys_ii [155]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_run_eigenvalue [1]
+[156]    0.0    0.00    0.00       1         __eigenvalue_MOD_calculate_average_keff [156]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_run_eigenvalue [1]
+[157]    0.0    0.00    0.00       1         __eigenvalue_MOD_initialize_batch [157]
+                0.00    0.00       1/6           __string_MOD_int4_to_str [131]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+                0.00    0.00       1/11          __timer_header_MOD_timer_stop [127]
+                0.00    0.00       1/11          __timer_header_MOD_timer_start [126]
+                0.00    0.00       1/1           __tally_MOD_setup_active_usertallies [190]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_run_eigenvalue [1]
+[158]    0.0    0.00    0.00       1         __eigenvalue_MOD_shannon_entropy [158]
+                0.00    0.00       1/1           __mesh_MOD_count_bank_sites [174]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[159]    0.0    0.00    0.00       1         __fission_bank_lib_MOD_allocate_banks [159]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[160]    0.0    0.00    0.00       1         __geometry_MOD_neighbor_lists [160]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+-----------------------------------------------
+                0.00    0.00       1/1           __finalize_MOD_finalize_run [281]
+[161]    0.0    0.00    0.00       1         __global_MOD_free_memory [161]
+                0.00    0.00     257/257         __ace_header_MOD_nuclide_clear [106]
+                0.00    0.00       8/9           __dict_header_MOD_dict_clear_ii [128]
+                0.00    0.00       5/5           __set_header_MOD_set_clear_int [134]
+                0.00    0.00       3/3           __dict_header_MOD_dict_clear_ci [141]
+                0.00    0.00       1/1           __cmfd_header_MOD_deallocate_cmfd [154]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[162]    0.0    0.00    0.00       1         __initialize_MOD_adjust_indices [162]
+                0.00    0.00    1584/1673        __dict_header_MOD_dict_has_key_ii [91]
+                0.00    0.00    1580/1636        __dict_header_MOD_dict_get_key_ii [92]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[163]    0.0    0.00    0.00       1         __initialize_MOD_calculate_work [163]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[164]    0.0    0.00    0.00       1         __initialize_MOD_display_grid_sizes [164]
+                0.00    0.00       2/6           __string_MOD_int4_to_str [131]
+                0.00    0.00       1/3           __string_MOD_real_to_str [144]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[165]    0.0    0.00    0.00       1         __initialize_MOD_normalize_ao [165]
+                0.00    0.00     762/1808        __dict_header_MOD_dict_get_key_ci [90]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[166]    0.0    0.00    0.00       1         __initialize_MOD_prepare_universes [166]
+                0.00    0.00      37/1636        __dict_header_MOD_dict_get_key_ii [92]
+                0.00    0.00       1/1           __dict_header_MOD_dict_keys_ii [155]
+                0.00    0.00       1/9           __dict_header_MOD_dict_clear_ii [128]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[167]    0.0    0.00    0.00       1         __initialize_MOD_read_command_line [167]
+                0.00    0.00       3/2064        __string_MOD_starts_with [88]
+                0.00    0.00       1/4234        __string_MOD_ends_with [82]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[168]    0.0    0.00    0.00       1         __initialize_MOD_resize_egrid [168]
+                0.00    0.00       1/3           __string_MOD_real_to_str [144]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_input_xml [29]
+[169]    0.0    0.00    0.00       1         __input_xml_MOD_read_geometry_xml [169]
+                0.00    0.00      86/98          __dict_header_MOD_dict_add_key_ii [107]
+                0.00    0.00      77/1673        __dict_header_MOD_dict_has_key_ii [91]
+                0.00    0.00      66/84          __string_MOD_lower_case [108]
+                0.00    0.00      24/25          __string_MOD_str_to_int [116]
+                0.00    0.00      19/1636        __dict_header_MOD_dict_get_key_ii [92]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+                0.00    0.00       1/1           __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_input_xml [29]
+[170]    0.0    0.00    0.00       1         __input_xml_MOD_read_materials_xml [170]
+                0.00    0.00     788/788         __dict_header_MOD_dict_has_key_ci [96]
+                0.00    0.00     530/1808        __dict_header_MOD_dict_get_key_ci [90]
+                0.00    0.00     516/4527        __dict_header_MOD_dict_add_key_ci [79]
+                0.00    0.00     385/385         __list_header_MOD_list_get_item_real [101]
+                0.00    0.00     385/385         __list_header_MOD_list_get_item_char [100]
+                0.00    0.00     385/900         __list_header_MOD_list_append_char [95]
+                0.00    0.00     385/385         __list_header_MOD_list_append_real [99]
+                0.00    0.00      12/1673        __dict_header_MOD_dict_has_key_ii [91]
+                0.00    0.00      12/84          __string_MOD_lower_case [108]
+                0.00    0.00      12/98          __dict_header_MOD_dict_add_key_ii [107]
+                0.00    0.00      12/12          __list_header_MOD_list_size_char [122]
+                0.00    0.00      12/13          __list_header_MOD_list_clear_char [120]
+                0.00    0.00      12/12          __list_header_MOD_list_clear_real [121]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+                0.00    0.00       1/1           __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_input_xml [29]
+[171]    0.0    0.00    0.00       1         __input_xml_MOD_read_settings_xml [171]
+                0.00    0.00       6/84          __string_MOD_lower_case [108]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+                0.00    0.00       1/25          __string_MOD_str_to_int [116]
+                0.00    0.00       1/1           __set_header_MOD_set_add_int [186]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_input_xml [29]
+[172]    0.0    0.00    0.00       1         __input_xml_MOD_read_tallies_xml [172]
+-----------------------------------------------
+                0.00    0.00       1/1           __set_header_MOD_set_add_int [186]
+[173]    0.0    0.00    0.00       1         __list_header_MOD_list_append_int [173]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_shannon_entropy [158]
+[174]    0.0    0.00    0.00       1         __mesh_MOD_count_bank_sites [174]
+                0.00    0.00   91477/91477       __mesh_MOD_get_mesh_indices [69]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_finalize_batch [61]
+[175]    0.0    0.00    0.00       1         __output_MOD_print_batch_keff [175]
+                0.00    0.00       2/6           __string_MOD_int4_to_str [131]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_run_eigenvalue [1]
+[176]    0.0    0.00    0.00       1         __output_MOD_print_columns [176]
+-----------------------------------------------
+                0.00    0.00       1/1           __finalize_MOD_finalize_run [281]
+[177]    0.0    0.00    0.00       1         __output_MOD_print_results [177]
+                0.00    0.00       1/5           __output_MOD_header [133]
+                0.00    0.00       1/2           __error_MOD_warning [146]
+-----------------------------------------------
+                0.00    0.00       1/1           __finalize_MOD_finalize_run [281]
+[178]    0.0    0.00    0.00       1         __output_MOD_print_runtime [178]
+                0.00    0.00       1/5           __output_MOD_header [133]
+                0.00    0.00       1/3           __string_MOD_real_to_str [144]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[179]    0.0    0.00    0.00       1         __output_MOD_title [179]
+                0.00    0.00       1/2           __output_MOD_time_stamp [149]
+-----------------------------------------------
+                0.00    0.00       1/1           __finalize_MOD_finalize_run [281]
+[180]    0.0    0.00    0.00       1         __output_MOD_write_tallies [180]
+-----------------------------------------------
+                0.00    0.00       1/1           __state_point_MOD_write_state_point [189]
+[181]    0.0    0.00    0.00       1         __output_interface_MOD_file_create [181]
+-----------------------------------------------
+                0.00    0.00       1/1           __state_point_MOD_write_state_point [189]
+[182]    0.0    0.00    0.00       1         __output_interface_MOD_file_open [182]
+-----------------------------------------------
+                0.00    0.00       1/1           __state_point_MOD_write_state_point [189]
+[183]    0.0    0.00    0.00       1         __output_interface_MOD_write_source_bank [183]
+-----------------------------------------------
+                0.00    0.00       1/1           __state_point_MOD_write_state_point [189]
+[184]    0.0    0.00    0.00       1         __output_interface_MOD_write_tally_result [184]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_synchronize_bank [59]
+[185]    0.0    0.00    0.00       1         __random_lcg_MOD_prn_skip [185]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_settings_xml [171]
+[186]    0.0    0.00    0.00       1         __set_header_MOD_set_add_int [186]
+                0.00    0.00       1/2           __list_header_MOD_list_contains_int [147]
+                0.00    0.00       1/1           __list_header_MOD_list_append_int [173]
+-----------------------------------------------
+                0.00    0.00       1/1           __ace_MOD_read_xs [19]
+[187]    0.0    0.00    0.00       1         __set_header_MOD_set_clear_char [187]
+                0.00    0.00       1/13          __list_header_MOD_list_clear_char [120]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_finalize_batch [61]
+[188]    0.0    0.00    0.00       1         __set_header_MOD_set_contains_int [188]
+                0.00    0.00       1/2           __list_header_MOD_list_contains_int [147]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_finalize_batch [61]
+[189]    0.0    0.00    0.00       1         __state_point_MOD_write_state_point [189]
+                0.00    0.00      16/16          __output_interface_MOD_write_integer [119]
+                0.00    0.00       3/3           __output_interface_MOD_write_double_1darray [143]
+                0.00    0.00       3/3           __output_interface_MOD_write_double [142]
+                0.00    0.00       2/2           __output_interface_MOD_write_string [152]
+                0.00    0.00       2/2           __output_interface_MOD_write_long [151]
+                0.00    0.00       2/2           __output_interface_MOD_file_close [150]
+                0.00    0.00       1/6           __string_MOD_int4_to_str [131]
+                0.00    0.00       1/266         __output_MOD_write_message [104]
+                0.00    0.00       1/1           __output_interface_MOD_file_create [181]
+                0.00    0.00       1/2           __output_MOD_time_stamp [149]
+                0.00    0.00       1/1           __output_interface_MOD_write_tally_result [184]
+                0.00    0.00       1/1           __output_interface_MOD_file_open [182]
+                0.00    0.00       1/1           __output_interface_MOD_write_source_bank [183]
+-----------------------------------------------
+                0.00    0.00       1/1           __eigenvalue_MOD_initialize_batch [157]
+[190]    0.0    0.00    0.00       1         __tally_MOD_setup_active_usertallies [190]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[191]    0.0    0.00    0.00       1         __tally_initialize_MOD_configure_tallies [191]
+                0.00    0.00       1/1           __tally_initialize_MOD_setup_tally_arrays [192]
+-----------------------------------------------
+                0.00    0.00       1/1           __tally_initialize_MOD_configure_tallies [191]
+[192]    0.0    0.00    0.00       1         __tally_initialize_MOD_setup_tally_arrays [192]
+-----------------------------------------------
+                0.00    0.00       1/1           __initialize_MOD_initialize_run [14]
+[193]    0.0    0.00    0.00       1         __tally_initialize_MOD_setup_tally_maps [193]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_geometry_xml [169]
+[194]    0.0    0.00    0.00       1         __xml_data_geometry_t_MOD_read_xml_file_geometry_t [194]
+                0.00    0.00     101/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00     100/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00      99/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      28/28          __xml_data_geometry_t_MOD_read_xml_type_cell_xml_array [115]
+                0.00    0.00      17/17          __xml_data_geometry_t_MOD_read_xml_type_surface_xml_array [118]
+                0.00    0.00       4/4           __xml_data_geometry_t_MOD_read_xml_type_lattice_xml_array [137]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_open [139]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_options [140]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_close [138]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_materials_xml [170]
+[195]    0.0    0.00    0.00       1         __xml_data_materials_t_MOD_read_xml_file_materials_t [195]
+                0.00    0.00      40/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00      39/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00      38/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00      12/12          __xml_data_materials_t_MOD_read_xml_type_material_xml_array [125]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_open [139]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_options [140]
+                0.00    0.00       1/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_close [138]
+                0.00    0.00       1/43          __xmlparse_MOD_xml_report_errors_extern_ [109]
+-----------------------------------------------
+                0.00    0.00       1/1           __input_xml_MOD_read_settings_xml [171]
+[196]    0.0    0.00    0.00       1         __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+                0.00    0.00      20/43          __xmlparse_MOD_xml_report_errors_extern_ [109]
+                0.00    0.00       5/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00       4/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00       3/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_open [139]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_options [140]
+                0.00    0.00       1/4           __xmlparse_MOD_xml_close [138]
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_mesh_xml_array [199]
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+-----------------------------------------------
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+[197]    0.0    0.00    0.00       1         __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
+                0.00    0.00       5/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00       5/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00       4/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00       2/43          __xmlparse_MOD_xml_report_errors_extern_ [109]
+                0.00    0.00       1/6540        __read_xml_primitives_MOD_read_xml_word [75]
+                0.00    0.00       1/28          __read_xml_primitives_MOD_read_xml_double_array [113]
+-----------------------------------------------
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_mesh_xml_array [199]
+[198]    0.0    0.00    0.00       1         __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+                0.00    0.00       5/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00       5/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00       4/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00       2/28          __read_xml_primitives_MOD_read_xml_double_array [113]
+                0.00    0.00       1/43          __xmlparse_MOD_xml_report_errors_extern_ [109]
+-----------------------------------------------
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[199]    0.0    0.00    0.00       1         __xml_data_settings_t_MOD_read_xml_type_mesh_xml_array [199]
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_mesh_xml [198]
+-----------------------------------------------
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[200]    0.0    0.00    0.00       1         __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml [200]
+                0.00    0.00       7/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00       7/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00       6/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00       2/4252        __read_xml_primitives_MOD_read_xml_integer [81]
+                0.00    0.00       1/6540        __read_xml_primitives_MOD_read_xml_word [75]
+-----------------------------------------------
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_file_settings_t [196]
+[201]    0.0    0.00    0.00       1         __xml_data_settings_t_MOD_read_xml_type_source_xml [201]
+                0.00    0.00       4/43          __xmlparse_MOD_xml_report_errors_extern_ [109]
+                0.00    0.00       2/2698        __xmlparse_MOD_xml_get [85]
+                0.00    0.00       2/2694        __xmlparse_MOD_xml_error [87]
+                0.00    0.00       1/18013       __xmlparse_MOD_xml_ok [70]
+                0.00    0.00       1/1           __xml_data_settings_t_MOD_read_xml_type_distribution_xml [197]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
@@ -1253,61 +1425,68 @@ index % time    self  children    called     name
 
 Index by function name
 
-   [1] MAIN__                [153] initialize_mp_read_command_line_ [82] random_lcg_mp_set_particle_seed_
-  [56] __intel_memset         [67] input_xml_mp_read_geometry_xml_ [115] read_xml_primitives_mp_read_from_buffer_doubles_
-  [57] __intel_ssse3_memcpy   [41] input_xml_mp_read_input_xml_ [114] read_xml_primitives_mp_read_from_buffer_integers_
-  [22] __intel_ssse3_rep_memcpy [64] input_xml_mp_read_materials_xml_ [61] read_xml_primitives_mp_read_xml_double_
-  [58] __libm_setusermatherrf [74] input_xml_mp_read_settings_xml_ [71] read_xml_primitives_mp_read_xml_double_array_
-  [27] __libm_sse2_sincos    [154] input_xml_mp_read_tallies_xml_ [62] read_xml_primitives_mp_read_xml_integer_
-  [33] _intel_fast_memcmp      [8] interpolation_mp_interpolate_tab1_array_ [70] read_xml_primitives_mp_read_xml_integer_array_
-  [59] _intel_fast_memcpy    [100] list_header_mp_list_append_char_ [60] read_xml_primitives_mp_read_xml_word_
-  [87] ace_header_mp_distenergy_clear_ [155] list_header_mp_list_append_int_ [53] ri_find_field
- [108] ace_header_mp_nuclide_clear_ [104] list_header_mp_list_append_real_ [54] ri_get_field
- [112] ace_mp_get_energy_dist_ [118] list_header_mp_list_clear_char_ [43] search._
-  [85] ace_mp_length_energy_dist_ [125] list_header_mp_list_clear_int_ [6] search_mp_binary_search_real_
-  [19] ace_mp_read_ace_table_ [119] list_header_mp_list_clear_real_ [102] set_header_mp_set_add_char_
-  [31] ace_mp_read_energy_dist_ [98] list_header_mp_list_contains_char_ [170] set_header_mp_set_add_int_
-  [32] ace_mp_read_esz_      [138] list_header_mp_list_contains_int_ [171] set_header_mp_set_clear_char_
- [109] ace_mp_read_nu_data_  [105] list_header_mp_list_get_item_char_ [126] set_header_mp_set_clear_int_
-  [40] ace_mp_read_reactions_ [106] list_header_mp_list_get_item_real_ [103] set_header_mp_set_contains_char_
- [143] ace_mp_read_thermal_data_ [99] list_header_mp_list_index_char_ [172] set_header_mp_set_contains_int_
-  [20] ace_mp_read_xs_       [139] list_header_mp_list_index_int_ [23] set_header_mp_set_size_int_
- [144] cmfd_header_mp_deallocate_cmfd_ [51] list_header_mp_list_remove_char_ [35] source_mp_get_source_particle_
-  [37] cos.N                 [120] list_header_mp_list_size_char_ [34] source_mp_initialize_source_
-   [5] cross_section_mp_calculate_xs_ [30] list_header_mp_list_size_int_ [173] state_point_mp_write_state_point_
-  [88] dict_header_mp_dict_add_key_ci_ [25] log           [89] string_mp_ends_with_
- [110] dict_header_mp_dict_add_key_ii_ [21] log.L        [124] string_mp_int4_to_str_
- [131] dict_header_mp_dict_clear_ci_ [80] math_mp_maxwell_spectrum_ [111] string_mp_lower_case_
- [123] dict_header_mp_dict_clear_ii_ [63] math_mp_watt_spectrum_ [135] string_mp_real_to_str_
-  [84] dict_header_mp_dict_get_elem_ci_ [156] mesh_mp_count_bank_sites_ [94] string_mp_starts_with_
-  [90] dict_header_mp_dict_get_elem_ii_ [140] output_interface_mp_file_close_ [116] string_mp_str_to_int_
-  [95] dict_header_mp_dict_get_key_ci_ [157] output_interface_mp_file_create_ [127] string_mp_upper_case_
-  [97] dict_header_mp_dict_get_key_ii_ [158] output_interface_mp_file_open_ [174] tally_initialize_mp_configure_tallies_
- [101] dict_header_mp_dict_has_key_ci_ [132] output_interface_mp_write_double_ [175] tally_mp_setup_active_usertallies_
-  [96] dict_header_mp_dict_has_key_ii_ [133] output_interface_mp_write_double_1darray_ [81] tally_mp_synchronize_tallies_
- [145] dict_header_mp_dict_keys_ii_ [117] output_interface_mp_write_integer_ [121] timer_header_mp_timer_start_
- [136] eigenvalue_mp_calculate_combined_keff_ [141] output_interface_mp_write_long_ [122] timer_header_mp_timer_stop_
-   [3] eigenvalue_mp_run_eigenvalue_ [159] output_interface_mp_write_source_bank_ [55] tracking._
- [146] eigenvalue_mp_shannon_entropy_ [142] output_interface_mp_write_string_ [4] tracking_mp_transport_
-  [86] endf_header_mp_tab1_clear_ [160] output_interface_mp_write_tally_result_ [44] xml_data_cross_sections_t_mp_read_xml_file_cross_sections_t_
- [137] error_mp_warning_     [134] output_mp_header_      [68] xml_data_geometry_t_mp_read_xml_file_geometry_t_
- [147] finalize_mp_finalize_run_ [161] output_mp_print_batch_keff_ [73] xml_data_geometry_t_mp_read_xml_type_lattice_xml_
- [148] fission_bank_lib_mp_allocate_banks_ [162] output_mp_print_columns_ [65] xml_data_materials_t_mp_read_xml_file_materials_t_
- [149] fission_bank_lib_mp_free_banks_ [163] output_mp_print_results_ [72] xml_data_materials_t_mp_read_xml_type_density_xml_
-  [38] fission_mp_nu_delayed_ [164] output_mp_print_runtime_ [66] xml_data_materials_t_mp_read_xml_type_material_xml_
-   [9] fission_mp_nu_total_  [165] output_mp_time_stamp_  [75] xml_data_settings_t_mp_read_xml_file_settings_t_
-  [47] for__desc_ret_item    [166] output_mp_title_       [77] xml_data_settings_t_mp_read_xml_type_distribution_xml_
-  [48] for_adjustl           [107] output_mp_write_message_ [78] xml_data_settings_t_mp_read_xml_type_mesh_xml_array_
-  [49] for_alloc_allocatable [167] output_mp_write_tallies_ [76] xml_data_settings_t_mp_read_xml_type_run_parameters_xml_
-  [42] for_cpstr              [69] particle_header_mp_clear_particle_ [79] xml_data_settings_t_mp_read_xml_type_source_xml_
-  [28] for_index              [45] particle_header_mp_deallocate_coord_ [128] xmlparse_mp_xml_close_
-  [36] for_len_trim           [39] particle_header_mp_initialize_particle_ [92] xmlparse_mp_xml_error_
-  [50] for_read_dir_xmit      [10] physics_mp_collision_  [46] xmlparse_mp_xml_find_attrib_
-  [15] geometry_mp_cross_lattice_ [26] physics_mp_create_fission_sites_ [91] xmlparse_mp_xml_get_
-  [14] geometry_mp_cross_surface_ [11] physics_mp_elastic_scatter_ [83] xmlparse_mp_xml_ok_
-   [7] geometry_mp_distance_to_boundary_ [17] physics_mp_sab_scatter_ [129] xmlparse_mp_xml_open_
-  [18] geometry_mp_find_cell_ [13] physics_mp_sample_angle_ [130] xmlparse_mp_xml_options_
- [150] geometry_mp_neighbor_lists_ [52] random_lcg._      [93] xmlparse_mp_xml_report_details_string__
- [151] global_mp_free_memory_ [168] random_lcg_mp_initialize_prng_ [113] xmlparse_mp_xml_report_errors_extern__
- [152] initialize_mp_adjust_indices_ [24] random_lcg_mp_prn_ [29] <cycle 1>
-  [16] initialize_mp_initialize_run_ [169] random_lcg_mp_prn_skip_ [12] <cycle 2>
+  [36] __ace_MOD_get_energy_dist [8] __interpolation_MOD_interpolate_tab1_array [111] __read_xml_primitives_MOD_read_xml_integer_array
+  [76] __ace_MOD_length_energy_dist [95] __list_header_MOD_list_append_char [75] __read_xml_primitives_MOD_read_xml_word
+  [18] __ace_MOD_read_ace_table [173] __list_header_MOD_list_append_int [25] __search_MOD_binary_search_int4
+  [55] __ace_MOD_read_angular_dist [99] __list_header_MOD_list_append_real [5] __search_MOD_binary_search_real
+  [37] __ace_MOD_read_energy_dist [120] __list_header_MOD_list_clear_char [97] __set_header_MOD_set_add_char
+  [40] __ace_MOD_read_esz    [132] __list_header_MOD_list_clear_int [186] __set_header_MOD_set_add_int
+  [57] __ace_MOD_read_nu_data [121] __list_header_MOD_list_clear_real [187] __set_header_MOD_set_clear_char
+  [41] __ace_MOD_read_reactions [93] __list_header_MOD_list_contains_char [134] __set_header_MOD_set_clear_int
+ [153] __ace_MOD_read_thermal_data [147] __list_header_MOD_list_contains_int [98] __set_header_MOD_set_contains_char
+ [105] __ace_MOD_read_unr_res [100] __list_header_MOD_list_get_item_char [188] __set_header_MOD_set_contains_int
+  [19] __ace_MOD_read_xs     [101] __list_header_MOD_list_get_item_real [46] __set_header_MOD_set_remove_char
+  [72] __ace_header_MOD_distangle_clear [94] __list_header_MOD_list_index_char [39] __set_header_MOD_set_size_int
+  [78] __ace_header_MOD_distenergy_clear [148] __list_header_MOD_list_index_int [45] __source_MOD_get_source_particle
+ [106] __ace_header_MOD_nuclide_clear [122] __list_header_MOD_list_size_char [48] __source_MOD_initialize_source
+  [73] __ace_header_MOD_reaction_clear [43] __list_header_MOD_list_size_int [50] __source_MOD_sample_external_source
+ [154] __cmfd_header_MOD_deallocate_cmfd [60] __math_MOD_maxwell_spectrum [189] __state_point_MOD_write_state_point
+   [4] __cross_section_MOD_calculate_nuclide_xs [58] __math_MOD_watt_spectrum [82] __string_MOD_ends_with
+  [22] __cross_section_MOD_calculate_sab_xs [174] __mesh_MOD_count_bank_sites [131] __string_MOD_int4_to_str
+   [6] __cross_section_MOD_calculate_urr_xs [69] __mesh_MOD_get_mesh_indices [108] __string_MOD_lower_case
+   [3] __cross_section_MOD_calculate_xs [133] __output_MOD_header [144] __string_MOD_real_to_str
+  [56] __cross_section_MOD_find_energy_index [175] __output_MOD_print_batch_keff [88] __string_MOD_starts_with
+  [79] __dict_header_MOD_dict_add_key_ci [176] __output_MOD_print_columns [116] __string_MOD_str_to_int
+ [107] __dict_header_MOD_dict_add_key_ii [177] __output_MOD_print_results [135] __string_MOD_upper_case
+ [141] __dict_header_MOD_dict_clear_ci [178] __output_MOD_print_runtime [190] __tally_MOD_setup_active_usertallies
+ [128] __dict_header_MOD_dict_clear_ii [149] __output_MOD_time_stamp [62] __tally_MOD_synchronize_tallies
+  [74] __dict_header_MOD_dict_get_elem_ci [179] __output_MOD_title [191] __tally_initialize_MOD_configure_tallies
+  [83] __dict_header_MOD_dict_get_elem_ii [104] __output_MOD_write_message [192] __tally_initialize_MOD_setup_tally_arrays
+  [90] __dict_header_MOD_dict_get_key_ci [180] __output_MOD_write_tallies [193] __tally_initialize_MOD_setup_tally_maps
+  [92] __dict_header_MOD_dict_get_key_ii [150] __output_interface_MOD_file_close [126] __timer_header_MOD_timer_start
+  [96] __dict_header_MOD_dict_has_key_ci [181] __output_interface_MOD_file_create [127] __timer_header_MOD_timer_stop
+  [91] __dict_header_MOD_dict_has_key_ii [182] __output_interface_MOD_file_open [2] __tracking_MOD_transport
+ [155] __dict_header_MOD_dict_keys_ii [142] __output_interface_MOD_write_double [30] __xml_data_cross_sections_t_MOD_read_xml_file_cross_sections_t
+ [156] __eigenvalue_MOD_calculate_average_keff [143] __output_interface_MOD_write_double_1darray [89] __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml
+ [145] __eigenvalue_MOD_calculate_combined_keff [119] __output_interface_MOD_write_integer [27] __xml_data_cross_sections_t_MOD_read_xml_type_ace_table_xml_array
+  [61] __eigenvalue_MOD_finalize_batch [151] __output_interface_MOD_write_long [194] __xml_data_geometry_t_MOD_read_xml_file_geometry_t
+ [157] __eigenvalue_MOD_initialize_batch [183] __output_interface_MOD_write_source_bank [114] __xml_data_geometry_t_MOD_read_xml_type_cell_xml
+   [1] __eigenvalue_MOD_run_eigenvalue [152] __output_interface_MOD_write_string [115] __xml_data_geometry_t_MOD_read_xml_type_cell_xml_array
+ [158] __eigenvalue_MOD_shannon_entropy [184] __output_interface_MOD_write_tally_result [136] __xml_data_geometry_t_MOD_read_xml_type_lattice_xml
+  [59] __eigenvalue_MOD_synchronize_bank [51] __particle_header_MOD_clear_particle [137] __xml_data_geometry_t_MOD_read_xml_type_lattice_xml_array
+  [77] __endf_header_MOD_tab1_clear [54] __particle_header_MOD_deallocate_coord [117] __xml_data_geometry_t_MOD_read_xml_type_surface_xml
+ [146] __error_MOD_warning    [52] __particle_header_MOD_initialize_particle [118] __xml_data_geometry_t_MOD_read_xml_type_surface_xml_array
+  [68] __fission_MOD_nu_delayed [47] __physics_MOD_absorption [195] __xml_data_materials_t_MOD_read_xml_file_materials_t
+  [35] __fission_MOD_nu_total  [9] __physics_MOD_collision [123] __xml_data_materials_t_MOD_read_xml_type_density_xml
+ [159] __fission_bank_lib_MOD_allocate_banks [32] __physics_MOD_create_fission_sites [124] __xml_data_materials_t_MOD_read_xml_type_material_xml
+  [21] __geometry_MOD_cross_lattice [12] __physics_MOD_elastic_scatter [125] __xml_data_materials_t_MOD_read_xml_type_material_xml_array
+  [16] __geometry_MOD_cross_surface [44] __physics_MOD_inelastic_scatter [102] __xml_data_materials_t_MOD_read_xml_type_nuclide_xml
+   [7] __geometry_MOD_distance_to_boundary [23] __physics_MOD_rotate_angle [103] __xml_data_materials_t_MOD_read_xml_type_nuclide_xml_array
+  [13] __geometry_MOD_find_cell [17] __physics_MOD_sab_scatter [129] __xml_data_materials_t_MOD_read_xml_type_sab_xml
+ [160] __geometry_MOD_neighbor_lists [15] __physics_MOD_sample_angle [130] __xml_data_materials_t_MOD_read_xml_type_sab_xml_array
+  [24] __geometry_MOD_sense   [34] __physics_MOD_sample_energy [196] __xml_data_settings_t_MOD_read_xml_file_settings_t
+  [20] __geometry_MOD_simple_cell_contains [53] __physics_MOD_sample_fission [197] __xml_data_settings_t_MOD_read_xml_type_distribution_xml
+ [161] __global_MOD_free_memory [33] __physics_MOD_sample_fission_energy [198] __xml_data_settings_t_MOD_read_xml_type_mesh_xml
+ [162] __initialize_MOD_adjust_indices [38] __physics_MOD_sample_nuclide [199] __xml_data_settings_t_MOD_read_xml_type_mesh_xml_array
+ [163] __initialize_MOD_calculate_work [10] __physics_MOD_sample_reaction [200] __xml_data_settings_t_MOD_read_xml_type_run_parameters_xml
+ [164] __initialize_MOD_display_grid_sizes [26] __physics_MOD_sample_target_velocity [201] __xml_data_settings_t_MOD_read_xml_type_source_xml
+ [165] __initialize_MOD_normalize_ao [11] __physics_MOD_scatter [138] __xmlparse_MOD_xml_close
+ [166] __initialize_MOD_prepare_universes [42] __random_lcg_MOD_initialize_prng [84] __xmlparse_MOD_xml_compress_
+ [167] __initialize_MOD_read_command_line [31] __random_lcg_MOD_prn [87] __xmlparse_MOD_xml_error
+ [168] __initialize_MOD_resize_egrid [185] __random_lcg_MOD_prn_skip [71] __xmlparse_MOD_xml_find_attrib
+  [28] __input_xml_MOD_read_cross_sections_xml [49] __random_lcg_MOD_set_particle_seed [85] __xmlparse_MOD_xml_get
+ [169] __input_xml_MOD_read_geometry_xml [112] __read_xml_primitives_MOD_read_from_buffer_doubles [70] __xmlparse_MOD_xml_ok
+  [29] __input_xml_MOD_read_input_xml [110] __read_xml_primitives_MOD_read_from_buffer_integers [139] __xmlparse_MOD_xml_open
+ [170] __input_xml_MOD_read_materials_xml [80] __read_xml_primitives_MOD_read_xml_double [140] __xmlparse_MOD_xml_options
+ [171] __input_xml_MOD_read_settings_xml [113] __read_xml_primitives_MOD_read_xml_double_array [86] __xmlparse_MOD_xml_replace_entities_
+ [172] __input_xml_MOD_read_tallies_xml [81] __read_xml_primitives_MOD_read_xml_integer [109] __xmlparse_MOD_xml_report_errors_extern_

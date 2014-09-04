@@ -15,7 +15,7 @@ __________________888______________________________________________________
       License:       http://mit-crpg.github.io/openmc/license.html
       Version:        0.5.3
       Git SHA1:       7e98d3bc10fee2f934bee3c1053cd0c9010b9994
-      Date/Time:      2014-09-02 14:24:34
+      Date/Time:      2014-09-04 10:31:54
 
  ===========================================================================
  ========================>     INITIALIZATION     <=========================
@@ -84,7 +84,6 @@ __________________888______________________________________________________
  Loading ACE cross section table: 98250.70c
  Loading ACE cross section table: 98251.70c
  Loading ACE cross section table: 98252.70c
- WARNING: Negative value(s) found on probability table for nuclide  98252.70c
  Loading ACE cross section table: 98254.70c
  Loading ACE cross section table: 99254.70c
  Loading ACE cross section table: 99255.70c
@@ -368,6 +367,8 @@ __________________888______________________________________________________
    Egrid interpolation threshold:  0.0            
    ...Finished reconstructing egrid
  Microscopic Cross-section Info
+ WARNING: Negative value(s) found on probability table for nuclide  98252.70c
+ WARNING: Could not compute uncertainties -- only one active batch simulated!
   Grid method:                  nuclide
   Number of nuclides:           336        
   Number of nuclide gridpoints: 4396596    
@@ -390,26 +391,25 @@ __________________888______________________________________________________
 
  =======================>     TIMING STATISTICS     <=======================
 
- Total time for initialization     =  1.5761E+00 seconds
-   Reading cross sections          =  1.0627E+00 seconds
+ Total time for initialization     =  3.0050E+00 seconds
+   Reading cross sections          =  2.2840E+00 seconds
    Unionizing energy grid          =  0.0000E+00 seconds
- Total time in simulation          =  1.9342E+02 seconds
-   Time in transport only          =  1.9340E+02 seconds
+ Total time in simulation          =  1.9949E+02 seconds
+   Time in transport only          =  1.9945E+02 seconds
    Time in inactive batches        =  0.0000E+00 seconds
-   Time in active batches          =  1.9342E+02 seconds
-   Time synchronizing fission bank =  6.9000E-03 seconds
-     Sampling source sites         =  5.6000E-03 seconds
-     SEND/RECV source sites        =  1.3000E-03 seconds
+   Time in active batches          =  1.9949E+02 seconds
+   Time synchronizing fission bank =  6.0000E-03 seconds
+     Sampling source sites         =  6.0000E-03 seconds
+     SEND/RECV source sites        =  0.0000E+00 seconds
    Time accumulating tallies       =  0.0000E+00 seconds
  Total time for finalization       =  0.0000E+00 seconds
- Total time elapsed                =  1.9500E+02 seconds
- Calculation Rate (active)         =  517.007 neutrons/second
+ Total time elapsed                =  2.0249E+02 seconds
+ Calculation Rate (active)         =  501.288 neutrons/second
 
  ============================>     RESULTS     <============================
 
- WARNING: Could not compute uncertainties -- only one active batch simulated!
  k-effective (Collision)     =  0.91506
  k-effective (Track-length)  =  0.91925
  k-effective (Absorption)    =  0.91106
  Leakage Fraction            =  0.00095
- 
+
