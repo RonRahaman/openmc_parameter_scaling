@@ -63,7 +63,7 @@ class ParsedBatch(object):
                 sys.stdout.flush()
         sys.stdout.write('done parsing!\n')
 
-        self.dframe.index.name= 'function'
+        # self.dframe.index.name= 'function'
 
         return self.dframe
 
@@ -93,6 +93,8 @@ class ParsedBatch(object):
             prefix = ''; sep = '_mp_'; suffix = '_'
         elif (compiler == 'gnu'):
             prefix = '__'; sep = '_MOD_'; suffix = ''
+        elif (compiler == 'ibm'):
+            prefix = '.__'; sep = '_NMOD_'; suffix = ''
         else:
             raise ValueError('unrecognized compiler for function names: %s' % (compiler))
         self.dframe.index = [x.split(sep)[-1].rstrip(suffix) for x in self.dframe.index]
