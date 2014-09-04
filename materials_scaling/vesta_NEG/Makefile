@@ -1,7 +1,5 @@
 qsub:
-	../set_matlib.sh nuclide
-	qsub -A mc_transport -n 32 -t 20 --mode script job.sh
+	qsub -A mc_transport -n 64 -t 45 --mode script job.sh
 
 clean:
-	rm *.output *.error *.cobaltlog statepoint* *gmon.out*
-
+	rm -f *.output *.error *.cobaltlog statepoint* *gmon.out*

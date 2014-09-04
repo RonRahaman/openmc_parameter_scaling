@@ -1,5 +1,5 @@
 #!/bin/bash
-#COBALT -n 32 -O qsub
+#COBALT -n 64 -O qsub
 
 #######################################################
 # Setup for subblock job
@@ -8,7 +8,7 @@
 export PATH=$PATH:/soft/cobalt/bgq_hardware_mapper
 SHAPE="1x1x1x1x1"                                 # Desired corner shape
 CORNERS=`get-corners.py $COBALT_PARTNAME $SHAPE`  # The corners
-MAXRUNJOB=32                                      # Maximum number of jobs
+MAXRUNJOB=64                                      # Maximum number of jobs
 
 
 #######################################################
@@ -19,7 +19,8 @@ SETTINGS=($( ls -d $PWD/matlib/* ))                # Locations of settings direc
 EXEC_PATH=$HOME/openmc/src/openmc                  # Path to executable
 CROSS_SECTIONS=$HOME/data/cross_sections.xml       # Path to cross_sections
 
-n_reps=3                                           # Number of replicates
+n_reps=4                                           # Number of replicates
+rep_start=0                                        # Starting index for replicates
 n_settings=${#SETTINGS[@]}                         # Number of different settings
 
 #######################################################
@@ -47,13 +48,13 @@ for CORNER in $CORNERS; do
   fi
 
   # Prefix for output files
-  OUT_PREFIX=materials.len_${SETTINGS[$i_setting]##*/}.rep_$i_rep  
+  OUT_PREFIX=${SETTINGS[$i_setting]##*/}.rep_$((rep_start+i_rep))
 
   echo "Run $i_corner corner $CORNER"
 
   runjob --block $COBALT_PARTNAME --corner $CORNER --shape $SHAPE --np 1 \
   --envs CROSS_SECTIONS=$CROSS_SECTIONS XLFRTEOPTS=ufmt_littleendian=7 GMON_OUT_PREFIX=$PWD/$OUT_PREFIX.gmon.out \
-  : $EXEC_PATH ${SETTINGS[$i_setting]} > $PWD/$OUT_PREFIX.output 2>&1 &
+  : $EXEC_PATH --energy-grid nuclide ${SETTINGS[$i_setting]} > $PWD/$OUT_PREFIX.output 2>&1 &
 
   # Important: give runjob time to finish
   sleep 3                                          
