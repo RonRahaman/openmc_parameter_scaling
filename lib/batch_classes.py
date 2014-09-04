@@ -91,9 +91,12 @@ class ParsedBatch(object):
     def clean_func_names(self, compiler):
         if (compiler == 'intel'):
             prefix = ''; sep = '_mp_'; suffix = '_'
+        elif (compiler == 'gnu'):
+            prefix = '__'; sep = '_MOD_'; suffix = ''
         else:
             raise ValueError('unrecognized compiler for function names: %s' % (compiler))
-        self.dframe.rename(index = lambda x: x.split(sep)[-1].rstrip(suffix), inplace=True)
+        self.dframe.index = [x.split(sep)[-1].rstrip(suffix) for x in self.dframe.index]
+        # self.dframe.rename(index = lambda x: x.split(sep)[-1].rstrip(suffix), inplace=True)
 
 
     def grep_output(self, input_path, re_pattern):
