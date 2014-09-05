@@ -1,0 +1,224 @@
+[2.4, 3.2386179821008736, 4.3702693474946388, 5.8973470397584951, 7.9580225706880068, 10.7387479164145, 14.491125878061787, 19.554675353990923, 26.387551348158237, 35.607999291564752, 48.050294505123652, 64.840228262306766, 87.496970505763315, 118.07052585804784, 159.32722008332496, 214.99999999999986]
+[87.496970505763315, 118.07052585804784, 159.32722008332496, 214.99999999999986, 290.12619422986972, 391.50329571306116, 528.30400564503157, 712.90618862413362, 962.01283417879847, 1298.1633599097011]
+NEG, target size = 2.4
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.750000, size = 3.554580
+    thresh = 0.875000, size = 2.133730
+    thresh = 0.812500, size = 2.805630
+    thresh = 0.843750, size = 2.448490
+    thresh = 0.859375, size = 2.280670
+    thresh = 0.851562, size = 2.355610
+    thresh = 0.847656, size = 2.411540
+NEG, target size = 3.2386179821
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.750000, size = 3.554580
+    thresh = 0.875000, size = 2.133730
+    thresh = 0.812500, size = 2.805630
+    thresh = 0.781250, size = 3.176740
+    thresh = 0.765625, size = 3.336230
+    thresh = 0.773438, size = 3.278690
+    thresh = 0.777344, size = 3.225040
+NEG, target size = 4.37026934749
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.750000, size = 3.554580
+    thresh = 0.625000, size = 5.215710
+    thresh = 0.687500, size = 4.282520
+    thresh = 0.656250, size = 4.733550
+    thresh = 0.671875, size = 4.482240
+    thresh = 0.679688, size = 4.385700
+NEG, target size = 5.89734703976
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.750000, size = 3.554580
+    thresh = 0.625000, size = 5.215710
+    thresh = 0.562500, size = 6.127210
+    thresh = 0.593750, size = 5.680110
+    thresh = 0.578125, size = 5.898150
+NEG, target size = 7.95802257069
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.375000, size = 10.261500
+    thresh = 0.437500, size = 8.643040
+    thresh = 0.468750, size = 7.995760
+NEG, target size = 10.7387479164
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.375000, size = 10.261500
+    thresh = 0.312500, size = 12.140100
+    thresh = 0.343750, size = 11.107000
+    thresh = 0.359375, size = 10.705600
+NEG, target size = 14.4911258781
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+NEG, target size = 19.554675354
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.187500, size = 18.061500
+    thresh = 0.156250, size = 20.406600
+    thresh = 0.171875, size = 19.163600
+    thresh = 0.164062, size = 19.762400
+    thresh = 0.167969, size = 19.463500
+NEG, target size = 26.3875513482
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.093750, size = 28.449900
+    thresh = 0.109375, size = 25.928400
+    thresh = 0.101562, size = 27.146900
+    thresh = 0.105469, size = 26.485700
+NEG, target size = 35.6079992916
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+NEG, target size = 48.0502945051
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.031250, size = 51.809200
+    thresh = 0.046875, size = 41.504300
+    thresh = 0.039062, size = 45.643500
+    thresh = 0.035156, size = 48.429000
+NEG, target size = 64.8402282623
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.031250, size = 51.809200
+    thresh = 0.015625, size = 75.814400
+    thresh = 0.023438, size = 61.096600
+    thresh = 0.019531, size = 67.496500
+    thresh = 0.021484, size = 64.041700
+    thresh = 0.020508, size = 65.713000
+    thresh = 0.020996, size = 64.859500
+NEG, target size = 87.4969705058
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.031250, size = 51.809200
+    thresh = 0.015625, size = 75.814400
+    thresh = 0.007812, size = 102.191000
+    thresh = 0.011719, size = 87.171800
+NEG, target size = 118.070525858
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.031250, size = 51.809200
+    thresh = 0.015625, size = 75.814400
+    thresh = 0.007812, size = 102.191000
+    thresh = 0.003906, size = 130.049000
+    thresh = 0.005859, size = 113.799000
+    thresh = 0.004883, size = 121.109000
+    thresh = 0.005371, size = 117.288000
+NEG, target size = 159.327220083
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.031250, size = 51.809200
+    thresh = 0.015625, size = 75.814400
+    thresh = 0.007812, size = 102.191000
+    thresh = 0.003906, size = 130.049000
+    thresh = 0.001953, size = 168.056000
+    thresh = 0.002930, size = 145.742000
+    thresh = 0.002441, size = 155.820000
+    thresh = 0.002197, size = 161.554000
+    thresh = 0.002319, size = 158.605000
+NEG, target size = 215.0
+    thresh = 0.500000, size = 7.327470
+    thresh = 0.250000, size = 14.598100
+    thresh = 0.125000, size = 23.704100
+    thresh = 0.062500, size = 35.782100
+    thresh = 0.031250, size = 51.809200
+    thresh = 0.015625, size = 75.814400
+    thresh = 0.007812, size = 102.191000
+    thresh = 0.003906, size = 130.049000
+    thresh = 0.001953, size = 168.056000
+    thresh = 0.000977, size = 197.091000
+    thresh = 0.000488, size = 201.522000
+    thresh = 0.000244, size = 204.845000
+    thresh = 0.000122, size = 206.702000
+    thresh = 0.000061, size = 208.003000
+    thresh = 0.000031, size = 209.292000
+    thresh = 0.000015, size = 210.716000
+    thresh = 0.000008, size = 211.975000
+    thresh = 0.000004, size = 213.079000
+UEG, target size = 87.4969705058
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.750000, size = 103.537000
+    thresh = 0.875000, size = 61.002300
+    thresh = 0.812500, size = 81.148600
+    thresh = 0.781250, size = 92.204800
+    thresh = 0.796875, size = 86.097900
+    thresh = 0.789062, size = 89.958600
+    thresh = 0.792969, size = 88.040900
+UEG, target size = 118.070525858
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.750000, size = 103.537000
+    thresh = 0.625000, size = 152.957000
+    thresh = 0.687500, size = 125.250000
+    thresh = 0.718750, size = 114.042000
+    thresh = 0.703125, size = 119.062000
+UEG, target size = 159.327220083
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.750000, size = 103.537000
+    thresh = 0.625000, size = 152.957000
+    thresh = 0.562500, size = 180.297000
+    thresh = 0.593750, size = 166.844000
+    thresh = 0.609375, size = 160.138000
+UEG, target size = 215.0
+    thresh = 0.500000, size = 215.856000
+UEG, target size = 290.12619423
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.250000, size = 432.481000
+    thresh = 0.375000, size = 303.067000
+    thresh = 0.437500, size = 255.366000
+    thresh = 0.406250, size = 278.617000
+    thresh = 0.390625, size = 290.419000
+UEG, target size = 391.503295713
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.250000, size = 432.481000
+    thresh = 0.375000, size = 303.067000
+    thresh = 0.312500, size = 359.125000
+    thresh = 0.281250, size = 393.928000
+UEG, target size = 528.304005645
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.250000, size = 432.481000
+    thresh = 0.125000, size = 701.559000
+    thresh = 0.187500, size = 534.907000
+    thresh = 0.218750, size = 476.948000
+    thresh = 0.203125, size = 504.318000
+    thresh = 0.195312, size = 519.983000
+    thresh = 0.191406, size = 527.471000
+UEG, target size = 712.906188624
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.250000, size = 432.481000
+    thresh = 0.125000, size = 701.559000
+    thresh = 0.062500, size = 1054.050000
+    thresh = 0.093750, size = 840.714000
+    thresh = 0.109375, size = 767.080000
+    thresh = 0.117188, size = 734.354000
+    thresh = 0.121094, size = 719.626000
+UEG, target size = 962.012834179
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.250000, size = 432.481000
+    thresh = 0.125000, size = 701.559000
+    thresh = 0.062500, size = 1054.050000
+    thresh = 0.093750, size = 840.714000
+    thresh = 0.078125, size = 932.012000
+    thresh = 0.070312, size = 987.812000
+    thresh = 0.074219, size = 959.206000
+UEG, target size = 1298.16335991
+    thresh = 0.500000, size = 215.856000
+    thresh = 0.250000, size = 432.481000
+    thresh = 0.125000, size = 701.559000
+    thresh = 0.062500, size = 1054.050000
+    thresh = 0.031250, size = 1514.460000
+    thresh = 0.046875, size = 1219.180000
+    thresh = 0.039062, size = 1337.700000
+    thresh = 0.042969, size = 1274.240000
+    thresh = 0.041016, size = 1305.050000

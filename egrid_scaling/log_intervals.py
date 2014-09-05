@@ -38,12 +38,18 @@ if __name__ == '__main__':
     print neg
     print ueg
 
-    neg_dict = {}
+    results = open('neg_sizes.txt', 'w')
+    results.write('size\tthresh\n')
     for v in neg:
         print 'NEG, target size = %s' % v
-        neg_dict[v] = find_resize_value(egrid='nuclide', target_size=v, max_error=0.01)
+        results.write('%s\t%s\n' % (v, find_resize_value(egrid='nuclide', target_size=v, max_error=0.01)))
+    results.close()
 
-    ueg_dict = {}
+    results = open('ueg_sizes.txt', 'w')
+    results.write('size\tthresh\n')
     for v in ueg:
         print 'UEG, target size = %s' % v
-        neg_dict[v] = find_resize_value(egrid='union', target_size=v, max_error=0.01)
+        results.write('%s\t%s\n' % (v, find_resize_value(egrid='union', target_size=v, max_error=0.01)))
+    results.close()
+
+
