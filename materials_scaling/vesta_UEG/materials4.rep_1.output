@@ -1,0 +1,151 @@
+2014-09-05 02:24:22.985 (INFO ) [0xfffa93bbde0] ibm.runjob.AbstractOptions: using properties file /bgsys/local/etc/bg.properties
+2014-09-05 02:24:22.986 (INFO ) [0xfffa93bbde0] ibm.runjob.AbstractOptions: max open file descriptors: 65536
+2014-09-05 02:24:22.986 (INFO ) [0xfffa93bbde0] ibm.runjob.AbstractOptions: core file limit: 18446744073709551615
+2014-09-05 02:24:22.987 (INFO ) [0xfffa93bbde0] 29415:tatu.runjob.client: scheduler job id is 215023
+2014-09-05 02:24:22.992 (INFO ) [0xfff9d8a34e0] 29415:tatu.runjob.monitor: monitor started
+2014-09-05 02:24:26.434 (INFO ) [0xfff9d8a34e0] 29415:tatu.runjob.monitor: task record 730437 created
+2014-09-05 02:24:26.435 (INFO ) [0xfffa93bbde0] VST-00460-11771-64:29415:ibm.runjob.client.options.Parser: set local socket to runjob_mux from properties file
+2014-09-05 02:24:28.207 (INFO ) [0xfffa93bbde0] VST-00460-11771-64:929803:ibm.runjob.client.Job: job 929803 started
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:        0.5.3
+      Date/Time:      2014-09-05 02:24:28
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+2014-09-05 02:24:31.619 (INFO ) [0xfff9d8a34e0] 29415:tatu.runjob.monitor: tracklib completed
+ Reading geometry XML file...
+ Reading materials XML file...
+ Building neighboring cells lists for each surface...
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92236.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 90227.70c
+ Loading ACE cross section table: 90228.70c
+ Loading ACE cross section table: 90229.70c
+ Loading ACE cross section table: 90230.70c
+ Loading ACE cross section table: 90232.70c
+ Loading ACE cross section table: 90233.70c
+ Loading ACE cross section table: 90234.70c
+ Loading ACE cross section table: 91231.70c
+ Loading ACE cross section table: 91232.70c
+ Loading ACE cross section table: 91233.70c
+ Loading ACE cross section table: 92232.70c
+ Loading ACE cross section table: 92233.70c
+ Loading ACE cross section table: 92237.70c
+ Loading ACE cross section table: 92239.70c
+ Loading ACE cross section table: 92240.70c
+ Loading ACE cross section table: 92241.70c
+ Loading ACE cross section table: 93235.70c
+ Loading ACE cross section table: 93236.70c
+ Loading ACE cross section table: 93237.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: lwtr.10t
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 25055.70c
+ Loading ACE cross section table: 42092.70c
+ Loading ACE cross section table: 42094.70c
+ Loading ACE cross section table: 42095.70c
+ Loading ACE cross section table: 42096.70c
+ Loading ACE cross section table: 42097.70c
+ Loading ACE cross section table: 42098.70c
+ Loading ACE cross section table: 42100.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 6000.70c
+ Loading ACE cross section table: 29063.70c
+ Loading ACE cross section table: 29065.70c
+ Begin reconstructing egrid...
+   Egrid interpolation threshold:  0.0            
+   ...Finished reconstructing egrid
+ Creating unionized energy grid...
+ Microscopic Cross-section Info
+  Grid method:                  union
+  Number of nuclides:           59         
+  Number of nuclide gridpoints: 1030404    
+  Number of union gridpoints:   945709     
+  Size of micro xs data (MB):   263.624        
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k       Entropy         Average k      
+  =========   ========   ========   ====================
+        1/1    0.91941   12.08605
+ Creating state point statepoint.1.binary...
+
+ ===========================================================================
+ ======================>     SIMULATION FINISHED     <======================
+ ===========================================================================
+
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  6.6310E+01 seconds
+   Reading cross sections          =  1.0620E+01 seconds
+   Unionizing energy grid          =  4.8390E+01 seconds
+ Total time in simulation          =  2.8383E+02 seconds
+   Time in transport only          =  2.8362E+02 seconds
+   Time in inactive batches        =  0.0000E+00 seconds
+   Time in active batches          =  2.8383E+02 seconds
+   Time synchronizing fission bank =  6.0000E-02 seconds
+     Sampling source sites         =  5.0000E-02 seconds
+     SEND/RECV source sites        =  1.0000E-02 seconds
+   Time accumulating tallies       =  0.0000E+00 seconds
+ Total time for finalization       =  0.0000E+00 seconds
+ Total time elapsed                =  3.5017E+02 seconds
+ Calculation Rate (active)         =  352.324 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ WARNING: Could not compute uncertainties -- only one active batch simulated!
+ k-effective (Collision)     =  0.91960
+ k-effective (Track-length)  =  0.91941
+ k-effective (Absorption)    =  0.92267
+ Leakage Fraction            =  0.00083
+ 
+2014-09-05 02:30:20.902 (INFO ) [0xfffa93bbde0] VST-00460-11771-64:929803:ibm.runjob.client.Job: exited with status 0
+2014-09-05 02:30:20.902 (INFO ) [0xfffa93bbde0] tatu.runjob.client: task exited with status 0
+2014-09-05 02:30:20.902 (INFO ) [0xfff9d8a34e0] 29415:tatu.runjob.monitor: monitor terminating
+2014-09-05 02:30:20.905 (INFO ) [0xfffa93bbde0] tatu.runjob.client: monitor completed

@@ -1,0 +1,26 @@
+Jobid: 215023
+qsub --mode script -n 64 -O qsub -A mc_transport -n 64 -t 45 --mode script job.sh
+Fri Sep 05 02:22:03 2014 +0000 (UTC) submitted with cwd set to: /gpfs/vesta-home/rrahaman/openmc_parameter_scaling/materials_scaling/vesta_UEG
+Fri Sep 05 02:22:37 2014 +0000 (UTC) rrahaman/215023: Initiating boot at location VST-00460-11771-64.
+Fri Sep 05 02:23:08 2014 +0000 (UTC) rrahaman/215023: Block VST-00460-11771-64 for location VST-00460-11771-64 successfully booted (Initiating). 
+Fri Sep 05 02:23:10 2014 +0000 (UTC) 
+Fri Sep 05 02:23:10 2014 +0000 (UTC) Command: '/gpfs/vesta-home/rrahaman/openmc_parameter_scaling/materials_scaling/vesta_UEG/job.sh'
+Fri Sep 05 02:23:10 2014 +0000 (UTC) 
+Fri Sep 05 02:23:10 2014 +0000 (UTC) Environment:
+Fri Sep 05 02:23:10 2014 +0000 (UTC) SHELL=/bin/bash
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_NODEFILE=/tmp/tmpFOeiO_
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_PARTNAME=VST-00460-11771-64
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_JOBID=215023
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_STARTTIME=1409883732
+Fri Sep 05 02:23:10 2014 +0000 (UTC) LOGNAME=rrahaman
+Fri Sep 05 02:23:10 2014 +0000 (UTC) USER=rrahaman
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_ENDTIME=1409886432
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_PARTSIZE=64
+Fri Sep 05 02:23:10 2014 +0000 (UTC) HOME=/home/rrahaman
+Fri Sep 05 02:23:10 2014 +0000 (UTC) COBALT_JOBSIZE=64
+Fri Sep 05 02:23:10 2014 +0000 (UTC) 
+Fri Sep 05 02:23:10 2014 +0000 (UTC) Info: stdin received from /dev/null
+Fri Sep 05 02:23:10 2014 +0000 (UTC) Info: stdout sent to /gpfs/vesta-home/rrahaman/openmc_parameter_scaling/materials_scaling/vesta_UEG/qsub.output
+Fri Sep 05 02:23:10 2014 +0000 (UTC) Info: stderr sent to /gpfs/vesta-home/rrahaman/openmc_parameter_scaling/materials_scaling/vesta_UEG/qsub.error
+Fri Sep 05 02:23:10 2014 +0000 (UTC) 
+Fri Sep 05 03:01:03 2014 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal
