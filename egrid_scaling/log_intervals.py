@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import numpy as np
+from find_resize_value import *
 
 def log_intervals(left, right, n):
     result = np.empty(n)
@@ -36,3 +37,13 @@ if __name__ == '__main__':
 
     print neg
     print ueg
+
+    neg_dict = {}
+    for v in neg:
+        print 'NEG, target size = %s' % v
+        neg_dict[v] = find_resize_value(egrid='nuclide', target_size=v, max_error=0.01)
+
+    ueg_dict = {}
+    for v in ueg:
+        print 'UEG, target size = %s' % v
+        neg_dict[v] = find_resize_value(egrid='union', target_size=v, max_error=0.01)
