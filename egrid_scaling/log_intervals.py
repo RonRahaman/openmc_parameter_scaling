@@ -23,7 +23,7 @@ if __name__ == '__main__':
         x = neg[-1]*interval 
         if x < 215:
             neg.append(x)
-            if x >= 67.9:
+            if x >= 64:
                 ueg.append(x)
         else:
             break
