@@ -3,6 +3,20 @@ import numpy as np
 from find_resize_value import *
 
 def log_intervals(left, right, n):
+    """Generate a sequence of logarithmically (natural log) spaced values.
+
+    Args:
+
+        left (float): The left (inclusive) bound of the sequence
+        right (float): The right (inclusive) bound of the sequence
+        n (int): The number of values in the sequence
+
+    Result:
+        
+        numpy.array: An array of logarithmically spaced values
+
+    """
+
     result = np.empty(n)
     interval = np.exp( (np.log(right) - np.log(left)) / (n-1) )
     result[0] = left
@@ -11,6 +25,8 @@ def log_intervals(left, right, n):
     return result
 
 if __name__ == '__main__':
+    """Find data points for egrid scaling study."""
+
     left = 2.4
     right = 215.
     n = 16.
