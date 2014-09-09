@@ -31,13 +31,15 @@ done
 #######################################################
 
 THREADS=(1 2 4 8 16 32)                            # Values for threads
+SIZES=(64.8402282623 290.12619423 1298.16335991)   # Values to resize egrid
 EXEC_PATH="$HOME/openmc/src/openmc"                # Path to executable
 CROSS_SECTIONS="$HOME/data/cross_sections.xml"     # Path to cross_sections
 SETTINGS="$HOME/benchmarks/mc-performance/openmc"  # Settings directory
 
 n_reps=${n_reps:-3}                                # Number of replicates
 rep_start=${rep_start:-0}                          # Start index for replicates
-n_threads=${#THREADS[@]}                               # Number of different settings
+n_threads=${#THREADS[@]}                           # Number of different settings
+n_sizes=${#SIZES[@]}                               # Number of different settings
 
 
 #######################################################
@@ -45,7 +47,8 @@ n_threads=${#THREADS[@]}                               # Number of different set
 #######################################################
 
 i_cmd=0                                            # index of the command being run
-i_thread=0                                           # index of the sizes
+i_thread=0                                         # index of the thread
+i_size=0                                           # index of the sizes
 i_rep=0                                            # index of the replicates
 
 while [ $i_rep -lt $n_reps ]; do
@@ -54,7 +57,7 @@ while [ $i_rep -lt $n_reps ]; do
   OUT_PREFIX="threads_${THREADS[$i_thread]}.rep_$((rep_start + i_rep))"
 
   # Command to run
-  CMD="$EXEC_PATH --threads ${THREADS[$i_thread]} --energy-grid union $SETTINGS > $PWD/$OUT_PREFIX.output 2>&1"
+  CMD="$EXEC_PATH --threads ${THREADS[$i_thread]} --resize-egrid ${SIZES[$i_size]} --energy-grid union $SETTINGS > $PWD/$OUT_PREFIX.output 2>&1"
 
   # Echo and run command
   echo "Running $CMD"
@@ -62,6 +65,7 @@ while [ $i_rep -lt $n_reps ]; do
 
   i_cmd=$(( i_cmd + 1 ))
   i_thread=$(( i_cmd % n_threads ))           
-  i_rep=$(( i_cmd / n_threads ))               
+  i_size=$(( i_cmd / n_threads  ))           
+  i_rep=$(( i_cmd / (n_threads * n_sizes) ))               
 
 done
