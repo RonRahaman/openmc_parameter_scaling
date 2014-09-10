@@ -30,8 +30,9 @@ done
 # Setup for OpenMC run
 #######################################################
 
-THREADS=(1 2 4 8 16 32)                            # Values for threads
-SIZES=(2.4 26.3875513482 215.0)                    # Values to resize egrid
+# THREADS=(1 2 4 8)                                  # Values for threads
+THREADS=(1 2 4 8 16 32)                          # Values for threads
+SIZES=(0.84765625 0.10546875 0.0)                  # Values to resize egrid
 EXEC_PATH="$HOME/openmc/src/openmc"                # Path to executable
 CROSS_SECTIONS="$HOME/data/cross_sections.xml"     # Path to cross_sections
 SETTINGS="$HOME/benchmarks/mc-performance/openmc"  # Settings directory
@@ -54,7 +55,7 @@ i_rep=0                                            # index of the replicates
 while [ $i_rep -lt $n_reps ]; do
   
   # Prefix for output files
-  OUT_PREFIX="threads_${THREADS[$i_thread]}.rep_$((rep_start + i_rep))"
+  OUT_PREFIX="resize_${SIZES[$i_size]}.threads_${THREADS[$i_thread]}.rep_$((rep_start + i_rep))"
 
   # Command to run
   CMD="$EXEC_PATH --threads ${THREADS[$i_thread]} --resize-egrid ${SIZES[$i_size]} --energy-grid nuclide $SETTINGS > $PWD/$OUT_PREFIX.output 2>&1"
@@ -64,8 +65,8 @@ while [ $i_rep -lt $n_reps ]; do
   # eval "$CMD"
 
   i_cmd=$(( i_cmd + 1 ))
-  i_thread=$(( i_cmd % n_threads ))           
-  i_size=$(( i_cmd / n_threads  ))           
   i_rep=$(( i_cmd / (n_threads * n_sizes) ))               
+  i_size=$(( i_cmd % (n_threads * n_sizes) / n_threads  ))           
+  i_thread=$(( i_cmd % n_threads ))           
 
 done
