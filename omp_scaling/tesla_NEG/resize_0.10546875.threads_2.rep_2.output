@@ -1,0 +1,436 @@
+
+       .d88888b.                             888b     d888  .d8888b.
+      d88P" "Y88b                            8888b   d8888 d88P  Y88b
+      888     888                            88888b.d88888 888    888
+      888     888 88888b.   .d88b.  88888b.  888Y88888P888 888       
+      888     888 888 "88b d8P  Y8b 888 "88b 888 Y888P 888 888       
+      888     888 888  888 88888888 888  888 888  Y8P  888 888    888
+      Y88b. .d88P 888 d88P Y8b.     888  888 888   "   888 Y88b  d88P
+       "Y88888P"  88888P"   "Y8888  888  888 888       888  "Y8888P"
+__________________888______________________________________________________
+                  888
+                  888
+
+      Copyright:     2011-2013 Massachusetts Institute of Technology
+      License:       http://mit-crpg.github.io/openmc/license.html
+      Version:        0.5.3
+      Git SHA1:       cb8fc943d52dff26b9c55cbda50a1a8d634efda2
+      Date/Time:      2014-09-10 10:50:56
+      OpenMP Threads: 2
+
+ ===========================================================================
+ ========================>     INITIALIZATION     <=========================
+ ===========================================================================
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading geometry XML file...
+ Reading materials XML file...
+ Building neighboring cells lists for each surface...
+ Loading ACE cross section table: 92234.70c
+ Loading ACE cross section table: 92235.70c
+ Loading ACE cross section table: 92236.70c
+ Loading ACE cross section table: 92238.70c
+ Loading ACE cross section table: 8016.70c
+ Loading ACE cross section table: 90227.70c
+ Loading ACE cross section table: 90228.70c
+ Loading ACE cross section table: 90229.70c
+ Loading ACE cross section table: 90230.70c
+ Loading ACE cross section table: 90232.70c
+ Loading ACE cross section table: 90233.70c
+ Loading ACE cross section table: 90234.70c
+ Loading ACE cross section table: 91231.70c
+ Loading ACE cross section table: 91232.70c
+ Loading ACE cross section table: 91233.70c
+ Loading ACE cross section table: 92232.70c
+ Loading ACE cross section table: 92233.70c
+ Loading ACE cross section table: 92237.70c
+ Loading ACE cross section table: 92239.70c
+ Loading ACE cross section table: 92240.70c
+ Loading ACE cross section table: 92241.70c
+ Loading ACE cross section table: 93235.70c
+ Loading ACE cross section table: 93236.70c
+ Loading ACE cross section table: 93237.70c
+ Loading ACE cross section table: 93238.70c
+ Loading ACE cross section table: 93239.70c
+ Loading ACE cross section table: 94236.70c
+ Loading ACE cross section table: 94237.70c
+ Loading ACE cross section table: 94238.70c
+ Loading ACE cross section table: 94239.70c
+ Loading ACE cross section table: 94240.70c
+ Loading ACE cross section table: 94241.70c
+ Loading ACE cross section table: 94242.70c
+ Loading ACE cross section table: 94243.70c
+ Loading ACE cross section table: 94244.70c
+ Loading ACE cross section table: 94246.70c
+ Loading ACE cross section table: 95241.70c
+ Loading ACE cross section table: 95642.70c
+ Loading ACE cross section table: 95242.70c
+ Loading ACE cross section table: 95243.70c
+ Loading ACE cross section table: 95244.70c
+ Loading ACE cross section table: 95644.70c
+ Loading ACE cross section table: 96241.70c
+ Loading ACE cross section table: 96242.70c
+ Loading ACE cross section table: 96243.70c
+ Loading ACE cross section table: 96244.70c
+ Loading ACE cross section table: 96245.70c
+ Loading ACE cross section table: 96246.70c
+ Loading ACE cross section table: 96247.70c
+ Loading ACE cross section table: 96248.70c
+ Loading ACE cross section table: 96249.70c
+ Loading ACE cross section table: 96250.70c
+ Loading ACE cross section table: 97249.70c
+ Loading ACE cross section table: 97250.70c
+ Loading ACE cross section table: 98249.70c
+ Loading ACE cross section table: 98250.70c
+ Loading ACE cross section table: 98251.70c
+ Loading ACE cross section table: 98252.70c
+ Loading ACE cross section table: 98254.70c
+ Loading ACE cross section table: 99254.70c
+ Loading ACE cross section table: 99255.70c
+ Loading ACE cross section table: 100255.70c
+ Loading ACE cross section table: 16032.70c
+ Loading ACE cross section table: 16033.70c
+ Loading ACE cross section table: 16034.70c
+ Loading ACE cross section table: 16036.70c
+ Loading ACE cross section table: 17035.70c
+ Loading ACE cross section table: 17037.70c
+ Loading ACE cross section table: 19039.70c
+ Loading ACE cross section table: 19040.70c
+ Loading ACE cross section table: 19041.70c
+ Loading ACE cross section table: 20040.70c
+ Loading ACE cross section table: 20042.70c
+ Loading ACE cross section table: 20043.70c
+ Loading ACE cross section table: 20044.70c
+ Loading ACE cross section table: 20046.70c
+ Loading ACE cross section table: 20048.70c
+ Loading ACE cross section table: 21045.70c
+ Loading ACE cross section table: 22046.70c
+ Loading ACE cross section table: 22047.70c
+ Loading ACE cross section table: 22048.70c
+ Loading ACE cross section table: 22049.70c
+ Loading ACE cross section table: 22050.70c
+ Loading ACE cross section table: 23000.70c
+ Loading ACE cross section table: 27059.70c
+ Loading ACE cross section table: 30000.70c
+ Loading ACE cross section table: 31069.70c
+ Loading ACE cross section table: 31071.70c
+ Loading ACE cross section table: 32070.70c
+ Loading ACE cross section table: 32072.70c
+ Loading ACE cross section table: 32073.70c
+ Loading ACE cross section table: 32074.70c
+ Loading ACE cross section table: 32076.70c
+ Loading ACE cross section table: 33074.70c
+ Loading ACE cross section table: 33075.70c
+ Loading ACE cross section table: 34074.70c
+ Loading ACE cross section table: 34076.70c
+ Loading ACE cross section table: 34077.70c
+ Loading ACE cross section table: 34078.70c
+ Loading ACE cross section table: 34079.70c
+ Loading ACE cross section table: 34080.70c
+ Loading ACE cross section table: 34082.70c
+ Loading ACE cross section table: 35079.70c
+ Loading ACE cross section table: 35081.70c
+ Loading ACE cross section table: 36078.70c
+ Loading ACE cross section table: 36080.70c
+ Loading ACE cross section table: 36082.70c
+ Loading ACE cross section table: 36083.70c
+ Loading ACE cross section table: 36084.70c
+ Loading ACE cross section table: 36085.70c
+ Loading ACE cross section table: 36086.70c
+ Loading ACE cross section table: 37085.70c
+ Loading ACE cross section table: 37086.70c
+ Loading ACE cross section table: 37087.70c
+ Loading ACE cross section table: 38084.70c
+ Loading ACE cross section table: 38086.70c
+ Loading ACE cross section table: 38087.70c
+ Loading ACE cross section table: 38088.70c
+ Loading ACE cross section table: 38089.70c
+ Loading ACE cross section table: 38090.70c
+ Loading ACE cross section table: 39089.70c
+ Loading ACE cross section table: 39090.70c
+ Loading ACE cross section table: 39091.70c
+ Loading ACE cross section table: 40093.70c
+ Loading ACE cross section table: 40095.70c
+ Loading ACE cross section table: 41093.70c
+ Loading ACE cross section table: 41094.70c
+ Loading ACE cross section table: 41095.70c
+ Loading ACE cross section table: 42099.70c
+ Loading ACE cross section table: 43099.70c
+ Loading ACE cross section table: 44096.70c
+ Loading ACE cross section table: 44098.70c
+ Loading ACE cross section table: 44099.70c
+ Loading ACE cross section table: 44100.70c
+ Loading ACE cross section table: 44101.70c
+ Loading ACE cross section table: 44102.70c
+ Loading ACE cross section table: 44103.70c
+ Loading ACE cross section table: 44104.70c
+ Loading ACE cross section table: 44105.70c
+ Loading ACE cross section table: 44106.70c
+ Loading ACE cross section table: 45103.70c
+ Loading ACE cross section table: 45105.70c
+ Loading ACE cross section table: 46102.70c
+ Loading ACE cross section table: 46104.70c
+ Loading ACE cross section table: 46105.70c
+ Loading ACE cross section table: 46106.70c
+ Loading ACE cross section table: 46107.70c
+ Loading ACE cross section table: 46108.70c
+ Loading ACE cross section table: 46110.70c
+ Loading ACE cross section table: 47107.70c
+ Loading ACE cross section table: 47109.70c
+ Loading ACE cross section table: 47510.70c
+ Loading ACE cross section table: 47111.70c
+ Loading ACE cross section table: 48106.70c
+ Loading ACE cross section table: 48108.70c
+ Loading ACE cross section table: 48110.70c
+ Loading ACE cross section table: 48111.70c
+ Loading ACE cross section table: 48112.70c
+ Loading ACE cross section table: 48113.70c
+ Loading ACE cross section table: 48114.70c
+ Loading ACE cross section table: 48515.70c
+ Loading ACE cross section table: 48116.70c
+ Loading ACE cross section table: 49113.70c
+ Loading ACE cross section table: 49115.70c
+ Loading ACE cross section table: 50112.70c
+ Loading ACE cross section table: 50113.70c
+ Loading ACE cross section table: 50114.70c
+ Loading ACE cross section table: 50115.70c
+ Loading ACE cross section table: 50116.70c
+ Loading ACE cross section table: 50117.70c
+ Loading ACE cross section table: 50118.70c
+ Loading ACE cross section table: 50119.70c
+ Loading ACE cross section table: 50120.70c
+ Loading ACE cross section table: 50122.70c
+ Loading ACE cross section table: 50123.70c
+ Loading ACE cross section table: 50124.70c
+ Loading ACE cross section table: 50125.70c
+ Loading ACE cross section table: 50126.70c
+ Loading ACE cross section table: 51121.70c
+ Loading ACE cross section table: 51123.70c
+ Loading ACE cross section table: 51124.70c
+ Loading ACE cross section table: 51125.70c
+ Loading ACE cross section table: 51126.70c
+ Loading ACE cross section table: 52122.70c
+ Loading ACE cross section table: 52123.70c
+ Loading ACE cross section table: 52124.70c
+ Loading ACE cross section table: 52125.70c
+ Loading ACE cross section table: 52126.70c
+ Loading ACE cross section table: 52527.70c
+ Loading ACE cross section table: 52128.70c
+ Loading ACE cross section table: 52529.70c
+ Loading ACE cross section table: 52130.70c
+ Loading ACE cross section table: 52132.70c
+ Loading ACE cross section table: 53127.70c
+ Loading ACE cross section table: 53129.70c
+ Loading ACE cross section table: 53130.70c
+ Loading ACE cross section table: 53131.70c
+ Loading ACE cross section table: 53135.70c
+ Loading ACE cross section table: 54123.70c
+ Loading ACE cross section table: 54124.70c
+ Loading ACE cross section table: 54126.70c
+ Loading ACE cross section table: 54128.70c
+ Loading ACE cross section table: 54129.70c
+ Loading ACE cross section table: 54130.70c
+ Loading ACE cross section table: 54131.70c
+ Loading ACE cross section table: 54132.70c
+ Loading ACE cross section table: 54133.70c
+ Loading ACE cross section table: 54134.70c
+ Loading ACE cross section table: 54135.70c
+ Loading ACE cross section table: 54136.70c
+ Loading ACE cross section table: 55133.70c
+ Loading ACE cross section table: 55134.70c
+ Loading ACE cross section table: 55135.70c
+ Loading ACE cross section table: 55136.70c
+ Loading ACE cross section table: 55137.70c
+ Loading ACE cross section table: 56130.70c
+ Loading ACE cross section table: 56132.70c
+ Loading ACE cross section table: 56133.70c
+ Loading ACE cross section table: 56134.70c
+ Loading ACE cross section table: 56135.70c
+ Loading ACE cross section table: 56136.70c
+ Loading ACE cross section table: 56137.70c
+ Loading ACE cross section table: 56138.70c
+ Loading ACE cross section table: 56140.70c
+ Loading ACE cross section table: 57138.70c
+ Loading ACE cross section table: 57139.70c
+ Loading ACE cross section table: 57140.70c
+ Loading ACE cross section table: 58136.70c
+ Loading ACE cross section table: 58138.70c
+ Loading ACE cross section table: 58139.70c
+ Loading ACE cross section table: 58140.70c
+ Loading ACE cross section table: 58141.70c
+ Loading ACE cross section table: 58142.70c
+ Loading ACE cross section table: 58143.70c
+ Loading ACE cross section table: 58144.70c
+ Loading ACE cross section table: 59141.70c
+ Loading ACE cross section table: 59142.70c
+ Loading ACE cross section table: 59143.70c
+ Loading ACE cross section table: 60142.70c
+ Loading ACE cross section table: 60143.70c
+ Loading ACE cross section table: 60144.70c
+ Loading ACE cross section table: 60145.70c
+ Loading ACE cross section table: 60146.70c
+ Loading ACE cross section table: 60147.70c
+ Loading ACE cross section table: 60148.70c
+ Loading ACE cross section table: 60150.70c
+ Loading ACE cross section table: 61147.70c
+ Loading ACE cross section table: 61148.70c
+ Loading ACE cross section table: 61548.70c
+ Loading ACE cross section table: 61149.70c
+ Loading ACE cross section table: 61151.70c
+ Loading ACE cross section table: 62147.70c
+ Loading ACE cross section table: 62148.70c
+ Loading ACE cross section table: 62149.70c
+ Loading ACE cross section table: 62150.70c
+ Loading ACE cross section table: 62151.70c
+ Loading ACE cross section table: 62152.70c
+ Loading ACE cross section table: 62153.70c
+ Loading ACE cross section table: 62154.70c
+ Loading ACE cross section table: 63151.70c
+ Loading ACE cross section table: 63152.70c
+ Loading ACE cross section table: 63153.70c
+ Loading ACE cross section table: 63154.70c
+ Loading ACE cross section table: 63155.70c
+ Loading ACE cross section table: 63156.70c
+ Loading ACE cross section table: 63157.70c
+ Loading ACE cross section table: 64152.70c
+ Loading ACE cross section table: 64153.70c
+ Loading ACE cross section table: 64154.70c
+ Loading ACE cross section table: 64155.70c
+ Loading ACE cross section table: 64156.70c
+ Loading ACE cross section table: 64157.70c
+ Loading ACE cross section table: 64158.70c
+ Loading ACE cross section table: 64160.70c
+ Loading ACE cross section table: 65159.70c
+ Loading ACE cross section table: 65160.70c
+ Loading ACE cross section table: 66156.70c
+ Loading ACE cross section table: 66158.70c
+ Loading ACE cross section table: 66160.70c
+ Loading ACE cross section table: 66161.70c
+ Loading ACE cross section table: 66162.70c
+ Loading ACE cross section table: 66163.70c
+ Loading ACE cross section table: 66164.70c
+ Loading ACE cross section table: 67165.70c
+ Loading ACE cross section table: 67566.70c
+ Loading ACE cross section table: 68162.70c
+ Loading ACE cross section table: 68164.70c
+ Loading ACE cross section table: 68166.70c
+ Loading ACE cross section table: 68167.70c
+ Loading ACE cross section table: 68168.70c
+ Loading ACE cross section table: 68170.70c
+ Loading ACE cross section table: 71175.70c
+ Loading ACE cross section table: 71176.70c
+ Loading ACE cross section table: 72174.70c
+ Loading ACE cross section table: 72176.70c
+ Loading ACE cross section table: 72177.70c
+ Loading ACE cross section table: 72178.70c
+ Loading ACE cross section table: 72179.70c
+ Loading ACE cross section table: 72180.70c
+ Loading ACE cross section table: 73181.70c
+ Loading ACE cross section table: 73182.70c
+ Loading ACE cross section table: 74182.70c
+ Loading ACE cross section table: 74183.70c
+ Loading ACE cross section table: 74184.70c
+ Loading ACE cross section table: 74186.70c
+ Loading ACE cross section table: 75185.70c
+ Loading ACE cross section table: 75187.70c
+ Loading ACE cross section table: 77191.70c
+ Loading ACE cross section table: 77193.70c
+ Loading ACE cross section table: 79197.70c
+ Loading ACE cross section table: 80196.70c
+ Loading ACE cross section table: 80198.70c
+ Loading ACE cross section table: 80199.70c
+ Loading ACE cross section table: 80200.70c
+ Loading ACE cross section table: 80201.70c
+ Loading ACE cross section table: 80202.70c
+ Loading ACE cross section table: 80204.70c
+ Loading ACE cross section table: 82204.70c
+ Loading ACE cross section table: 82206.70c
+ Loading ACE cross section table: 82207.70c
+ Loading ACE cross section table: 82208.70c
+ Loading ACE cross section table: 40090.70c
+ Loading ACE cross section table: 40091.70c
+ Loading ACE cross section table: 40092.70c
+ Loading ACE cross section table: 40094.70c
+ Loading ACE cross section table: 40096.70c
+ Loading ACE cross section table: 1001.70c
+ Loading ACE cross section table: 5010.70c
+ Loading ACE cross section table: 5011.70c
+ Loading ACE cross section table: lwtr.10t
+ Loading ACE cross section table: 26054.70c
+ Loading ACE cross section table: 26056.70c
+ Loading ACE cross section table: 26057.70c
+ Loading ACE cross section table: 26058.70c
+ Loading ACE cross section table: 28058.70c
+ Loading ACE cross section table: 28060.70c
+ Loading ACE cross section table: 28061.70c
+ Loading ACE cross section table: 28062.70c
+ Loading ACE cross section table: 28064.70c
+ Loading ACE cross section table: 25055.70c
+ WARNING: Negative value(s) found on probability table for nuclide  98252.70c
+ WARNING: Could not compute uncertainties -- only one active batch simulated!
+ Loading ACE cross section table: 42092.70c
+ Loading ACE cross section table: 42094.70c
+ Loading ACE cross section table: 42095.70c
+ Loading ACE cross section table: 42096.70c
+ Loading ACE cross section table: 42097.70c
+ Loading ACE cross section table: 42098.70c
+ Loading ACE cross section table: 42100.70c
+ Loading ACE cross section table: 14028.70c
+ Loading ACE cross section table: 14029.70c
+ Loading ACE cross section table: 14030.70c
+ Loading ACE cross section table: 24050.70c
+ Loading ACE cross section table: 24052.70c
+ Loading ACE cross section table: 24053.70c
+ Loading ACE cross section table: 24054.70c
+ Loading ACE cross section table: 6000.70c
+ Loading ACE cross section table: 29063.70c
+ Loading ACE cross section table: 29065.70c
+ Begin reconstructing egrid...
+   Number of nuclides:             356        
+   Egrid interpolation threshold:  0.105469       
+   Original sum(nuc % ngrid):      4713729    
+   Original size xs (MB):          215.777        
+   Reconstructed sum(nuc % ngrid): 578588     
+   Reconstructed size xs (MB):     26.4857        
+   ...Finished reconstructing egrid
+ Initializing source particles...
+
+ ===========================================================================
+ ====================>     K EIGENVALUE SIMULATION     <====================
+ ===========================================================================
+
+  Bat./Gen.      k       Entropy         Average k         
+  =========   ========   ========   ====================   
+        1/1    0.92549   12.09051                       
+ Creating state point statepoint.1.binary...
+
+ ===========================================================================
+ ======================>     SIMULATION FINISHED     <======================
+ ===========================================================================
+
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     =  3.2310E+00 seconds
+   Reading cross sections          =  2.4440E+00 seconds
+   Unionizing energy grid          =  0.0000E+00 seconds
+ Total time in simulation          =  6.3345E+01 seconds
+   Time in transport only          =  6.3293E+01 seconds
+   Time in inactive batches        =  0.0000E+00 seconds
+   Time in active batches          =  6.3345E+01 seconds
+   Time synchronizing fission bank =  5.0000E-03 seconds
+     Sampling source sites         =  4.0000E-03 seconds
+     SEND/RECV source sites        =  1.0000E-03 seconds
+   Time accumulating tallies       =  0.0000E+00 seconds
+ Total time for finalization       =  0.0000E+00 seconds
+ Total time elapsed                =  6.6576E+01 seconds
+ Calculation Rate (active)         =  1578.66 neutrons/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     =  0.92576
+ k-effective (Track-length)  =  0.92549
+ k-effective (Absorption)    =  0.92937
+ Leakage Fraction            =  0.00152
+

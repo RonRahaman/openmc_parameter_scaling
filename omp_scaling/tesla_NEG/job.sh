@@ -62,7 +62,7 @@ while [ $i_rep -lt $n_reps ]; do
 
   # Echo and run command
   echo "Running $CMD"
-  # eval "$CMD"
+  eval "$CMD"
 
   i_cmd=$(( i_cmd + 1 ))
   i_rep=$(( i_cmd / (n_threads * n_sizes) ))               
