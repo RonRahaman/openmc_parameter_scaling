@@ -57,11 +57,11 @@ while [ $i_rep -lt $n_reps ]; do
   OUT_PREFIX="resize_${SIZES[$i_size]}.threads_${THREADS[$i_thread]}.rep_$((rep_start + i_rep))"
 
   # Command to run
-  CMD="$EXEC_PATH --threads ${THREADS[$i_thread]} --resize-egrid ${SIZES[$i_size]} --energy-grid nuclide $SETTINGS > $PWD/$OUT_PREFIX.output 2>&1"
+  CMD="$EXEC_PATH --threads ${THREADS[$i_thread]} --resize-egrid ${SIZES[$i_size]} --energy-grid union $SETTINGS > $PWD/$OUT_PREFIX.output 2>&1"
 
   # Echo and run command
   echo "Running $CMD"
-  # eval "$CMD"
+  eval "$CMD"
 
   i_cmd=$(( i_cmd + 1 ))
   i_rep=$(( i_cmd / (n_threads * n_sizes) ))               

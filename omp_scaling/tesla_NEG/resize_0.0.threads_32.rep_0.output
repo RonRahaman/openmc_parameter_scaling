@@ -14,8 +14,8 @@ __________________888______________________________________________________
       Copyright:     2011-2013 Massachusetts Institute of Technology
       License:       http://mit-crpg.github.io/openmc/license.html
       Version:        0.5.3
-      Git SHA1:       cb8fc943d52dff26b9c55cbda50a1a8d634efda2
-      Date/Time:      2014-09-10 10:30:21
+      Git SHA1:       7e98d3bc10fee2f934bee3c1053cd0c9010b9994
+      Date/Time:      2014-09-11 10:29:52
       OpenMP Threads: 32
 
  ===========================================================================
@@ -387,13 +387,13 @@ __________________888______________________________________________________
  Loading ACE cross section table: 29063.70c
  Loading ACE cross section table: 29065.70c
  Begin reconstructing egrid...
-   Number of nuclides:             356        
    Egrid interpolation threshold:  0.0            
-   Original sum(nuc % ngrid):      4713729    
-   Original size xs (MB):          215.777        
-   Reconstructed sum(nuc % ngrid): 4713729    
-   Reconstructed size xs (MB):     215.777        
    ...Finished reconstructing egrid
+ Microscopic Cross-section Info
+  Grid method:                  nuclide
+  Number of nuclides:           356        
+  Number of nuclide gridpoints: 4713729    
+  Size of micro xs data (MB):   215.777        
  Initializing source particles...
 
  ===========================================================================
@@ -412,20 +412,20 @@ __________________888______________________________________________________
 
  =======================>     TIMING STATISTICS     <=======================
 
- Total time for initialization     =  3.1810E+00 seconds
-   Reading cross sections          =  2.4580E+00 seconds
+ Total time for initialization     =  3.1730E+00 seconds
+   Reading cross sections          =  2.4670E+00 seconds
    Unionizing energy grid          =  0.0000E+00 seconds
- Total time in simulation          =  1.2263E+01 seconds
-   Time in transport only          =  1.2200E+01 seconds
+ Total time in simulation          =  1.1825E+01 seconds
+   Time in transport only          =  1.1774E+01 seconds
    Time in inactive batches        =  0.0000E+00 seconds
-   Time in active batches          =  1.2263E+01 seconds
-   Time synchronizing fission bank =  6.0000E-03 seconds
-     Sampling source sites         =  5.0000E-03 seconds
+   Time in active batches          =  1.1825E+01 seconds
+   Time synchronizing fission bank =  5.0000E-03 seconds
+     Sampling source sites         =  4.0000E-03 seconds
      SEND/RECV source sites        =  1.0000E-03 seconds
    Time accumulating tallies       =  0.0000E+00 seconds
  Total time for finalization       =  0.0000E+00 seconds
- Total time elapsed                =  1.5444E+01 seconds
- Calculation Rate (active)         =  8154.61 neutrons/second
+ Total time elapsed                =  1.4998E+01 seconds
+ Calculation Rate (active)         =  8456.66 neutrons/second
 
  ============================>     RESULTS     <============================
 
