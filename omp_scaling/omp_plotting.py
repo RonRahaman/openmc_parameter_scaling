@@ -13,8 +13,11 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     # for f in ['calculate_xs', 'calculate_nuclide_xs', 'binary_search_real']:
     for f in mean_fr.index.get_level_values(0).unique():
         # Rate
-        axis.errorbar(mean_fr.loc[f].index, mean_fr.loc[f][column],
-                      yerr=std_fr.loc[f][column], label = "%0.2f MB" % f)
+        # On another version of pandas, I can just do xvals = mean_fr.loc[f].index
+        xvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f].index.get_level_values(1)
+        yvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f][column]
+        yerr = std_fr.loc[std_fr.index.get_level_values(0) == f][column]
+        axis.errorbar( xvals, yvals, yerr = yerr, label = "%0.2f MB" % f)
         
         # Speedup
         # axis.plot(mean_fr.loc[f].index, 
