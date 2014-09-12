@@ -81,22 +81,37 @@ if __name__ == '__main__':
             r'OpenMP Threads:\s+(?P<threads>[0-9]+)')
     # tesla_NEG.dframe.reset_index(inplace=True)
 
-    # Plot Rate
-    fig, axes = plt.subplots(nrows=1, ncols=1)
+    tesla_UEG = ParsedBatchNoProf('tesla_UEG',
+            output_pattern =
+            r'Size of micro xs data \(MB\):\s+(?P<xs_size>[0-9\.E\-\+]+)|'+
+            r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second|'+
+            r'OpenMP Threads:\s+(?P<threads>[0-9]+)')
 
-    batch = tesla_NEG; title='Tesla NEG'; ax = axes
-    # for (batch, title, ax) in zip( 
+    vesta_NEG = ParsedBatchNoProf('vesta_NEG',
+            output_pattern =
+            r'Size of micro xs data \(MB\):\s+(?P<xs_size>[0-9\.E\-\+]+)|'+
+            r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second|'+
+            r'OpenMP Threads:\s+(?P<threads>[0-9]+)')
+
+    # Plot Rate
+    fig, axes = plt.subplots(nrows=2, ncols=2)
+
+    # batch = tesla_NEG; title='Tesla NEG'; ax = axes
+    for (batch, title, ax) in zip( 
             # [tesla_NEG, tesla_UEG, vesta_NEG, vesta_UEG],
             # ['NEG, Intel Xeon E5-2650', 'UEG, Intel Xeon E5-2650', 'NEG, IBM BG/Q', 'UEG, IBM BG/Q'],
             # [axes[0,0], axes[0,1], axes[1,0], axes[1,1]]):
-    batch_means = batch.dframe.convert_objects(
-            convert_numeric=True).groupby(['xs_size', 'threads']).mean()
+            [tesla_NEG, tesla_UEG, vesta_NEG],
+            ['NEG, Intel Xeon E5-2650', 'UEG, Intel Xeon E5-2650', 'NEG, IBM BG/Q'],
+            [axes[0,0], axes[0,1], axes[1,0]]):
+        batch_means = batch.dframe.convert_objects(
+                convert_numeric=True).groupby(['xs_size', 'threads']).mean()
 
-    batch_stds = batch.dframe.convert_objects(
-            convert_numeric=True).groupby(['xs_size', 'threads']).std()
-    errobar_batch(mean_fr=batch_means, std_fr=batch_stds, axis=ax, title=title,
-            column='rate_active', xlabel='threads', ylabel='rate')
-    axes.legend(loc=2, fontsize=9)
+        batch_stds = batch.dframe.convert_objects(
+                convert_numeric=True).groupby(['xs_size', 'threads']).std()
+        errobar_batch(mean_fr=batch_means, std_fr=batch_stds, axis=ax, title=title,
+                column='rate_active', xlabel='threads', ylabel='rate')
+    axes[0,0].legend(loc=2, fontsize=9)
     plt.show()
 
 
