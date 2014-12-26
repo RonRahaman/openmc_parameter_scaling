@@ -9,15 +9,21 @@ import pandas as pd
 sys.path.append('../lib/')
 from batch_classes import ParsedBatch
 
+
 def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     # for f in ['calculate_xs', 'calculate_nuclide_xs', 'binary_search_real']:
     for f in mean_fr.index.get_level_values(0).unique():
         # Rate
         # On another version of pandas, I can just do xvals = mean_fr.loc[f].index
+
         xvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f].index.get_level_values(1)
         yvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f][column]
         yerr = std_fr.loc[std_fr.index.get_level_values(0) == f][column]
-        axis.errorbar( xvals, yvals, yerr = yerr, label = "%0.2f MB" % f)
+
+        #axis.errorbar(xvals, yvals, yerr=yerr, label="%0.2f MB" % f)
+        axis.plot(xvals, 
+                yvals / yvals.irow(0) / xvals * 100, 
+                label="%0.2f MB" % f)
         
         # Speedup
         # axis.plot(mean_fr.loc[f].index, 
@@ -25,15 +31,26 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
         #               label = "%0.2f MB" % f)
 
         # Parallel efficiency
-        # axis.plot(mean_fr.loc[f].index, 
-        #               mean_fr.loc[f][column] / mean_fr.loc[f, 1][column] / mean_fr.loc[f].index,
-        #               label = "%0.2f MB" % f)
+        #axis.plot(mean_fr.loc[f].index, 
+                      #mean_fr.loc[f][column] / mean_fr.loc[f, 1][column] / mean_fr.loc[f].index,
+                      #label = "%0.2f MB" % f)
     axis.set_title(title)
     axis.set_xlabel(xlabel)
     axis.set_ylabel(ylabel)
-    axis.set_xscale('log')
-    axis.set_yscale('log')
+    axis.set_ylim(0, 110)
+    axis.set_xlim(1, 64)
+    axis.set_xscale('log', basex=2)
+    axis.xaxis.labelpad = 3
+    axis.yaxis.labelpad = 3
+    #axis.set_yscale('log')
     axis.grid(which='both')
+
+    axis.legend(loc=3, fontsize=9,
+            markerscale=0.8,   # Size of markers, relative to original
+            handlelength=1.75, # Length of markers
+            handletextpad=1,   # Horizontal spacing between markers and text
+            labelspacing=.55    # Vertical spacing between lines
+            )
 
 class ParsedBatchNoProf(ParsedBatch):
 
@@ -93,25 +110,35 @@ if __name__ == '__main__':
             r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second|'+
             r'OpenMP Threads:\s+(?P<threads>[0-9]+)')
 
+    vesta_UEG = ParsedBatchNoProf('vesta_UEG',
+            output_pattern =
+            r'Size of micro xs data \(MB\):\s+(?P<xs_size>[0-9\.E\-\+]+)|'+
+            r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second|'+
+            r'OpenMP Threads:\s+(?P<threads>[0-9]+)')
+
     # Plot Rate
     fig, axes = plt.subplots(nrows=2, ncols=2)
+    fig.subplots_adjust(wspace=0.3, hspace=0.5, bottom=0.1, top=0.95, left=0.1, right=0.95)
+
 
     # batch = tesla_NEG; title='Tesla NEG'; ax = axes
     for (batch, title, ax) in zip( 
-            # [tesla_NEG, tesla_UEG, vesta_NEG, vesta_UEG],
-            # ['NEG, Intel Xeon E5-2650', 'UEG, Intel Xeon E5-2650', 'NEG, IBM BG/Q', 'UEG, IBM BG/Q'],
-            # [axes[0,0], axes[0,1], axes[1,0], axes[1,1]]):
-            [tesla_NEG, tesla_UEG, vesta_NEG],
-            ['NEG, Intel Xeon E5-2650', 'UEG, Intel Xeon E5-2650', 'NEG, IBM BG/Q'],
-            [axes[0,0], axes[0,1], axes[1,0]]):
+            [tesla_NEG, tesla_UEG, vesta_NEG, vesta_UEG],
+            ['NEG, Intel Xeon E5-2650', 'UEG, Intel Xeon E5-2650', 'NEG, IBM BG/Q', 'UEG, IBM BG/Q'],
+            [axes[0,0], axes[0,1], axes[1,0], axes[1,1]]):
         batch_means = batch.dframe.convert_objects(
                 convert_numeric=True).groupby(['xs_size', 'threads']).mean()
 
         batch_stds = batch.dframe.convert_objects(
                 convert_numeric=True).groupby(['xs_size', 'threads']).std()
         errobar_batch(mean_fr=batch_means, std_fr=batch_stds, axis=ax, title=title,
-                column='rate_active', xlabel='threads', ylabel='rate')
-    axes[0,0].legend(loc=2, fontsize=9)
+                column='rate_active', xlabel='Threads', ylabel='Efficiency (%)')
+
+    plt.rc("font", size=10)
+    fig.set_size_inches(7,5.5)
+    for ext in ['png', 'pdf']:
+            fig.savefig('figures/omp_efficiency.%s' % ext, format=ext)
+                
     plt.show()
 
 
