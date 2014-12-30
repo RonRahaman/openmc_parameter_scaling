@@ -13,16 +13,16 @@ from batch_classes import ParsedBatch
 def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     # for f in ['calculate_xs', 'calculate_nuclide_xs', 'binary_search_real']:
     for f in mean_fr.index.get_level_values(0).unique():
-        # Rate
         # On another version of pandas, I can just do xvals = mean_fr.loc[f].index
-
         xvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f].index.get_level_values(1)
         yvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f][column]
         yerr = std_fr.loc[std_fr.index.get_level_values(0) == f][column]
 
-        #axis.errorbar(xvals, yvals, yerr=yerr, label="%0.2f MB" % f)
-        axis.plot(xvals, yvals / yvals.irow(0) / xvals * 100, label="%0.2f MB" % f,
-                marker='o', markersize=4)
+        #Rate
+        axis.plot(xvals, yvals, label="%0.2f MB" % f, marker='o', markersize=4)
+        
+        # Parallel efficiency
+        #axis.plot(xvals, yvals / yvals.irow(0) / xvals * 100, label="%0.2f MB" % f)
         
         # Speedup
         # axis.plot(mean_fr.loc[f].index, 
@@ -36,15 +36,16 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     axis.set_title(title)
     axis.set_xlabel(xlabel)
     axis.set_ylabel(ylabel)
-    axis.set_ylim(0, 110)
     axis.set_xlim(1, 64)
+    #axis.set_ylim(0, 110)
     axis.set_xscale('log', basex=2)
+    axis.set_yscale('log', basex=2)
     axis.xaxis.labelpad = 3
     axis.yaxis.labelpad = 3
     #axis.set_yscale('log')
     axis.grid(which='both')
 
-    axis.legend(loc=3, fontsize=9,
+    axis.legend(loc=4, fontsize=9,
             markerscale=1,   # Size of markers, relative to original
             handlelength=1.75, # Length of markers
             handletextpad=1,   # Horizontal spacing between markers and text
@@ -131,12 +132,14 @@ if __name__ == '__main__':
         batch_stds = batch.dframe.convert_objects(
                 convert_numeric=True).groupby(['xs_size', 'threads']).std()
         errobar_batch(mean_fr=batch_means, std_fr=batch_stds, axis=ax, title=title,
-                column='rate_active', xlabel='Threads', ylabel='Efficiency (%)')
+                column='rate_active', xlabel='Threads', ylabel='Rate (neutrons/s)')
+
+    axes[1,0].set_ylim(bottom=100)
 
     plt.rc("font", size=10)
     fig.set_size_inches(7,5.5)
     for ext in ['png', 'pdf']:
-            fig.savefig('figures/omp_efficiency.%s' % ext, format=ext)
+            fig.savefig('figures/omp_rate.%s' % ext, format=ext)
                 
     plt.show()
 
