@@ -37,7 +37,7 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     axis.set_xlabel(xlabel)
     axis.set_ylabel(ylabel)
     axis.set_xlim(1, 64)
-    #axis.set_ylim(0, 110)
+    axis.set_ylim(80, 12000)
     axis.set_xscale('log', basex=2)
     axis.set_yscale('log', basex=2)
     axis.xaxis.labelpad = 3
@@ -134,7 +134,7 @@ if __name__ == '__main__':
         errobar_batch(mean_fr=batch_means, std_fr=batch_stds, axis=ax, title=title,
                 column='rate_active', xlabel='Threads', ylabel='Rate (neutrons/s)')
 
-    axes[1,0].set_ylim(bottom=100)
+    #axes[1,0].set_ylim(bottom=100)
 
     plt.rc("font", size=10)
     fig.set_size_inches(7,5.5)
