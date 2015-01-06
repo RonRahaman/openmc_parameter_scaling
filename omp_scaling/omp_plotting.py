@@ -3,6 +3,7 @@ import sys
 import os
 import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib.ticker import ScalarFormatter, FormatStrFormatter
 import numpy as np
 import pandas as pd
 
@@ -49,6 +50,8 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     axis.yaxis.labelpad = 3
     #axis.set_yscale('log')
     axis.grid(which='both')
+    # axis.xaxis.set_major_formatter(ScalarFormatter())
+    axis.xaxis.set_major_formatter(FormatStrFormatter('%d'))
 
     axis.legend(loc=3, fontsize=9,
             markerscale=1,   # Size of markers, relative to original
