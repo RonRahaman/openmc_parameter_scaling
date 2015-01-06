@@ -18,8 +18,13 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
         yvals = mean_fr.loc[mean_fr.index.get_level_values(0) == f][column]
         yerr = std_fr.loc[std_fr.index.get_level_values(0) == f][column]
 
+        if f > 1300:
+            label = 1584.51
+        else:
+            label = f
+
         #Rate
-        axis.plot(xvals, yvals, label="%0.2f MB" % f, marker='o', markersize=4)
+        axis.plot(xvals, yvals, label="%0.2f MB" % label, marker='o', markersize=4)
         
         # Parallel efficiency
         #axis.plot(xvals, yvals / yvals.irow(0) / xvals * 100, label="%0.2f MB" % f)
@@ -37,7 +42,7 @@ def errobar_batch(mean_fr, std_fr, axis, title, column, xlabel, ylabel):
     axis.set_xlabel(xlabel)
     axis.set_ylabel(ylabel)
     axis.set_xlim(1, 64)
-    axis.set_ylim(80, 12000)
+    axis.set_ylim(80, 40000)
     axis.set_xscale('log', basex=2)
     axis.set_yscale('log', basex=2)
     axis.xaxis.labelpad = 3
@@ -91,14 +96,14 @@ class ParsedBatchNoProf(ParsedBatch):
 
 if __name__ == '__main__':
 
-    tesla_NEG = ParsedBatchNoProf('tesla_NEG',
+    tesla_NEG = ParsedBatchNoProf('tesla_NEG_affinity',
             output_pattern =
             r'Size of micro xs data \(MB\):\s+(?P<xs_size>[0-9\.E\-\+]+)|'+
             r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second|'+
             r'OpenMP Threads:\s+(?P<threads>[0-9]+)')
     # tesla_NEG.dframe.reset_index(inplace=True)
 
-    tesla_UEG = ParsedBatchNoProf('tesla_UEG',
+    tesla_UEG = ParsedBatchNoProf('tesla_UEG_affinity',
             output_pattern =
             r'Size of micro xs data \(MB\):\s+(?P<xs_size>[0-9\.E\-\+]+)|'+
             r'Calculation Rate \(active\)\s+=\s+(?P<rate_active>[0-9\.E\-\+]+)\s+neutrons/second|'+
