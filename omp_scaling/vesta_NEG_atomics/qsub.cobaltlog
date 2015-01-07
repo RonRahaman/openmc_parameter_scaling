@@ -1,0 +1,26 @@
+Jobid: 236352
+qsub --mode script -n 128 -O qsub -A mc_transport -n 128 -t 45 --mode script job.sh
+Wed Jan 07 15:50:51 2015 +0000 (UTC) submitted with cwd set to: /gpfs/vesta-home/rrahaman/openmc_parameter_scaling/omp_scaling/vesta_NEG_atomics
+Wed Jan 07 15:51:21 2015 +0000 (UTC) rrahaman/236352: Initiating boot at location VST-20400-31731-128.
+Wed Jan 07 15:51:41 2015 +0000 (UTC) 
+Wed Jan 07 15:51:41 2015 +0000 (UTC) Command: '/gpfs/vesta-home/rrahaman/openmc_parameter_scaling/omp_scaling/vesta_NEG_atomics/job.sh'
+Wed Jan 07 15:51:41 2015 +0000 (UTC) 
+Wed Jan 07 15:51:41 2015 +0000 (UTC) Environment:
+Wed Jan 07 15:51:41 2015 +0000 (UTC) SHELL=/bin/bash
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_NODEFILE=/tmp/tmpL5uias
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_PARTNAME=VST-20400-31731-128
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_JOBID=236352
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_STARTTIME=1420645856
+Wed Jan 07 15:51:41 2015 +0000 (UTC) LOGNAME=rrahaman
+Wed Jan 07 15:51:41 2015 +0000 (UTC) USER=rrahaman
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_ENDTIME=1420648556
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_PARTSIZE=128
+Wed Jan 07 15:51:41 2015 +0000 (UTC) HOME=/home/rrahaman
+Wed Jan 07 15:51:41 2015 +0000 (UTC) COBALT_JOBSIZE=128
+Wed Jan 07 15:51:41 2015 +0000 (UTC) 
+Wed Jan 07 15:51:41 2015 +0000 (UTC) Info: stdin received from /dev/null
+Wed Jan 07 15:51:41 2015 +0000 (UTC) Info: stdout sent to /gpfs/vesta-home/rrahaman/openmc_parameter_scaling/omp_scaling/vesta_NEG_atomics/qsub.output
+Wed Jan 07 15:51:41 2015 +0000 (UTC) Info: stderr sent to /gpfs/vesta-home/rrahaman/openmc_parameter_scaling/omp_scaling/vesta_NEG_atomics/qsub.error
+Wed Jan 07 15:51:41 2015 +0000 (UTC) 
+Wed Jan 07 15:51:42 2015 +0000 (UTC) rrahaman/236352: Block VST-20400-31731-128 for location VST-20400-31731-128 successfully booted (Initiating). 
+Wed Jan 07 16:15:12 2015 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal
